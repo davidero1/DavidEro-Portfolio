@@ -9,32 +9,55 @@ html {
 }
 
 body {
-  font-family: "Space Grotesk", Cascadia Code, sans-serif;
+  font-family: "Space Grotesk", "Roboto Mono", "Courier Prime", Cascadia Code, sans-serif;
 }
 
-.banner {
-  background-color: black;
-  height: 14vh;
+.header-background {
+  background-image: url("images/IMG_0220.JPG");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 100%;
+  background-position-y: 77%;
+  background-size: 100%;
+  background-origin: padding-box;
+  z-index: 0;
+  height: 190vh;
+  object-fit: cover;
+  object-position: 100% 100%;
   width: 100%;
+}
+
+.header-background-inner {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  height: 55vh;
+  width: 95vw;
   z-index: 1;
 }
 
-.bannerinner {
+.logobox1 {
   display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  height: 12vh;
-  width: 92vw;
-  z-index: 2;
-  position: sticky;
+  flex-direction: column;
 }
 
-.logobox {
-  padding-top: 2.2vh;
+.logobox1a {
+  display: inline-block;
+  margin-top: 4vh;
+  padding-left: 1vw;
 }
 
-.logo {
-  height: 7vh;
+.logobox1b {
+  display: block;
+  margin-top: -5vh;
+}
+
+.logo1a {
+  height: 19vh;
+}
+
+.logo1b {
+  height: 33vh;
 }
 
 .fa-brands {
@@ -43,43 +66,63 @@ body {
 }
 
 .navbox {
-  list-style: none;
-  display: flex;
-  width: 70vw;
-  margin: auto;
+  height: 35vh;
+  margin-top: 3vh;
 }
 
 .navul {
+  list-style: none;
   list-style-type: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   margin: auto;
-  width: 70vw;
 }
 
 .navli {
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   text-decoration: none;
-  font-size: 2vh;
-  font-weight: 500;
+  font-size: 2.2vh;
+  font-weight: 300;
+  text-align: right;
+  line-height: 10vh;
+}
+
+.navlid {
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-decoration: none;
+  text-decoration: none;
+  font-size: 2.2vh;
+  text-align: right;
+  line-height: 3vh;
 }
 
 a.Alink-nav:link,
 a.Alink-nav:visited {
   text-decoration: none;
-  color: red;
+  color: white;
+  font-size: 2.2vh;
+  font-weight: 400;
 }
 
 a.Alink-nav:hover,
 a.Alink-nav:active {
-  color: maroon;
+  color: #be0032;
+  font-size: 4.5vh;
+  font-weight: 500;
+  transition: 0.5s ease-out;
 }
 
+/*
 .iconsbox {
   display: flex;
   justify-content: space-between;
   width: 6vw;
-}
+}*/
 
 .bagicon {
   display: flex;
@@ -98,27 +141,8 @@ a.Alink-nav:active {
   size: 2vh;
 }
 
-.bannerbkg {
-  background-color: rgb(220, 219, 140);
-  height: 8vh;
-  width: 100%;
-  z-index: 0;
-  margin-top: -4.7rem;
-}
-
 header {
-  background-image: url("IMG_1805.JPG");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position-x: 100%;
-  background-position-y: 50%;
-  background-size: 100%;
-  background-origin: padding-box;
-  z-index: 0;
-  height: 82vh;
-  object-fit: cover;
-  object-position: 100% 100%;
-  border: 2px solid yellow;
+  
 }
 
 .headercontainer {
@@ -128,30 +152,56 @@ header {
   justify-content: space-between;
 }
 
-.biotextbox {
-  background-color: rgba(0, 0, 0, 0.42);
-  width: 98.5vw;
-  height: 45vh;
+.biotextimgbox {
+  display: flex;
+  justify-content: space-between;
+  height: 30vh;
+  width: 95vw;
+  margin: auto;
+}
+
+.biotb-title {
+  display: inline;
+  width: 30vw;
   text-align: left;
+  padding-top: 3.3vh;
+}
+
+.imgtitles {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.biotb-img {
+  display: inline;
+  margin-top: -8vh;
+}
+
+.biotb-image {
+  width: 7.3vw;
+  height: 33vh;
+  margin-left: 45vw;
+  border-bottom: 1px solid #be0032;
 }
 
 .bioheading {
-  color: white;
-  font-family: "Space Grotesk", Cascadia Code, sans-serif;
+  color: #e9d9cb;
+  font-family: "Courier Prime", serif;
   font-optical-sizing: auto;
-  font-weight: 300;
   font-style: normal;
-  font-size: 8vh;
+  font-size: 10vh;
+  line-height: 8vh;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.biosubheading {
-  color: white;
-  font-family: "Albert Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-size: 2.5vh;
-  font-style: normal;
-  letter-spacing: 6px;
+.biosup {
+  font-size: 4vh;
+  color: #be0032;
+}
+
+.folio-txt {
+  padding-left: 2.2vw;
 }
 
 .biopara {
@@ -165,18 +215,366 @@ header {
   line-height: 4vh;
 }
 
-.biopara2 {
-  color: red;
-  font-family: "Space Grotesk", Cascadia Code, sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 2vh;
+.bannerbkg {
+  height: 105vh;
+  width: 95vw;
+  margin-left: 2vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.form {
-  border: 2px solid orange;
-  width: 40vw;
+.logobox2 {
+}
+
+.logo2 {
+  height: 105vh;
+}
+
+.logobkg {
+  height: 70vh;
+  position: absolute;
+  left: 4vw;
+  top: 90vh;
+}
+
+.titles {
+  display: inline;
+  width: 45vw;
+  height: 20vh;
+  padding-top: 4vh;
+  margin-left: 7.2vw;
+  text-align: right;
+}
+
+.titles-txt {
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: right;
+  line-height: 4vh;
+  display: inline;
+}
+
+a.Alink-title:link,
+a.Alink-title:visited {
+  font-size: 2.4vh;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  text-shadow: 2px 2px 5px black;
+}
+
+a.Alink-title:hover,
+a.Alink-title:active {
+  color: #e9d9cb;
+  font-size: 2.6vh;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 2px 5px #880000;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  width: 66vw;
+  height: 50vh;
+  justify-content: space-between;
+  margin-top: 23.6vh;
+}
+
+.about-sec-img {
+
+}
+
+.about-img {
+  height: 16vh;
+  margin-left: 13.8vw;
+  border-bottom: 1px solid #006aad;
+}
+
+.about-sec-title {
+  display: inline;
+  width: 26vw;
+  height: 26vh;
+}
+
+.about-sec-title-txt {
+  font-family: "Courier Prime", serif;
+  font-weight: 200;
+  font-size: 18vh;
+  color: white;
+  text-align: right;
+  line-height: 14vh;
+}
+
+.about-sec-txt {
+  position: absolute;
+  top: 155vh;
+  left: 31vw;
+  width: 42vw;
+  height: 20vh;
+  line-height: 8vh;
+}
+
+.about-sec-txt-txt {
+  font-size: 10vh;
+  color: #e9d9cb;
+  text-align: left;
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 4vh;
+  letter-spacing: 0.2rem;
+  display: inline;
+  text-shadow: 2px 2px 10px black;
+}
+
+.bio-sect {
+  height: 40vh;
+  background: linear-gradient(
+    180deg,
+    black,
+    #032b44,
+    #006aad
+  );
+}
+
+.bio-sect-box {
+  margin: auto;
+  width: 95vw;
+  align-self: center;
+  padding-top: 5vh;
+}
+
+.bio-sect-txt {
+  font-size: 2.6vh;
+  color: white;
+  text-align: justify;
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 4.4vh;
+  letter-spacing: 0.1rem;
+  display: inline;
+  text-shadow: 2px 2px 6px black;
+}
+
+.skills-spec {
+  background: linear-gradient(
+    180deg,
+    #006aad,
+    #032b44,
+    black 
+  );
+  height: 135vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills-spec-box {
+  height: 20vh;
+  width: 42vw;
+  margin-top: 12vh;
+  margin-left: 2.6vw;
+}
+
+.skills-spec-txt {
+  color: white;
+  font-size: 10vh;
+  text-align: left;
+  line-height: 6vh;
+  display: block;
+  font-family: "Courier Prime", serif;
+  font-weight: 100;
+  line-height: 8vh;
+}
+
+.certificates {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70vw;
+  height: 52vh;
+  margin: auto;
+}
+
+.cert2 {
+  height: 50vh;
+}
+
+.areas-of-practice {
+  display: flex;
+  width: 93vw;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.area1box {
+
+}
+
+.area1box, .area2box, .area3box, .area4box {
+  width: 20vw;
+}
+
+.arealine {
+  border-right: 1px solid #006aad;
+}
+
+.areaheading {
+  font-size: 3vh;
+  color: white;
+  font-weight: 400;
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 3vh;
+  letter-spacing: 0.1rem;
+}
+
+.areaul {
+  list-style-type: disc;
+  padding-top: 2.5vh;
+}
+
+.areali {
+  color: white;
+  font-weight: 100;
+  font-size: 2vh;
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 4vh;
+}
+
+/*
+.todolist {
+  background-image: url("images/bkg\ 2.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 100%;
+  background-position-y: 77%;
+  background-size: 100%;
+  background-origin: padding-box;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 100% 100%;
+  width: 100%;
+}*/
+
+.create {
+  background-color: black;
+  height: 120vh;
+}
+
+.create-heading {
+  height: 40vh;
+  width: 95vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 3vh;
+}
+
+.create-head {
+  width: 50vw;
+  height: 20vh;
+  align-self: self-end;
+  margin-top: 3vh;
+}
+
+.create-head1 {
+  font-family: "Courier Prime", serif;
+  font-weight: 100;
+  font-size: 10vh;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+  padding-top: 5vh;
+}
+
+.create-head2 {
+  font-family: "Courier Prime", serif;
+  font-weight: 300;
+  font-size: 18vh;
+  color: #be0032;
+  margin-left: 10vw;
+  margin-top: -3vh;
+}
+
+.create-subhead {
+  width: 25vw;
+}
+
+.create-subhead-txt {
+  font-family: "Roboto Mono", serif;
+  color: white;
+  font-size: 2.8vh;
+  font-weight: 300;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.create-body {
+  height: 75vh;
+  margin-top: 5vh;
+  display: flex;
+}
+
+.create-img {
+
+}
+
+.create-pic {
+  height: 74.8vh;
+  margin-left: 2.5vw;
+}
+
+.create-logo {
+  display: inline;
+  padding-top: 12vh;
+  margin-left: -3vw;
+}
+
+.create-logo-img {
+  height: 50vh;
+}
+
+.create-contentbox {
+  background: linear-gradient(
+    180deg,
+    #be0032,
+    black 
+  );
+  height: 80vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: -4vw;
+  padding-top: 4vh;
+}
+
+.create-content1, .create-content2, .create-content3 {
+  border: 1px solid white;
+  width: 18vw;
+  height: 38vh;
+}
+
+.create-content-heading {
+  font-family: "Roboto Mono", serif;
+  font-size: 2.5vh;
+  color: white;
+  text-align: center;
+}
+
+.create-content-para {
+  font-family: "Roboto Mono", serif;
+  font-size: 1.6vh;
+  color: white;
+  text-align: center;
 }
 
 #who {
