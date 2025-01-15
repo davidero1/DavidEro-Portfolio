@@ -13,7 +13,7 @@ body {
 }
 
 .header-background {
-  background-image: url("images/IMG_0220.JPG");
+  background-image: url("images/IMG_0220darkerr.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position-x: 100%;
@@ -33,6 +33,16 @@ body {
   margin: auto;
   height: 55vh;
   width: 95vw;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -175,13 +185,29 @@ header {
 .biotb-img {
   display: inline;
   margin-top: -8vh;
+  position: relative;
+  animation-name: myani;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  width: 8vw;
+  height: 33.4vh;
+  align-self: flex-end;
 }
 
 .biotb-image {
   width: 7.3vw;
   height: 33vh;
-  margin-left: 45vw;
-  border-bottom: 1px solid #be0032;
+}
+
+@keyframes myani {
+  0% {border-bottom: 2px solid #be0032; right:0px; top:0px;}
+  25% {border-bottom: 2px solid #880000; right:500px; top:0px;}
+  50% {border-bottom: 2px solid #006aad; right:500px; top:-100px;}
+  75% {border-bottom: 2px solid #032b44; right:0px; top:0px;}
+  100% {border-bottom: 2px solid #898575; right:0px; top:0px;}
 }
 
 .bioheading {
@@ -240,8 +266,8 @@ header {
 
 .titles {
   display: inline;
-  width: 45vw;
-  height: 20vh;
+  width: 57vw;
+  height: 25vh;
   padding-top: 4vh;
   margin-left: 7.2vw;
   text-align: right;
@@ -254,6 +280,10 @@ header {
   text-align: right;
   line-height: 4vh;
   display: inline;
+  font-size: 2.4vh;
+  font-weight: 300;
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 a.Alink-title:link,
@@ -261,7 +291,7 @@ a.Alink-title:visited {
   font-size: 2.4vh;
   color: white;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   text-shadow: 2px 2px 5px black;
 }
 
@@ -272,6 +302,7 @@ a.Alink-title:active {
   font-weight: 400;
   letter-spacing: 0.2rem;
   text-shadow: 2px 2px 5px #880000;
+  transition: 0.5s ease-out;
 }
 
 .about-section {
@@ -288,9 +319,17 @@ a.Alink-title:active {
 }
 
 .about-img {
-  height: 16vh;
-  margin-left: 13.8vw;
-  border-bottom: 1px solid #006aad;
+  height: 15vh;
+  margin-left: 14.6vw;
+  margin-top: 0.3vh;
+  border-top: 2px solid #006aad;
+  border-bottom: 2px solid #006aad;
+  transition: height 17vh;
+}
+
+.about-img:hover {
+  height: 17vh;
+  transition: height 1s;
 }
 
 .about-sec-title {
@@ -306,6 +345,7 @@ a.Alink-title:active {
   color: white;
   text-align: right;
   line-height: 14vh;
+  text-shadow: 2px 2px 10px black;
 }
 
 .about-sec-txt {
@@ -401,6 +441,13 @@ a.Alink-title:active {
 
 .cert2 {
   height: 50vh;
+  box-shadow: 2px 2px 12px #880000;
+  transition: width 1s;
+}
+
+.cert2:hover {
+  height: 55vh;
+  transition: height 2s;
 }
 
 .areas-of-practice {
@@ -511,8 +558,8 @@ a.Alink-title:active {
 .create-subhead-txt {
   font-family: "Roboto Mono", serif;
   color: white;
-  font-size: 2.8vh;
-  font-weight: 300;
+  font-size: 3vh;
+  font-weight: 500;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -548,7 +595,7 @@ a.Alink-title:active {
     #be0032,
     black 
   );
-  height: 80vh;
+  height: 70vh;
   width: 70vw;
   display: flex;
   flex-direction: row;
@@ -575,6 +622,349 @@ a.Alink-title:active {
   font-size: 1.6vh;
   color: white;
   text-align: center;
+}
+
+.create-link {
+  width: 10vw;
+  height: 10vh;
+  position: relative;
+  top: -15vh;
+  left: 90vw;
+  display: inline;
+}
+
+a.Alink-creations:link, a.Alink-creations:visited {
+  color: white;
+  font-family: "Roboto Mono", serif;
+  font-size: 2vh;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a.Alink-creations:hover, a.Alink-creations:active {
+  font-family: "Roboto Mono", serif;
+  font-size: 2.2vh;
+  font-weight: 500;
+  color: #e9d9cb;
+  text-shadow: 2px 2px 5px #be0032;
+}
+
+.logos-created {
+  background-color: black;
+  height: 30vh;
+  padding-top: 6vh;
+}
+
+.logos-inner {
+  height: 22vh;
+  width: 94vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.logos-heading {
+  font-family: "Courier Prime", serif;
+  color: white;
+  font-size: 3vh;
+  font-weight: 300;
+  text-align: center;
+}
+
+.logos-headbold {
+  color: #be0032;
+  letter-spacing: 0.03rem;
+  font-size: 4vh;
+}
+
+.logos-box {
+  display: flex;
+  height: 12vh;
+  justify-content: space-between;
+  margin-top: 5vh;
+}
+
+.logos {
+
+}
+
+.logo-img {
+  height: 8vh;
+}
+
+.alonglogo {
+  height: 11vh;
+}
+
+.adlogo {
+  height: 7vh;
+}
+
+.pairedlogo {
+  height: 7vh;
+}
+
+.yatilogo {
+  height: 11vh;
+}
+
+.cclogo {
+  height: 6vh;
+}
+
+.fklogo {
+  height: 7vh;
+}
+
+.code {
+  height: 136vh;
+  background-color: black;
+  padding-top: 10vh;
+}
+
+.code-inner {
+  display: flex;
+}
+
+.code-title {
+  display: inline;
+  margin-top: 60vh;
+  rotate: 270deg;
+  height: 30vh;
+}
+
+.code-head1 {
+  font-family: "Courier Prime", serif;
+  font-weight: 100;
+  font-size: 10vh;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+  padding-top: 5vh;
+}
+
+.code-head2 {
+  font-family: "Courier Prime", serif;
+  font-weight: 300;
+  font-size: 18vh;
+  color: #898575;
+  margin-left: 14vw;
+  margin-top: -3vh;
+}
+
+.code-images {
+  width: 94vw;
+  margin: auto;
+  display: flex;
+  margin-left: -31.3vw;
+  margin-top: 6vh;
+  justify-content: space-between;
+}
+
+.code-img1 {
+  
+}
+
+.code-img2 {
+
+}
+
+.code-i1 {
+  width: 45vw;
+}
+
+.code-i2 {
+  height: 25vh;
+  border-bottom: 2px solid #be0032;
+}
+
+.code-body {
+  width: 66vw;
+  height: 126vh;
+  background-color: #898575;
+  align-self: self-end;
+  border-top: 2px solid #be0032;
+  border-left: 2px solid #880000;
+}
+
+.code-body-content {
+  width: 62.6vw;
+  height: 126vh;
+}
+
+.code-body-text {
+  width: 52vw;
+  height: 20vh;
+  margin-top: 6vh;
+  margin-left: 3vw;
+}
+
+.code-body-text-heading {
+  font-family: "Roboto Mono", serif;
+  color: white;
+  font-size: 3vh;
+  font-weight: 500;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.code-body-text-para {
+  font-family: "Roboto Mono", serif;
+  color: white;
+  font-size: 2vh;
+  font-weight: 300;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-top: 2vh;
+  line-height: 3.3vh;
+}
+
+.code-body-grid {
+  width: 59vw;
+  height: 63vh;
+  margin-left: 3vw;
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.code-body-grid-row1,.code-body-grid-row2, .code-body-grid-row3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9 /* container */{
+  position: relative;
+} 
+
+.code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9 /* image */{
+  width: 18.5vw;
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+a.Alink-grid:link, a.Alink-grid:visited {
+  width: 18.5vw;
+}
+
+a.Alink-grid:hover, a.Alink-grid:active {
+  width: 18.5vw;
+}
+
+.code-grid-img-txt /* middle*/ {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.cgi-txt {
+  font-family: "Roboto Mono", serif;
+  font-size: 2.5vh;
+  color: white;
+}
+
+.code-grid-img1:hover .code-grid-i1, 
+.code-grid-img2:hover .code-grid-i2, 
+.code-grid-img3:hover .code-grid-i3,
+.code-grid-img4:hover .code-grid-i4,
+.code-grid-img5:hover .code-grid-i5,
+.code-grid-img6:hover .code-grid-i6,
+.code-grid-img7:hover .code-grid-i7,
+.code-grid-img8:hover .code-grid-i8,
+.code-grid-img9:hover .code-grid-i9 {
+  opacity: 0.3;
+  width: 20vw;
+  box-shadow: 5px 10px 10px black;
+}
+
+.code-grid-img1:hover .code-grid-img-txt,
+.code-grid-img2:hover .code-grid-img-txt, 
+.code-grid-img3:hover .code-grid-img-txt,
+.code-grid-img4:hover .code-grid-img-txt,
+.code-grid-img5:hover .code-grid-img-txt,
+.code-grid-img6:hover .code-grid-img-txt,
+.code-grid-img7:hover .code-grid-img-txt,
+.code-grid-img8:hover .code-grid-img-txt,
+.code-grid-img9:hover .code-grid-img-txt {
+  opacity: 1;
+}
+
+.experience {
+  height: 110vh;
+  background: linear-gradient(
+    180deg,
+    #898575,
+    black
+  );
+}
+
+.exper-inner {
+  margin: auto;
+}
+
+.exper-inner-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.exper-inner-head1 {
+  width: 55vw;
+  height: 25vh;
+  margin-top: 10vh;
+  margin-right: 3vw;
+}
+
+.exper-ih-txt {
+  font-size: 6vh;
+  color: white;
+  font-family: "Courier Prime", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+  text-align: right;
+  margin-bottom: 3vh;
+}
+
+.exper-span {
+  color: #e9d9cb;
+  font-weight: 400;
+  font-size: 6vh;
+  font-family: "Courier Prime", serif;
+  text-shadow: 2px 2px 5px #880000;
+}
+
+.exper-ih-para {
+  font-family: "Roboto Mono", serif;
+  font-size: 2.2vh;
+  color: white;
+  font-weight: 300;
+  text-align: right;
+}
+
+.exper-inner-head2 {
+
+}
+
+.exper-inner-img {
+  height: 41.84vh;
+  border-right: 2px solid #880000;
+  border-bottom: 2px solid #be0032;
+}
+
+.exper-inner-box {
+  border: 2px solid white;
+  height: 60vh;
+  margin-top: 4vh;
 }
 
 #who {

@@ -1,3 +1,11 @@
 @media (max-width:600px) {
-    
+    .navbox {
+        list-style: none;
+        display: flex;
+        display: none;
+    }
+
+    .barsicon {
+        display: flex;
+      }
 }
