@@ -1,0 +1,890 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    /* scroll bar */
+    /* width */
+    ::-webkit-scrollbar {
+      width: 0.2vw;
+    }
+  
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: black;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #be0032;
+    }
+  
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #be0032;
+      width: 0.5vw;
+    }
+  }
+  
+  body {
+    font-family: "Courier Prime", "Roboto Mono", "Space Grotesk", sans-serif;
+  }
+
+  .frontend-hero {
+    height: 100vh;
+    background: white;
+  }
+
+  .logobox1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logobox1a {
+    display: inline-block;
+    margin-top: 4vh;
+    padding-left: 1vw;
+  }
+  
+  .logobox1b {
+    display: block;
+    margin-top: -5vh;
+  }
+  
+  .logo1a {
+    height: 17vh;
+  }
+  
+  .logo1b {
+    height: 31vh;
+  }
+
+  .code {
+    height: 146vh;
+    background-color: white;
+    padding-top: 10vh;
+  }
+  
+  .code-inner {
+    display: flex;
+  }
+  
+  .code-title {
+    display: inline;
+    margin-top: 60vh;
+    rotate: 270deg;
+    height: 30vh;
+  }
+  
+  .code-head1 {
+    font-family: "Courier Prime", serif;
+    font-weight: 100;
+    font-size: 10vh;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: black;
+    padding-top: 5vh;
+  }
+  
+  .code-head2 {
+    font-family: "Courier Prime", serif;
+    font-weight: 300;
+    font-size: 18vh;
+    color: #9e8461;
+    margin-left: 14vw;
+    margin-top: -3vh;
+  }
+  
+  .code-images {
+    width: 94vw;
+    margin: auto;
+    display: flex;
+    margin-left: -31.3vw;
+    margin-top: 6vh;
+    justify-content: space-between;
+  }
+  
+  .code-img1 {
+    
+  }
+  
+  .code-img2 {
+  
+  }
+  
+  .code-i1 {
+    width: 45vw;
+    filter: grayscale(100%);
+  }
+  
+  .code-i2 {
+    height: 20vh;
+    filter: grayscale(100%);
+  }
+  
+  .code-body {
+    width: 70vw;
+    height: 136vh;
+    background: linear-gradient(
+      180deg,
+      #9e8461,
+      black
+    );
+    align-self: self-end;
+    border-top: 2px solid #be0032;
+    border-left: 2px solid #880000;
+    border-bottom: 2px solid #be0032;
+  }
+  
+  .code-body-content {
+    width: 62.6vw;
+    height: 126vh;
+  }
+  
+  .code-body-text {
+    width: 52vw;
+    height: 20vh;
+    margin-top: 6vh;
+    margin-left: 3vw;
+  }
+  
+  .code-body-text-heading {
+    font-family: "Roboto Mono", serif;
+    color: white;
+    font-size: 3vh;
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  .code-body-text-para {
+    font-family: "Roboto Mono", serif;
+    color: white;
+    font-size: 2vh;
+    font-weight: 300;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 2vh;
+    line-height: 3.4vh;
+  }
+  
+  .codeicon, .fa-code {
+    color: #be0032;
+  }
+  
+  .code-body-grid {
+    width: 59vw;
+    height: 65vh;
+    margin-left: 3vw;
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  a.Alink-code:link, a.Alink-code:visited {
+    color: #be0032;
+    font-family: "Roboto Mono", serif;
+    font-size: 2.2vh;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  a.Alink-code:hover, a.Alink-code:active {
+    font-family: "Roboto Mono", serif;
+    font-size: 2.5vh;
+    font-weight: 500;
+    color: #d6c09f;
+    transition: 1s ease-in-out;
+    text-shadow: 2px 2px 5px #be0032;
+  }
+  
+  .code-body-grid-row1,.code-body-grid-row2, .code-body-grid-row3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9 /* container */{
+    position: relative;
+  } 
+  
+  .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9 /* image */{
+    width: 18.5vw;
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  a.Alink-grid:link, a.Alink-grid:visited {
+    width: 18.5vw;
+  }
+  
+  a.Alink-grid:hover, a.Alink-grid:active {
+    width: 18.5vw;
+  }
+  
+  .code-grid-img-txt /* middle*/ {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .cgi-txt {
+    font-family: "Roboto Mono", serif;
+    font-size: 2.5vh;
+    color: white;
+  }
+  
+  .code-grid-img1:hover .code-grid-i1, 
+  .code-grid-img2:hover .code-grid-i2, 
+  .code-grid-img3:hover .code-grid-i3,
+  .code-grid-img4:hover .code-grid-i4,
+  .code-grid-img5:hover .code-grid-i5,
+  .code-grid-img6:hover .code-grid-i6,
+  .code-grid-img7:hover .code-grid-i7,
+  .code-grid-img8:hover .code-grid-i8,
+  .code-grid-img9:hover .code-grid-i9 {
+    opacity: 0.3;
+    width: 20vw;
+    box-shadow: 5px 10px 10px black;
+  }
+  
+  .code-grid-img1:hover .code-grid-img-txt,
+  .code-grid-img2:hover .code-grid-img-txt, 
+  .code-grid-img3:hover .code-grid-img-txt,
+  .code-grid-img4:hover .code-grid-img-txt,
+  .code-grid-img5:hover .code-grid-img-txt,
+  .code-grid-img6:hover .code-grid-img-txt,
+  .code-grid-img7:hover .code-grid-img-txt,
+  .code-grid-img8:hover .code-grid-img-txt,
+  .code-grid-img9:hover .code-grid-img-txt {
+    opacity: 1;
+  }
+  
+  .experience {
+    height: 120vh;
+    background-color: white;
+    padding-top: 8vh;
+  }
+  
+  .exper-inner {
+    margin: auto;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .exper-inner-head {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .exper-inner-head1 {
+    width: 59vw;
+    height: 35vh;
+    margin-top: 0vh;
+    margin: auto;
+    border-bottom: 1px solid #757575;
+    z-index: 2;
+  }
+  
+  .exper-ih-txt {
+    font-size: 6vh;
+    color: #880000;
+    font-family: "Courier Prime", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+    margin-bottom: 3vh;
+  }
+  
+  .exper-span {
+    color: black;
+    font-weight: 500;
+    font-size: 7vh;
+    font-family: "Courier Prime", serif;
+    text-shadow: 2px 2px 5px #9e8461;
+  }
+  
+  .exper-ih-para {
+    font-family: "Roboto Mono", serif;
+    font-size: 2vh;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .exper-inner-overlay {
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    height: 41.41vh;
+  }
+  
+  .exper-inner-head2 {
+    position: absolute;
+    background-image: url("images/Untitled\ design\ -\ 2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-size: cover;
+    background-origin: padding-box;
+    z-index: 0;
+    object-fit: cover;
+    object-position: 10% 100%;
+    filter: grayscale(100%, 100%);
+  }
+  
+  .exper-inner-img {
+    height: 41.41vh;
+    position: absolute;
+    border-bottom: 2px solid #be0032;
+  }
+  
+  .exper-inner-box {
+    width: 94vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  
+  .scale {
+    height: 4vh;
+    width: 25vw;
+    /*rotate: 90deg; flex-direction: column;*/
+    rotate: 90deg;
+    display: inline;
+    margin-top: 26vh;
+    margin-left: -5vw;
+  }
+  
+  .slider {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    background: black;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: red;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 25px;
+    border-radius: 50%;
+    background: pink;
+    cursor: pointer;
+  }
+  
+  .exper-info {
+    height: 53vh;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -7vw;
+  }
+  
+  .exper-info-logobox {
+    width: 6vw;
+    height: 12vh;
+  }
+  
+  .exper-info-logo {
+    width: 5.6vw;
+    height: 11vh;
+  }
+  
+  .exper-info-txt {
+    width: 26vw;
+    height: 33vh;
+  }
+  
+  .exper-ift-heading {
+    font-family: "Roboto Mono", serif;
+    font-size: 2.7vh;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .exper-ift-para {
+    font-family: "Roboto Mono", serif;
+    font-size: 1.8vh;
+    color: black;
+    font-weight: 300;
+  }
+  
+  .fa-brands {
+    font-size: 3vh;
+  }
+  
+  .exper-ift-para2 {
+    font-family: "Roboto Mono", serif;
+    font-size: 1.8vh;
+    color: black;
+    font-weight: 300;
+    line-height: 3vh;
+  }
+  
+  a.Alink-exper:link,
+  a.Alink-exper:visited {
+    font-family: "Roboto Mono", serif;
+    text-decoration: none;
+    color: #be0032;
+    font-size: 2.2vh;
+    font-weight: 400;
+  }
+  
+  a.Alink-exper:hover,
+  a.Alink-exper:active {
+    color: #d6c09f;
+    font-size: 2.4vh;
+    font-weight: 500;
+    transition: 0.5s ease-out;
+  }
+  
+  .fa-arrow-up-right-from-square, .fa-2xs {
+    color: black;
+  }
+  
+  .exper-cert {
+    margin-left: 5vw;
+    width: 55vw;
+    height: 59vh;
+    display: flex;
+    padding-left: 5vw;
+  }
+  
+  .exper-cert-img {
+    height: 50vh;
+    align-self: center;
+    transform: skewX(-10deg);
+    box-shadow: 2px 2px 20px black;
+  }
+  
+  .exper-cert-img:hover {
+    height: 58vh;
+    align-self: center;
+    transform: skewX(0deg);
+    box-shadow: 2px 2px 20px black;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .featured-projects {
+    height: 100vh;
+    background-color: black;
+  }
+  
+  .featured-inner {
+    width: 94vw;
+    height: 94vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .featured-head {
+    margin: auto;
+    height: 12vh;
+    margin-top: 5vh;
+  }
+  
+  .feat-heading {
+    font-family: "Courier Prime", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    font-size: 5vh;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .feat-para {
+    font-family: "Roboto Mono", serif;
+    color: rgb(206, 206, 206);
+    text-align: center;
+    font-size: 2.4vh;
+  }
+  
+  .featured-body {
+    display: flex;
+    height: 70vh;
+    width: 90vw;
+    margin-top: 2vh;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .ftb1, .ftb2, .ftb3 {
+    width: 83vw;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3vw;
+    padding-top: 3vh;
+    margin-left: 4vw;
+    margin: auto;
+    border-radius: 2vh;
+    border: 0.1px solid white;
+    background: linear-gradient(#006aad, black, black, black);
+  }
+  
+  .ftb1-deets {
+    width: 35vw;
+    height: 48vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .ftb1-preview {
+    width: 34vw;
+    height: 32vh;
+  }
+  
+  a.Alink-preview:link, a.Alink-preview:active {
+    height: 30vh;
+  }
+  a.Alink-preview:hover, a.Alink-preview:visited {
+    height: 33vh;
+  }
+  
+  .preview-scnsht {
+    height: 30vh;
+  }
+  
+  .ftb1-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vh;
+    width: 27vw;
+  }
+  
+  .ftb1-head-logo {
+    width: 10vw;
+    height: 20vh;
+    padding-top: 1.5vh;
+  }
+  
+  .ftb1-head-logo-img {
+    height: 11vh;
+  }
+
+  .ftb2-head-logo-img {
+    height: 9vh;
+  }
+
+  .ftb3-head-logo-img {
+    height: 7vh;
+  }
+  
+  .ftb1-head-deets {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    height: 17vh;
+    justify-content: space-between;
+    margin-left: 0vw;
+  }
+
+  .ftb2-head-deets {
+    width: 22vw;
+    display: flex;
+    flex-direction: column;
+    height: 14vh;
+    justify-content: space-between;
+    margin-left: 0vw;
+  }
+  
+  .fhd-heading {
+    font-family: "Roboto Mono", serif;
+    color: white;
+    font-size: 3.6vh;
+    font-weight: 300;
+    text-shadow: 2px 2px 10px black;
+  }
+  
+  .fhd-tools {
+   display: flex;
+   width: 16vw;
+   justify-content: space-between;
+  }
+  
+  .fhd-tools-para-p1 {
+    font-family: "Roboto Mono", serif;
+    display: block;
+    background-color: rgba(152, 152, 152, 0.262);
+    color: rgb(255, 175, 27);
+    font-weight: 200;
+    border-radius: 5vw;
+    font-size: 1.8vh;
+    box-shadow: 2px 2px 8px black;
+    padding: 2px 10px 2px 10px; /*top, right, bottom, left */
+    cursor: pointer;
+  }
+  
+  .fhd-tools-para-p2 {
+    font-family: "Roboto Mono", serif;
+    font-weight: 200;
+    display: block;
+    background-color: rgba(152, 152, 152, 0.262);
+    color: rgb(82, 134, 212);
+    border-radius: 5vw;
+    font-size: 1.8vh;
+    box-shadow: 2px 2px 8px black;
+    padding: 2px 10px 2px 10px;
+    cursor: pointer;
+  }
+  
+  .fhd-tools-para-p3 {
+    font-family: "Roboto Mono", serif;
+    font-weight: 200;
+    display: block;
+    background-color: rgba(152, 152, 152, 0.262);
+    color: rgb(239, 223, 0);
+    border-radius: 5vw;
+    font-size: 1.8vh;
+    box-shadow: 2px 2px 8px black;
+    padding: 2px 10px 2px 10px;
+    cursor: pointer;
+  }
+  
+  .fhd-para-timeline {
+    font-family: "Roboto Mono", serif;
+    color: rgba(255, 255, 255, 0.556);
+    font-size: 1.8vh;
+    padding-left: 0.3vw;
+  }
+  
+  .ftb1-devices {
+    display: flex;
+    border: 0.5px solid #626262;
+    width: 19vw;
+    height: 5vh;
+    border-radius: 5vw; 
+    padding: 5px;
+    margin-top: 1vh;
+    box-shadow: 2px 2px 9px #032b44;
+    justify-content: space-between;
+  }
+  
+  .ftb1-devices-desk {
+    width: 13vw;
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .ftb1-devices-mobile {
+    width: 13vw;
+    border-left: 0.5px solid #626262;
+    display: flex;
+    margin: auto;
+    margin-left: 1vw;
+    cursor: pointer;
+  }
+  
+  .ftb1-devices-iPad {
+    width: 9vw;
+    border-left: 0.5px solid #626262;
+    display: flex;
+    margin: auto;
+    margin-left: 1vw;
+    cursor: pointer;
+  }
+  
+  .ftb1-devices-desk-para, .ftb1-devices-mobile-para, .ftb1-devices-iPad-para {
+    font-family: "Roboto Mono", serif;
+    font-size: 1.6vh;
+    color: white;
+    display: block;
+    padding-left: 1vw;
+    text-align: center;
+  }
+  
+  .fa-desktop, .fa-xs, .fa-mobile, .fa-xs, .fa-tablet-button {
+    color: black;
+    display: block;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+  
+  .ftb1-para {
+    font-family: "Roboto Mono", serif;
+    color: white;
+    font-size: 2vh;
+    text-align: left;
+    display: block;
+  }
+  
+  .ftb1-info {
+    height: 6.8vh;
+    width: 30vw;
+    display: flex;
+  }
+  
+  a.Alink-feat1:link, a.Alink-feat1:active {
+    color: white;
+    /* background-color: #006aad; */
+    border: 1px solid #880000;
+    font-size: 2vh;
+    text-decoration: none;
+    width: 12vw;
+    height: 5.8vh;
+    text-align: center;
+    padding-top: 1.6vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  a.Alink-feat1:hover, a.Alink-feat1:visited {
+    color: white;
+    border: 1px solid #880000;
+    font-size: 2vh;
+    width: 16vw;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 4px black;
+  }
+  
+  a.Alink-feat2:link, a.Alink-feat2:active {
+    color: white;
+    /* border: 1px solid #be0032; */
+    background: #880000;
+    font-size: 2vh;
+    text-decoration: none;
+    width: 12vw;
+    height: 5.8vh;
+    text-align: center;
+    padding-top: 1.8vh;
+    /* margin-left: 1.2vw; */
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  a.Alink-feat2:hover, a.Alink-feat2:visited {
+    color: white;
+    background: #880000;
+    font-size: 2vh;
+    width: 16vw;
+    height: 5.8vh;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 4px black;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 2;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .dots {
+    width: 8vw;
+    height: 4vh;
+    margin: auto;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 11px;
+    width: 11px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #be0032;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px;
+    }
+  }
+  
+  #who {
+    width: 10vw;
+    height: 5vh;
+  }
+  
+  .option {
+    font-size: 2vh;
+    padding: 2vh;
+    background-color: beige;
+  }
+  

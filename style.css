@@ -6,14 +6,35 @@
 
 html {
   font-size: 62.5%;
+  /* scroll bar */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 0.2vw;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #be0032;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #be0032;
+    width: 0.5vw;
+  }
 }
 
 body {
-  font-family: "Space Grotesk", "Roboto Mono", "Courier Prime", Cascadia Code, sans-serif;
+  font-family: "Courier Prime", "Roboto Mono", "Space Grotesk", sans-serif;
 }
 
 .header-background {
-  background-image: url("images/IMG_0220darkerr.png");
+  background-image: url("images/IMG_0220.JPG");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position-x: 100%;
@@ -21,7 +42,7 @@ body {
   background-size: 100%;
   background-origin: padding-box;
   z-index: 0;
-  height: 190vh;
+  height: 177vh;
   object-fit: cover;
   object-position: 100% 100%;
   width: 100%;
@@ -36,38 +57,29 @@ body {
   z-index: 2;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
 .logobox1 {
   display: flex;
   flex-direction: column;
+  height: 27vh;
 }
 
 .logobox1a {
   display: inline-block;
   margin-top: 4vh;
-  padding-left: 1vw;
+  padding-left: 0.5vw;
 }
 
 .logobox1b {
   display: block;
-  margin-top: -5vh;
+  margin-top: -3vh;
 }
 
 .logo1a {
-  height: 19vh;
+  height: 8vh;
 }
 
 .logo1b {
-  height: 33vh;
+  height: 14vh;
 }
 
 .fa-brands {
@@ -122,8 +134,8 @@ a.Alink-nav:visited {
 a.Alink-nav:hover,
 a.Alink-nav:active {
   color: #be0032;
-  font-size: 4.5vh;
-  font-weight: 500;
+  font-size: 4vh;
+  font-weight: 300;
   transition: 0.5s ease-out;
 }
 
@@ -175,6 +187,7 @@ header {
   width: 30vw;
   text-align: left;
   padding-top: 3.3vh;
+  margin-top: -20vh;
 }
 
 .imgtitles {
@@ -205,25 +218,25 @@ header {
 @keyframes myani {
   0% {border-bottom: 2px solid #be0032; right:0px; top:0px;}
   25% {border-bottom: 2px solid #880000; right:500px; top:0px;}
-  50% {border-bottom: 2px solid #006aad; right:500px; top:-100px;}
+  50% {border-bottom: 2px solid #006aad; right:500px; top:0px;}
   75% {border-bottom: 2px solid #032b44; right:0px; top:0px;}
-  100% {border-bottom: 2px solid #898575; right:0px; top:0px;}
+  100% {border-bottom: 2px solid #9e8461; right:0px; top:0px;}
 }
 
 .bioheading {
-  color: #e9d9cb;
+  color: white;
   font-family: "Courier Prime", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 10vh;
-  line-height: 8vh;
-  font-weight: 400;
-  font-style: normal;
+  font-size: 26vh;
+  line-height: 18vh;
+  letter-spacing: 0vw;
+  font-weight: 100;
 }
 
 .biosup {
-  font-size: 4vh;
-  color: #be0032;
+  font-size: 6vh;
+  color: #006aad;
 }
 
 .folio-txt {
@@ -232,7 +245,7 @@ header {
 
 .biopara {
   color: white;
-  font-family: "Space Grotesk", Cascadia Code, sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
@@ -242,7 +255,7 @@ header {
 }
 
 .bannerbkg {
-  height: 105vh;
+  height: 91vh;
   width: 95vw;
   margin-left: 2vw;
   display: flex;
@@ -254,14 +267,15 @@ header {
 }
 
 .logo2 {
-  height: 105vh;
+  height: 90vh;
 }
 
 .logobkg {
-  height: 70vh;
+  height: 60vh;
   position: absolute;
   left: 4vw;
   top: 90vh;
+  opacity: 0.7;
 }
 
 .titles {
@@ -297,7 +311,7 @@ a.Alink-title:visited {
 
 a.Alink-title:hover,
 a.Alink-title:active {
-  color: #e9d9cb;
+  color: #d6c09f;
   font-size: 2.6vh;
   font-weight: 400;
   letter-spacing: 0.2rem;
@@ -315,17 +329,26 @@ a.Alink-title:active {
 }
 
 .about-sec-img {
-
+  margin-left: 15.3vw;
+  margin-top: 0.3vh;
+  /*
+  background-image: url("images/IMG_6009.DNG");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 100%;
+  background-position-y: 77%;
+  background-size: 100%;
+  background-origin: padding-box;
+  height: 20vh;
+  object-fit: cover;
+  object-position: 100% 100%; */
 }
-
+ /*
 .about-img {
   height: 15vh;
-  margin-left: 14.6vw;
-  margin-top: 0.3vh;
-  border-top: 2px solid #006aad;
-  border-bottom: 2px solid #006aad;
   transition: height 17vh;
-}
+ 
+}*/
 
 .about-img:hover {
   height: 17vh;
@@ -334,17 +357,26 @@ a.Alink-title:active {
 
 .about-sec-title {
   display: inline;
-  width: 26vw;
+  width: 37vw;
   height: 26vh;
 }
 
 .about-sec-title-txt {
   font-family: "Courier Prime", serif;
-  font-weight: 200;
-  font-size: 18vh;
-  color: white;
+  font-weight: 100;
+  font-size: 15vh;
+  color: #d6c09f;
   text-align: right;
-  line-height: 14vh;
+  line-height: 11vh;
+  text-shadow: 2px 2px 10px black;
+}
+
+.really {
+  font-family: "Courier Prime", serif;
+  font-weight: 100;
+  font-size: 7vh;
+  color: #be0032;
+  text-align: right;
   text-shadow: 2px 2px 10px black;
 }
 
@@ -358,8 +390,8 @@ a.Alink-title:active {
 }
 
 .about-sec-txt-txt {
-  font-size: 10vh;
-  color: #e9d9cb;
+  font-size: 9vh;
+  color: white;
   text-align: left;
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
@@ -371,43 +403,46 @@ a.Alink-title:active {
 }
 
 .bio-sect {
-  height: 40vh;
+  height: 47vh;
   background: linear-gradient(
     180deg,
     black,
-    #032b44,
-    #006aad
+    #9e8461,
+    #d6c09f
   );
 }
 
 .bio-sect-box {
   margin: auto;
-  width: 95vw;
+  width: 90vw;
+  height: 40vh;
   align-self: center;
-  padding-top: 5vh;
+  padding-top: 4vh;
+ 
 }
 
 .bio-sect-txt {
-  font-size: 2.6vh;
+  font-size: 2.3vh;
   color: white;
   text-align: justify;
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  line-height: 4.4vh;
+  line-height: 4.8vh;
   letter-spacing: 0.1rem;
   display: inline;
-  text-shadow: 2px 2px 6px black;
+  text-shadow: 2px 2px 2px #4137288f;
 }
 
 .skills-spec {
   background: linear-gradient(
     180deg,
-    #006aad,
-    #032b44,
-    black 
+    #d6c09f,
+    white,
+    white,
+    white
   );
-  height: 135vh;
+  height: 105vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -415,14 +450,17 @@ a.Alink-title:active {
 
 .skills-spec-box {
   height: 20vh;
-  width: 42vw;
+  width: 50vw;
   margin-top: 12vh;
-  margin-left: 2.6vw;
+  padding-left: 2.2vw;
+  padding-top: 2vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .skills-spec-txt {
-  color: white;
-  font-size: 10vh;
+  color: black;
+  font-size: 9vh;
   text-align: left;
   line-height: 6vh;
   display: block;
@@ -433,21 +471,32 @@ a.Alink-title:active {
 
 .certificates {
   display: flex;
-  justify-content: space-evenly;
-  width: 70vw;
-  height: 52vh;
+  justify-content: space-between;
+  width: 100%;
+  height: 30vh;
   margin: auto;
+  align-items: center;
+  margin-top: 0vh;
+}
+
+.cert1 {
+  height: 20vh;
+}
+
+.cert1:hover {
+  height: 25vh;
+  transition: 1s ease-in-out;
+  transform: scale(1.1,1.1)
 }
 
 .cert2 {
-  height: 50vh;
-  box-shadow: 2px 2px 12px #880000;
-  transition: width 1s;
+  height: 20vh;
 }
 
 .cert2:hover {
-  height: 55vh;
-  transition: height 2s;
+  height: 25vh;
+  transition: 1s ease-in-out;
+  transform: scale(1.1,1.1)
 }
 
 .areas-of-practice {
@@ -455,24 +504,30 @@ a.Alink-title:active {
   width: 93vw;
   margin: auto;
   justify-content: space-between;
-}
-
-.area1box {
-
+  margin-top: -3vh;
 }
 
 .area1box, .area2box, .area3box, .area4box {
-  width: 20vw;
+  width: 21vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .arealine {
-  border-right: 1px solid #006aad;
+  border-right: 1.5px solid #be0032;
+}
+
+.fa-solid {
+  color: #8e8e8e;
+  font-size: 2.5vh;
+  padding-bottom: 2vh;
 }
 
 .areaheading {
-  font-size: 3vh;
-  color: white;
-  font-weight: 400;
+  font-size: 2.5vh;
+  color: black;
+  font-weight: 500;
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -481,14 +536,14 @@ a.Alink-title:active {
 }
 
 .areaul {
-  list-style-type: disc;
+  list-style-type: square;
   padding-top: 2.5vh;
 }
 
 .areali {
-  color: white;
-  font-weight: 100;
-  font-size: 2vh;
+  color: black;
+  font-weight: 400;
+  font-size: 1.9vh;
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -510,6 +565,7 @@ a.Alink-title:active {
   width: 100%;
 }*/
 
+/*
 .create {
   background-color: black;
   height: 120vh;
@@ -526,16 +582,16 @@ a.Alink-title:active {
 }
 
 .create-head {
-  width: 50vw;
-  height: 20vh;
+  width: 46vw;
+  height: 30vh;
   align-self: self-end;
-  margin-top: 3vh;
+  margin-top: 4vh;
 }
 
 .create-head1 {
   font-family: "Courier Prime", serif;
   font-weight: 100;
-  font-size: 10vh;
+  font-size: 9vh;
   font-optical-sizing: auto;
   font-style: normal;
   color: white;
@@ -544,22 +600,24 @@ a.Alink-title:active {
 
 .create-head2 {
   font-family: "Courier Prime", serif;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 18vh;
   color: #be0032;
   margin-left: 10vw;
   margin-top: -3vh;
+  text-align: right;
 }
 
 .create-subhead {
-  width: 25vw;
+  display: inline-block;
+  width: 40vw;
 }
 
 .create-subhead-txt {
   font-family: "Roboto Mono", serif;
   color: white;
   font-size: 3vh;
-  font-weight: 500;
+  font-weight: 200;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -604,49 +662,73 @@ a.Alink-title:active {
   padding-top: 4vh;
 }
 
-.create-content1, .create-content2, .create-content3 {
-  border: 1px solid white;
+.create-content1, .create-content3 {
   width: 18vw;
+  height: 38vh;
+}
+
+.create-content1-img, .create-content3-img {
+  height: 38vh;
+}
+
+.create-content2 {
+  width: 31vh;
+  height: 38vh;
+}
+
+.create-content2-img {
+  height: 38vh;
+}
+
+a.Alink-create-content:link, a.Alink-create-content:visited {
+  height: 38vh;
+}
+
+a.Alink-create-content:hover, a.Alink-create-content:active {
   height: 38vh;
 }
 
 .create-content-heading {
   font-family: "Roboto Mono", serif;
-  font-size: 2.5vh;
+  font-size: 2vh;
   color: white;
-  text-align: center;
+  text-align: left;
+  margin-top: 2vh;
+  padding-bottom: 1vh;
 }
 
 .create-content-para {
   font-family: "Roboto Mono", serif;
   font-size: 1.6vh;
+  font-weight: 300;
   color: white;
-  text-align: center;
+  text-align: justify;
 }
 
 .create-link {
   width: 10vw;
   height: 10vh;
   position: relative;
-  top: -15vh;
-  left: 90vw;
+  top: -8vh;
+  left: 88vw;
   display: inline;
 }
 
 a.Alink-creations:link, a.Alink-creations:visited {
   color: white;
   font-family: "Roboto Mono", serif;
-  font-size: 2vh;
+  font-size: 2.6vh;
   font-weight: 300;
   text-decoration: none;
 }
 
 a.Alink-creations:hover, a.Alink-creations:active {
   font-family: "Roboto Mono", serif;
-  font-size: 2.2vh;
-  font-weight: 500;
-  color: #e9d9cb;
+  font-size: 3.1vh;
+  font-weight: 400;
+  color: #d6c09f;
   text-shadow: 2px 2px 5px #be0032;
+  transition: .5s ease;
 }
 
 .logos-created {
@@ -716,146 +798,158 @@ a.Alink-creations:hover, a.Alink-creations:active {
   height: 7vh;
 }
 
-.code {
-  height: 136vh;
-  background-color: black;
-  padding-top: 10vh;
+*/
+
+.collab {
+  height: 102vh;
+  background-image: url("images/david\ ero.png.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 100%;
+  background-position-y: 30%;
+  background-size: cover;
+  background-origin: padding-box;
+  object-fit: cover;
+  object-position: 100% 100%;
+  border-bottom-left-radius: 5vw;
+  border-bottom-right-radius: 5vw;
 }
 
-.code-inner {
-  display: flex;
+.collabbkg {
+  height: 100vh;
+  width: 100%;
 }
 
-.code-title {
-  display: inline;
-  margin-top: 60vh;
-  rotate: 270deg;
-  height: 30vh;
+.companiestxt {
+  color: #880000;
+  position: absolute;
+  font-size: 3.8vh;
+  font-weight: 500;
+  text-align: center;
+  width: 60vw;
+  display: block;
+  margin: auto;
+  left: 20vw;
+  padding-top: 8vh;
 }
 
-.code-head1 {
-  font-family: "Courier Prime", serif;
-  font-weight: 100;
-  font-size: 10vh;
-  font-optical-sizing: auto;
-  font-style: normal;
-  color: white;
-  padding-top: 5vh;
-}
-
-.code-head2 {
-  font-family: "Courier Prime", serif;
-  font-weight: 300;
-  font-size: 18vh;
-  color: #898575;
-  margin-left: 14vw;
-  margin-top: -3vh;
-}
-
-.code-images {
-  width: 94vw;
+.companieslogobox {
+  height: 8vh;
+  width: 95vw;
+  top: 87vh;
+  position: relative;
   margin: auto;
   display: flex;
-  margin-left: -31.3vw;
-  margin-top: 6vh;
   justify-content: space-between;
 }
 
-.code-img1 {
-  
+.companieslogo {
+  height: 4vh;
 }
 
-.code-img2 {
-
+.companieslogo-ps {
+  height: 5vh;
 }
 
-.code-i1 {
-  width: 45vw;
+.companieslogo-dd {
+  height: 7vh;
+  margin-top: -2vh;
 }
 
-.code-i2 {
-  height: 25vh;
-  border-bottom: 2px solid #be0032;
+.companieslogo-glo {
+  height: 6vh;
+  clip-path: circle(40%);
 }
 
-.code-body {
-  width: 66vw;
-  height: 126vh;
-  background-color: #898575;
-  align-self: self-end;
-  border-top: 2px solid #be0032;
-  border-left: 2px solid #880000;
+.projects {
+  height: 399.8vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.code-body-content {
-  width: 62.6vw;
-  height: 126vh;
+.projects1 {
+  height: 401vh;
+  padding-top: 4vh;
 }
 
-.code-body-text {
-  width: 52vw;
-  height: 20vh;
-  margin-top: 6vh;
+.projects-heading-bold {
+  color: black;
+  font-size: 18vh;
+  font-weight: 200;
+  position: relative;
+  top: 35vh;
   margin-left: 3vw;
+  position: sticky;
+  z-index: 0;
+  letter-spacing: -0.5vw;
 }
 
-.code-body-text-heading {
-  font-family: "Roboto Mono", serif;
-  color: white;
-  font-size: 3vh;
-  font-weight: 500;
-  font-optical-sizing: auto;
-  font-style: normal;
+.projects-logo {
+  height: 15vh;
+  position: relative;
+  margin-top: 10vh;
+  position: sticky;
+  z-index: 0;
+  margin-left: 89vw;
+  top: 75vh;
 }
 
-.code-body-text-para {
-  font-family: "Roboto Mono", serif;
-  color: white;
-  font-size: 2vh;
-  font-weight: 300;
-  font-optical-sizing: auto;
-  font-style: normal;
-  margin-top: 2vh;
-  line-height: 3.3vh;
-}
-
-.code-body-grid {
-  width: 59vw;
-  height: 63vh;
-  margin-left: 3vw;
-  margin-top: 3vh;
+.projects2 {
+  height: 350vh;
+  z-index: 2;
+  background: linear-gradient(rgba(255, 255, 255, 0.108), #d6c09fa6);
+  position: relative;
+  bottom: 0vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 2vh;
 }
 
-.code-body-grid-row1,.code-body-grid-row2, .code-body-grid-row3 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9 /* container */{
+.project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8 {
+  width: 34.9vw;
+  height: 32.7vh;
+  margin: auto;
   position: relative;
-} 
+  box-shadow: 1px 1px 4px black;
+}
 
-.code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9 /* image */{
-  width: 18.5vw;
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover, .project7:hover, .project8:hover {
+  width: 34.9vw;
+  height: 32.7vh;
+  margin: auto;
+  position: relative;
+  transition: 0.7s ease-in-out;
+  transform: scale(1.2,1.2);
+}
+
+/* image */
+.code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6 {
   opacity: 1;
   display: block;
-  height: auto;
+  height: 32.7vh;
+  width: 34.9vw;
   transition: .5s ease;
   backface-visibility: hidden;
 }
 
-a.Alink-grid:link, a.Alink-grid:visited {
-  width: 18.5vw;
+/* what happens when the div and image are hovered */
+.project1:hover, .code-grid-i1:hover, .project2:hover, .code-grid-i2:hover, .project3:hover, .code-grid-i3:hover, .project4:hover, .code-grid-i4:hover, .project5:hover, .code-grid-i5:hover, .project6:hover, .code-grid-i6:hover {
+  opacity: 0.9;
+  box-shadow: 5px 10px 10px black;
 }
 
-a.Alink-grid:hover, a.Alink-grid:active {
-  width: 18.5vw;
+/* to show the text when the div is hovered */
+.project1:hover .project2:hover .project3:hover .project4:hover .project5:hover .project6:hover .code-grid-img-txt {
+  opacity: 1;
 }
 
-.code-grid-img-txt /* middle*/ {
+/*
+a.Alink-grid:link, a.Alink-grid:visited {}
+a.Alink-grid:hover, a.Alink-grid:active {} */
+
+.code-grid-img-txt /* text div*/ {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
@@ -866,114 +960,137 @@ a.Alink-grid:hover, a.Alink-grid:active {
 }
 
 .cgi-txt {
-  font-family: "Roboto Mono", serif;
-  font-size: 2.5vh;
-  color: white;
+  font-size: 5vh;
+  color: #be0032;
 }
 
-.code-grid-img1:hover .code-grid-i1, 
-.code-grid-img2:hover .code-grid-i2, 
-.code-grid-img3:hover .code-grid-i3,
-.code-grid-img4:hover .code-grid-i4,
-.code-grid-img5:hover .code-grid-i5,
-.code-grid-img6:hover .code-grid-i6,
-.code-grid-img7:hover .code-grid-i7,
-.code-grid-img8:hover .code-grid-i8,
-.code-grid-img9:hover .code-grid-i9 {
-  opacity: 0.3;
-  width: 20vw;
-  box-shadow: 5px 10px 10px black;
+.fa-brands {
+  font-size: 3vh;
+  color: #be0032;
 }
 
-.code-grid-img1:hover .code-grid-img-txt,
-.code-grid-img2:hover .code-grid-img-txt, 
-.code-grid-img3:hover .code-grid-img-txt,
-.code-grid-img4:hover .code-grid-img-txt,
-.code-grid-img5:hover .code-grid-img-txt,
-.code-grid-img6:hover .code-grid-img-txt,
-.code-grid-img7:hover .code-grid-img-txt,
-.code-grid-img8:hover .code-grid-img-txt,
-.code-grid-img9:hover .code-grid-img-txt {
-  opacity: 1;
+.shiftright {
+  left: 13vw;
 }
 
-.experience {
-  height: 110vh;
-  background: linear-gradient(
-    180deg,
-    #898575,
-    black
-  );
+.shiftleft {
+  right: 18vw;
 }
 
-.exper-inner {
-  margin: auto;
-}
-
-.exper-inner-head {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.exper-inner-head1 {
-  width: 55vw;
-  height: 25vh;
-  margin-top: 10vh;
-  margin-right: 3vw;
-}
-
-.exper-ih-txt {
-  font-size: 6vh;
-  color: white;
-  font-family: "Courier Prime", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 400;
-  font-style: normal;
-  text-align: right;
-  margin-bottom: 3vh;
-}
-
-.exper-span {
-  color: #e9d9cb;
-  font-weight: 400;
-  font-size: 6vh;
-  font-family: "Courier Prime", serif;
-  text-shadow: 2px 2px 5px #880000;
-}
-
-.exper-ih-para {
-  font-family: "Roboto Mono", serif;
-  font-size: 2.2vh;
-  color: white;
-  font-weight: 300;
-  text-align: right;
-}
-
-.exper-inner-head2 {
-
-}
-
-.exper-inner-img {
-  height: 41.84vh;
-  border-right: 2px solid #880000;
-  border-bottom: 2px solid #be0032;
-}
-
-.exper-inner-box {
-  border: 2px solid white;
-  height: 60vh;
-  margin-top: 4vh;
-}
-
-#who {
-  width: 10vw;
+.moreprojectslink {
   height: 5vh;
+  width: 15vw;
+  position: relative;
+  left: 70vw;
+  bottom: 7vh;
 }
 
-.option {
-  font-size: 2vh;
-  padding: 2vh;
-  background-color: beige;
+a.Alink-moreprojects:link, a.Alink-moreprojects:visited {
+  font-size: 2.8vh;
+  text-decoration: none;
+  color: #be0032;
+}
+
+a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
+  font-size: 2.8vh;
+  text-decoration: none;
+  color: #880000;
+}
+
+.services {
+  height: 100vh;
+  background: linear-gradient(#d6c09fa6, #d6c09f, #9e8461);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.serv-heading {
+  text-align: center;
+  font-size: 7vh;
+  font-weight: 500;
+  color: black;
+  padding-top: 10vh;
+}
+
+.serv-parting {
+  height: 7vh;
+  width: 30vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7vh;
+}
+
+.serv-label {
+  font-size: 2.2vh;
+  color: black;
+  font-weight: 300;
+  background-color: white;
+  padding: 1vw;
+  border-radius: 2vw;
+  width: 8vw;
+  text-align: center;
+  transform: rotate(-5deg);
+  animation-name: serv-ani;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 15;
+  animation-direction: normal;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes serv-ani {
+  0% {transform: rotate(-5deg)}
+  25% {transform: rotate(0deg)}
+  50% {transform: rotate(5deg)}
+  75% {transform: rotate(0deg)}
+  100% {transform: rotate(-5deg)}
+}
+
+.line {
+  color: #be0032;
+  size: 2px;
+  margin-top: 1.8vh;
+}
+
+.serv-grid {
+  height: 30vh;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15vh;
+}
+
+.serv1, .serv2, .serv3 {
+  width: 23vw;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 3vh;
+  border-radius: 2vh;
+  cursor: pointer;
+}
+
+.serv-title {
+  font-size: 3.6vh;
+  color: #880000;
+  font-weight: 700;
+}
+
+.serv-para {
+  font-size: 2.4vh;
+  color: black;
+  text-align: left;
+  padding-bottom: 2vh;
+}
+
+.fa-solid {
+  font-size: 4vh;
+  color: #8e8e8e;
+  padding-top: 1vh;
 }
