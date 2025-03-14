@@ -75,11 +75,11 @@ body {
 }
 
 .logo1a {
-  height: 8vh;
+  height: 7vh;
 }
 
 .logo1b {
-  height: 14vh;
+  height: 12vh;
 }
 
 .fa-brands {
@@ -185,9 +185,10 @@ header {
 .biotb-title {
   display: inline;
   width: 30vw;
+  height: 33vh;
   text-align: left;
   padding-top: 3.3vh;
-  margin-top: -20vh;
+  margin-top: -5vh;
 }
 
 .imgtitles {
@@ -228,14 +229,14 @@ header {
   font-family: "Courier Prime", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 26vh;
-  line-height: 18vh;
+  font-size: 16vh;
+  line-height: 12vh;
   letter-spacing: 0vw;
   font-weight: 100;
 }
 
 .biosup {
-  font-size: 6vh;
+  font-size: 4vh;
   color: #006aad;
 }
 
@@ -359,6 +360,7 @@ a.Alink-title:active {
   display: inline;
   width: 37vw;
   height: 26vh;
+  margin-top: 20vh;
 }
 
 .about-sec-title-txt {
@@ -369,6 +371,7 @@ a.Alink-title:active {
   text-align: right;
   line-height: 11vh;
   text-shadow: 2px 2px 10px black;
+  padding-top: 8vh;
 }
 
 .really {
@@ -390,7 +393,7 @@ a.Alink-title:active {
 }
 
 .about-sec-txt-txt {
-  font-size: 9vh;
+  font-size: 8vh;
   color: white;
   text-align: left;
   font-family: "Roboto Mono", serif;
@@ -404,25 +407,48 @@ a.Alink-title:active {
 
 .bio-sect {
   height: 47vh;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     black,
-    #9e8461,
-    #d6c09f
-  );
+    #880000 
+  );*/
+  background-image: url("images/david\ ero\ bkg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 100%;
+  background-position-y: 77%;
+  background-size: cover;
+  background-origin: padding-box;
+  object-fit: cover;
+  object-position: 100% 100%;
+  z-index: 0;
+  position: relative;
+}
+
+.bio-sect-overlay {
+  height: 47vh;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.954),
+    rgba(0, 0, 0, 0.524),
+    #d6c09f);
+  position: relative;
+  z-index: 1;
 }
 
 .bio-sect-box {
   margin: auto;
   width: 90vw;
-  height: 40vh;
+  height: 45vh;
   align-self: center;
   padding-top: 4vh;
- 
+  z-index: 2;
+  position: relative;
+  margin-top: -47vh;
 }
 
 .bio-sect-txt {
-  font-size: 2.3vh;
+  font-size: 2.4vh;
   color: white;
   text-align: justify;
   font-family: "Roboto Mono", serif;
@@ -432,6 +458,7 @@ a.Alink-title:active {
   letter-spacing: 0.1rem;
   display: inline;
   text-shadow: 2px 2px 2px #4137288f;
+  z-index: 3;
 }
 
 .skills-spec {
@@ -460,13 +487,18 @@ a.Alink-title:active {
 
 .skills-spec-txt {
   color: black;
-  font-size: 9vh;
+  font-size: 15vh;
   text-align: left;
   line-height: 6vh;
   display: block;
   font-family: "Courier Prime", serif;
-  font-weight: 100;
-  line-height: 8vh;
+  line-height: 12vh;
+  font-weight: 200;
+  top: 10vh;
+  position: sticky;
+  z-index: 0;
+  letter-spacing: -0.5vw;
+  padding-top: 4vh;
 }
 
 .certificates {
@@ -811,8 +843,6 @@ a.Alink-creations:hover, a.Alink-creations:active {
   background-origin: padding-box;
   object-fit: cover;
   object-position: 100% 100%;
-  border-bottom-left-radius: 5vw;
-  border-bottom-right-radius: 5vw;
 }
 
 .collabbkg {
@@ -862,10 +892,18 @@ a.Alink-creations:hover, a.Alink-creations:active {
 }
 
 .projects {
-  height: 399.8vh;
-  background-color: white;
+  height: 402.6vh;
   display: flex;
   flex-direction: column;
+  background-image: url("images/IMG_2669.JPG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 100%;
+  background-position-y: 40%;
+  background-size: cover;
+  background-origin: padding-box;
+  object-fit: cover;
+  object-position: 100% 100%;
 }
 
 .projects1 {
@@ -875,14 +913,24 @@ a.Alink-creations:hover, a.Alink-creations:active {
 
 .projects-heading-bold {
   color: black;
-  font-size: 18vh;
+  font-size: 15vh;
   font-weight: 200;
   position: relative;
   top: 35vh;
   margin-left: 3vw;
   position: sticky;
   z-index: 0;
-  letter-spacing: -0.5vw;
+  letter-spacing: -0.3vw;
+}
+
+.projects-heading-para {
+  color: #be0032;
+  font-size: 2vh;
+  text-align: left;
+  position: relative;
+  position: sticky;
+  top: 50vh;
+  margin-left: 4vw;
 }
 
 .projects-logo {
@@ -896,20 +944,20 @@ a.Alink-creations:hover, a.Alink-creations:active {
 }
 
 .projects2 {
-  height: 350vh;
+  height: 354.1vh;
   z-index: 2;
-  background: linear-gradient(rgba(255, 255, 255, 0.108), #d6c09fa6);
+  background: linear-gradient(rgba(255, 255, 255, 0.108),#d6c09f5f, #d6c09fcd);
   position: relative;
   bottom: 0vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 2vh;
+  padding-top: 0vh;
 }
 
 .project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8 {
   width: 34.9vw;
-  height: 32.7vh;
+  height: 32.9vh;
   margin: auto;
   position: relative;
   box-shadow: 1px 1px 4px black;
@@ -917,7 +965,7 @@ a.Alink-creations:hover, a.Alink-creations:active {
 
 .project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover, .project7:hover, .project8:hover {
   width: 34.9vw;
-  height: 32.7vh;
+  height: 32.9vh;
   margin: auto;
   position: relative;
   transition: 0.7s ease-in-out;
@@ -925,23 +973,23 @@ a.Alink-creations:hover, a.Alink-creations:active {
 }
 
 /* image */
-.code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6 {
+.code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8 {
   opacity: 1;
   display: block;
-  height: 32.7vh;
+  height: 32.9vh;
   width: 34.9vw;
   transition: .5s ease;
   backface-visibility: hidden;
 }
 
 /* what happens when the div and image are hovered */
-.project1:hover, .code-grid-i1:hover, .project2:hover, .code-grid-i2:hover, .project3:hover, .code-grid-i3:hover, .project4:hover, .code-grid-i4:hover, .project5:hover, .code-grid-i5:hover, .project6:hover, .code-grid-i6:hover {
+.project1:hover, .code-grid-i1, .project2:hover, .code-grid-i2, .project3:hover, .code-grid-i3, .project4:hover, .code-grid-i4, .project5:hover, .code-grid-i5, .project6:hover, .code-grid-i6, .project7:hover, .code-grid-i7, .project8:hover, .code-grid-i8 {
   opacity: 0.9;
   box-shadow: 5px 10px 10px black;
 }
 
 /* to show the text when the div is hovered */
-.project1:hover .project2:hover .project3:hover .project4:hover .project5:hover .project6:hover .code-grid-img-txt {
+.project1:hover .code-grid-img-txt, .project2:hover .code-grid-img-txt, .project3:hover .code-grid-img-txt, .project4:hover .code-grid-img-txt, .project5:hover .code-grid-img-txt, .project6:hover .code-grid-img-txt, .project7:hover .code-grid-img-txt, .project8:hover .code-grid-img-txt {
   opacity: 1;
 }
 
@@ -956,12 +1004,13 @@ a.Alink-grid:hover, a.Alink-grid:active {} */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
 }
 
 .cgi-txt {
-  font-size: 5vh;
-  color: #be0032;
+  font-size: 7vh;
+  color: white;
+  text-shadow: 2px 2px 10px black;
 }
 
 .fa-brands {
@@ -999,7 +1048,7 @@ a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
 
 .services {
   height: 100vh;
-  background: linear-gradient(#d6c09fa6, #d6c09f, #9e8461);
+  background: linear-gradient(#d6c09fcd, #d6c09f, #9e8461, #9e8461);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1007,7 +1056,7 @@ a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
 
 .serv-heading {
   text-align: center;
-  font-size: 7vh;
+  font-size: 6vh;
   font-weight: 500;
   color: black;
   padding-top: 10vh;
@@ -1056,7 +1105,7 @@ a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
 }
 
 .serv-grid {
-  height: 30vh;
+  height: 40vh;
   width: 80vw;
   margin: auto;
   display: flex;
@@ -1066,14 +1115,28 @@ a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
 
 .serv1, .serv2, .serv3 {
   width: 23vw;
+  height: 36vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  padding: 3vh;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+
+.serv1:hover, .serv2:hover, .serv3:hover {
+  width: 23vw;
   height: 33vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.661), black);
   padding: 3vh;
-  border-radius: 2vh;
+  border-radius: 1vh;
   cursor: pointer;
+  transform: scale(1.1, 1.1);
+  transition: 0.5s ease-in-out;
 }
 
 .serv-title {
@@ -1084,13 +1147,166 @@ a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
 
 .serv-para {
   font-size: 2.4vh;
-  color: black;
+  color: white;
   text-align: left;
   padding-bottom: 2vh;
 }
 
 .fa-solid {
   font-size: 4vh;
-  color: #8e8e8e;
+  color: #9e8461;
   padding-top: 1vh;
+}
+
+.connect {
+  height: 90vh;
+  width: 100%;
+  background-color: #9e8461;
+  z-index: -1;
+  position: relative;
+}
+
+.connect-inner {
+  height: 90vh;
+  background-image: url("images/IMG_1805.JPG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 100%;
+  background-position-y: 5%;
+  background-size: cover;
+  background-origin: padding-box;
+  object-fit: cover;
+  object-position: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 10vw;
+  border-top-right-radius: 10vw;
+}
+
+.connect-overlay {
+  height: 90vh;
+  width: 99.8vw;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.583), black);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10vw;
+  border-top-right-radius: 10vw;
+}
+
+.connect-inner-cta {
+  position: relative;
+  height: 40vh;
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 3;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.solid2 {
+  color: white;
+  font-size: 10vh;
+  padding-left: 3vw;
+}
+
+.cic-heading {
+  color: #d6c09f;
+  font-size: 6vh;
+  text-align: center;
+  font-weight: 500;
+  line-height: 7vh;
+  text-shadow: 2px 2px 6px black;
+}
+
+.cic-buttons {
+  height: 10vh;
+  width: 35vw;
+  display: flex;
+  justify-content: space-around;
+  z-index: 4;
+  position: relative;
+}
+
+a.cic-email:link, a.cic-email:visited {
+  height: 8vh;
+  width: 12vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-bottom: 1.5px solid black;
+  cursor: pointer;
+  color: black;
+  font-weight: 300;
+  font-size: 2.3vh;
+  justify-content: center;
+  z-index: 4;
+}
+
+a.cic-email:hover, a.cic-email:active {
+  background-color: #d6c09f;
+  height: 8vh;
+  width: 15vw;
+  text-decoration: none;
+}
+
+a.cic-WA:link, a.cic-WA:visited {
+  background-color: black;
+  border-bottom: 1.5px solid white;
+  height: 8vh;
+  width: 12vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-weight: 300;
+  font-size: 2.3vh;
+  justify-content: center;
+}
+
+a.cic-WA:hover, a.cic-WA:active {
+  width: 15vw;
+  background-color: green;
+}
+
+.connect-inner-socials {
+  width: 90vw;
+  height: 4vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+}
+
+.cis1 {
+
+}
+
+.cis1-para {
+  color: white;
+  font-size: 1.7vh;
+  font-weight: 200;
+}
+
+.cis2 {
+
+}
+
+a.Alink-socials:link, a.Alink-socials:active {
+  font-size: 1.7vh;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.Alink-socials:hover, a.Alink-socials:visited {
+  color: #be0032;
 }
