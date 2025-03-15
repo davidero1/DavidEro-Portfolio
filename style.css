@@ -430,7 +430,7 @@ a.Alink-title:active {
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.954),
-    rgba(0, 0, 0, 0.524),
+    rgba(0, 0, 0, 0.158),
     #d6c09f);
   position: relative;
   z-index: 1;
@@ -1115,7 +1115,7 @@ a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
 
 .serv1, .serv2, .serv3 {
   width: 23vw;
-  height: 36vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1131,7 +1131,7 @@ a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(rgba(0, 0, 0, 0.661), black);
+  background: linear-gradient(rgba(0, 0, 0, 0.479), black);
   padding: 3vh;
   border-radius: 1vh;
   cursor: pointer;
@@ -1140,13 +1140,13 @@ a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
 }
 
 .serv-title {
-  font-size: 3.6vh;
-  color: #880000;
+  font-size: 3.3vh;
+  color: white;
   font-weight: 700;
 }
 
 .serv-para {
-  font-size: 2.4vh;
+  font-size: 2.2vh;
   color: white;
   text-align: left;
   padding-bottom: 2vh;
@@ -1154,7 +1154,7 @@ a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
 
 .fa-solid {
   font-size: 4vh;
-  color: #9e8461;
+  color: #880000;
   padding-top: 1vh;
 }
 

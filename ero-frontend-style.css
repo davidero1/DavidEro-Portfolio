@@ -35,7 +35,18 @@
 
   .frontend-hero {
     height: 100vh;
-    background: white;
+    background-image: url("images/Untitled\ design\ -\ 2.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: 100%;
+    background-position-y: 77%;
+    background-size: 100%;
+    background-origin: padding-box;
+    z-index: 0;
+    object-fit: cover;
+    object-position: 100% 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .logobox1 {
@@ -62,10 +73,138 @@
     height: 31vh;
   }
 
+  .navbox {
+    height: 92vh;
+    width: 29vw;
+    margin-right: 2vw;
+    margin-top: 2vh;
+  }
+  
+  .navul {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  
+  .navli {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2.2vh;
+    font-weight: 300;
+    text-align: right;
+    line-height: 10vh;
+  }
+  
+  .navlid {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 2.2vh;
+    text-align: right;
+    line-height: 3vh;
+  }
+  
+  a.Alink-nav:link,
+  a.Alink-nav:visited {
+    text-decoration: none;
+    color: #be0032;
+    font-size: 2.6vh;
+    font-weight: 300;
+  }
+  
+  a.Alink-nav:hover,
+  a.Alink-nav:active {
+    color: #006aad;
+    font-size: 3vh;
+    font-weight: 400;
+    transition: 0.5s ease-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.42);
+  }
+
+  .hero-buttons {
+    height: 10vh;
+    width: 28.2vw;
+    display: flex;
+    margin: auto;
+    padding-left: 2vw;
+    margin-top: 48vh;
+  }
+  
+  a.Alink-hbutt1:link, a.Alink-hbutt1:visited {
+    color: white;
+    /* background-color: #006aad; */
+    border: 1.3px solid #006aad;
+    font-size: 3.3vh;
+    text-decoration: none;
+    width: 12vw;
+    height: 8.7vh;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 6px black;
+  }
+  
+  a.Alink-hbutt1:hover, a.Alink-hbutt1:active {
+    color: white;
+    border: 1.7px solid #880000;
+    font-size: 3.3vh;
+    width: 16vw;
+    height: 8.7vh;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 10px #880000;
+  }
+  
+  a.Alink-hbutt2:link, a.Alink-hbutt2:visited {
+    color: black;
+    /* border: 1px solid #be0032; */
+    background: linear-gradient(white, #006bad92);
+    font-size: 3.3vh;
+    text-decoration: none;
+    width: 12vw;
+    height: 9vh;
+    text-align: center;
+    /* margin-left: 1.2vw; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 2px #032b44;
+  }
+  
+  a.Alink-hbutt2:hover, a.Alink-hbutt2:active {
+    color: white;
+    background: linear-gradient(#880000, rgba(0, 0, 0, 0.627));
+    font-size: 3.3vh;
+    width: 16vw;
+    height: 9vh;
+    transition: 1s ease-in-out;
+    box-shadow: 2px 2px 4px black;
+    box-shadow: 2px 2px 10px #880000;
+  }
+  
+  h1 {
+    font-family: "Courier Prime", serif;
+    font-weight: 100;
+    font-size: 10vh;
+    color: #006aad;
+    text-align: left;
+    line-height: 8vh;
+    /* text-shadow: 2px 2px 2px black; */
+    padding-left: 2vw;
+    margin-top: 28vh;
+  }
+
   .code {
-    height: 146vh;
+    height: 160vh;
     background-color: white;
-    padding-top: 10vh;
+    padding-top: 0vh;
   }
   
   .code-inner {
@@ -93,7 +232,7 @@
     font-family: "Courier Prime", serif;
     font-weight: 300;
     font-size: 18vh;
-    color: #9e8461;
+    color: #006aad;
     margin-left: 14vw;
     margin-top: -3vh;
   }
@@ -123,18 +262,20 @@
   .code-i2 {
     height: 20vh;
     filter: grayscale(100%);
+    /* margin-top: -10vh; */
   }
   
   .code-body {
     width: 70vw;
-    height: 136vh;
+    height: 160vh;
     background: linear-gradient(
       180deg,
-      #9e8461,
+      #006aad,
+      #032b44,
       black
     );
     align-self: self-end;
-    border-top: 2px solid #be0032;
+    /* border-top: 2px solid #be0032; */
     border-left: 2px solid #880000;
     border-bottom: 2px solid #be0032;
   }
@@ -145,7 +286,7 @@
   }
   
   .code-body-text {
-    width: 52vw;
+    width: 58vw;
     height: 20vh;
     margin-top: 6vh;
     margin-left: 3vw;
@@ -158,6 +299,7 @@
     font-weight: 300;
     font-optical-sizing: auto;
     font-style: normal;
+    padding-top: 1vh;
   }
   
   .code-body-text-para {
@@ -176,8 +318,8 @@
   }
   
   .code-body-grid {
-    width: 59vw;
-    height: 65vh;
+    width: 59.5vw;
+    height: 95vh;
     margin-left: 3vw;
     margin-top: 3vh;
     display: flex;
@@ -202,16 +344,16 @@
     text-shadow: 2px 2px 5px #be0032;
   }
   
-  .code-body-grid-row1,.code-body-grid-row2, .code-body-grid-row3 {
+  .code-body-grid-row1,.code-body-grid-row2, .code-body-grid-row3, .code-body-grid-row4 {
     display: flex;
     justify-content: space-between;
   }
   
-  .code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9 /* container */{
+  .code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9, .code-grid-img10, .code-grid-img11, .code-grid-img12 /* container */{
     position: relative;
   } 
   
-  .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9 /* image */{
+  .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9, .code-grid-i10, .code-grid-i11, .code-grid-i12 /* image */{
     width: 18.5vw;
     opacity: 1;
     display: block;
@@ -252,7 +394,10 @@
   .code-grid-img6:hover .code-grid-i6,
   .code-grid-img7:hover .code-grid-i7,
   .code-grid-img8:hover .code-grid-i8,
-  .code-grid-img9:hover .code-grid-i9 {
+  .code-grid-img9:hover .code-grid-i9,
+  .code-grid-img10:hover .code-grid-i10,
+  .code-grid-img11:hover .code-grid-i11,
+  .code-grid-img12:hover .code-grid-i12 {
     opacity: 0.3;
     width: 20vw;
     box-shadow: 5px 10px 10px black;
@@ -266,7 +411,10 @@
   .code-grid-img6:hover .code-grid-img-txt,
   .code-grid-img7:hover .code-grid-img-txt,
   .code-grid-img8:hover .code-grid-img-txt,
-  .code-grid-img9:hover .code-grid-img-txt {
+  .code-grid-img9:hover .code-grid-img-txt,
+  .code-grid-img10:hover .code-grid-img-txt,
+  .code-grid-img11:hover .code-grid-img-txt,
+  .code-grid-img12:hover .code-grid-img-txt {
     opacity: 1;
   }
   
@@ -300,7 +448,7 @@
   
   .exper-ih-txt {
     font-size: 6vh;
-    color: #880000;
+    color: black;
     font-family: "Courier Prime", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -311,11 +459,23 @@
   }
   
   .exper-span {
-    color: black;
+    color: rgba(255, 255, 255, 0.928);
     font-weight: 500;
     font-size: 7vh;
     font-family: "Courier Prime", serif;
-    text-shadow: 2px 2px 5px #9e8461;
+    text-shadow: 2px 2px 7px #064c77;
+  }
+
+  .exper-span-red {
+    font-size: 4vh;
+    color: #880000;
+    font-family: "Courier Prime", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+    margin-bottom: 3vh;
   }
   
   .exper-ih-para {
@@ -394,7 +554,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: red;
+    background: #006aad;
     cursor: pointer;
   }
   
@@ -402,7 +562,7 @@
     width: 20px;
     height: 25px;
     border-radius: 50%;
-    background: pink;
+    background: #006aad;
     cursor: pointer;
   }
   
@@ -438,8 +598,8 @@
   
   .exper-ift-para {
     font-family: "Roboto Mono", serif;
-    font-size: 1.8vh;
-    color: black;
+    font-size: 1.7vh;
+    color: #006aad;
     font-weight: 300;
   }
   
@@ -459,16 +619,16 @@
   a.Alink-exper:visited {
     font-family: "Roboto Mono", serif;
     text-decoration: none;
-    color: #be0032;
+    color: #006aad;
     font-size: 2.2vh;
     font-weight: 400;
   }
   
   a.Alink-exper:hover,
   a.Alink-exper:active {
-    color: #d6c09f;
-    font-size: 2.4vh;
-    font-weight: 500;
+    color: #032b44;
+    font-size: 2.3vh;
+    font-weight: 400;
     transition: 0.5s ease-out;
   }
   
@@ -524,7 +684,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     color: white;
-    font-size: 5vh;
+    font-size: 8vh;
     font-weight: 300;
     text-align: center;
   }
@@ -772,7 +932,7 @@
     display: flex;
   }
   
-  a.Alink-feat1:link, a.Alink-feat1:active {
+  a.Alink-feat1:link, a.Alink-feat1:visited {
     color: white;
     /* background-color: #006aad; */
     border: 1px solid #880000;
@@ -786,7 +946,7 @@
     justify-content: space-evenly;
   }
   
-  a.Alink-feat1:hover, a.Alink-feat1:visited {
+  a.Alink-feat1:hover, a.Alink-feat1:active {
     color: white;
     border: 1px solid #880000;
     font-size: 2vh;
@@ -795,7 +955,7 @@
     box-shadow: 2px 2px 4px black;
   }
   
-  a.Alink-feat2:link, a.Alink-feat2:active {
+  a.Alink-feat2:link, a.Alink-feat2:visited {
     color: white;
     /* border: 1px solid #be0032; */
     background: #880000;
@@ -810,7 +970,7 @@
     justify-content: space-evenly;
   }
   
-  a.Alink-feat2:hover, a.Alink-feat2:visited {
+  a.Alink-feat2:hover, a.Alink-feat2:active {
     color: white;
     background: #880000;
     font-size: 2vh;
@@ -888,3 +1048,155 @@
     background-color: beige;
   }
   
+  .connect {
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    position: relative;
+  }
+  
+  .connect-inner {
+    height: 90vh;
+    background-image: url("images/Untitled\ design\ -\ 7.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 100%;
+    background-position-y: 5%;
+    background-size: cover;
+    background-origin: padding-box;
+    object-fit: cover;
+    object-position: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+  }
+  
+  .connect-overlay {
+    height: 90vh;
+    width: 99.8vw;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, 0.279), rgba(0, 0, 0, 0.463), black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+  }
+  
+  .connect-inner-cta {
+    position: relative;
+    height: 40vh;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    align-items: center;
+    margin-top: 15vh;
+  }
+  
+  .solid2 {
+    color: white;
+    font-size: 10vh;
+    padding-left: 3vw;
+  }
+  
+  .cic-heading {
+    color: #006aad;
+    font-size: 6vh;
+    text-align: center;
+    font-weight: 500;
+    line-height: 7vh;
+    text-shadow: 2px 2px 6px black;
+  }
+  
+  .cic-buttons {
+    height: 10vh;
+    width: 35vw;
+    display: flex;
+    justify-content: space-around;
+    z-index: 4;
+    position: relative;
+  }
+  
+  a.cic-email:link, a.cic-email:visited {
+    height: 8vh;
+    width: 12vw;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1.5px solid black;
+    cursor: pointer;
+    color: black;
+    font-weight: 300;
+    font-size: 2.3vh;
+    justify-content: center;
+    z-index: 4;
+  }
+  
+  a.cic-email:hover, a.cic-email:active {
+    background-color: #d6c09f;
+    height: 8vh;
+    width: 15vw;
+    text-decoration: none;
+  }
+  
+  a.cic-WA:link, a.cic-WA:visited {
+    background-color: black;
+    border-bottom: 1.5px solid white;
+    height: 8vh;
+    width: 12vw;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 300;
+    font-size: 2.3vh;
+    justify-content: center;
+  }
+  
+  a.cic-WA:hover, a.cic-WA:active {
+    width: 15vw;
+    background-color: green;
+  }
+  
+  .connect-inner-socials {
+    width: 90vw;
+    height: 4vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+  }
+  
+  .cis1 {
+  
+  }
+  
+  .cis1-para {
+    color: white;
+    font-size: 1.7vh;
+    font-weight: 200;
+  }
+  
+  .cis2 {
+  
+  }
+  
+  a.Alink-socials:link, a.Alink-socials:visited {
+    font-size: 1.7vh;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a.Alink-socials:hover, a.Alink-socials:active {
+    color: #be0032;
+  }
