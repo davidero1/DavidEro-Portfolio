@@ -1,1316 +1,1332 @@
-@media (max-width:1024px) {
+@media (max-width: 1024px),
+  (max-width: 1228px),
+  (max-width: 820px),
+  (max-width: 768px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      
-      html {
-        font-size: 62.5%;
-        /* scroll bar */
-        /* width */
-        ::-webkit-scrollbar {
-          width: 0.2vw;
-        }
-      
-        /* Track */
-        ::-webkit-scrollbar-track {
-          background: black;
-        }
-        
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-          background: #be0032;
-        }
-      
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-          background: #be0032;
-          width: 0.5vw;
-        }
-      }
-      
-      body {
-        font-family: "Courier Prime", "Roboto Mono", "Space Grotesk", sans-serif;
-      }
-      
-      .header-background {
-        background-image: url("images/IMG_0220.JPG");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position-x: 100%;
-        background-position-y: 77%;
-        background-size: 100%;
-        background-origin: padding-box;
-        z-index: 0;
-        height: 177vh;
-        object-fit: cover;
-        object-position: 100% 100%;
-        width: 100%;
-      }
-      
-      .header-background-inner {
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-        height: 55vh;
-        width: 95vw;
-        z-index: 2;
-      }
-      
-      .logobox1 {
-        display: flex;
-        flex-direction: column;
-        height: 27vh;
-      }
-      
-      .logobox1a {
-        display: inline-block;
-        margin-top: 4vh;
-        padding-left: 0.5vw;
-      }
-      
-      .logobox1b {
-        display: block;
-        margin-top: -3vh;
-      }
-      
-      .logo1a {
-        height: 7vh;
-      }
-      
-      .logo1b {
-        height: 12vh;
-      }
-      
-      .fa-brands {
-        color: rgba(211, 211, 211, 0.881);
-        font-size: 3vh;
-      }
-      
-      .navbox {
-        height: 35vh;
-        margin-top: 3vh;
-      }
-      
-      .navul {
-        list-style: none;
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin: auto;
-      }
-      
-      .navli {
-        font-family: "Roboto Mono", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        text-decoration: none;
-        font-size: 2.2vh;
-        font-weight: 300;
-        text-align: right;
-        line-height: 10vh;
-      }
-      
-      .navlid {
-        font-family: "Roboto Mono", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        text-decoration: none;
-        text-decoration: none;
-        font-size: 2.2vh;
-        text-align: right;
-        line-height: 3vh;
-      }
-      
-      a.Alink-nav:link,
-      a.Alink-nav:visited {
-        text-decoration: none;
-        color: white;
-        font-size: 2.2vh;
-        font-weight: 400;
-      }
-      
-      a.Alink-nav:hover,
-      a.Alink-nav:active {
-        color: #be0032;
-        font-size: 4vh;
-        font-weight: 300;
-        transition: 0.5s ease-out;
-      }
-      
-      /*
-      .iconsbox {
-        display: flex;
-        justify-content: space-between;
-        width: 6vw;
-      }*/
-      
-      .bagicon {
-        display: flex;
-      }
-      
-      .searchicon {
-        display: flex;
-      }
-      
-      .barsicon {
-        display: none;
-      }
-      
-      .fa-solid {
-        color: white;
-        size: 2vh;
-      }
-      
-      header {
-        
-      }
-      
-      .headercontainer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-      
-      .biotextimgbox {
-        display: flex;
-        justify-content: space-between;
-        height: 30vh;
-        width: 95vw;
-        margin: auto;
-      }
-      
-      .biotb-title {
-        display: inline;
-        width: 30vw;
-        height: 33vh;
-        text-align: left;
-        padding-top: 3.3vh;
-        margin-top: -5vh;
-      }
-      
-      .imgtitles {
-        display: flex;
-        flex-direction: column;
-      }
-       
-      .biotb-img {
-        display: inline;
-        margin-top: -8vh;
-        position: relative;
-        animation-name: myani;
-        animation-duration: 4s;
-        animation-delay: 2s;
-        animation-iteration-count: 5;
-        animation-direction: alternate;
-        animation-timing-function: ease-in-out;
-        width: 8vw;
-        height: 33.4vh;
-        align-self: flex-end;
-      }
-      
-      .biotb-image {
-        width: 7.3vw;
-        height: 33vh;
-      }
-      
-      @keyframes myani {
-        0% {border-bottom: 2px solid #be0032; right:0px; top:0px;}
-        25% {border-bottom: 2px solid #880000; right:500px; top:0px;}
-        50% {border-bottom: 2px solid #006aad; right:500px; top:0px;}
-        75% {border-bottom: 2px solid #032b44; right:0px; top:0px;}
-        100% {border-bottom: 2px solid #9e8461; right:0px; top:0px;}
-      }
-      
-      .bioheading {
-        color: white;
-        font-family: "Courier Prime", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-size: 16vh;
-        line-height: 12vh;
-        letter-spacing: 0vw;
-        font-weight: 100;
-      }
-      
-      .biosup {
-        font-size: 4vh;
-        color: #006aad;
-      }
-      
-      .folio-txt {
-        padding-left: 2.2vw;
-      }
-      
-      .biopara {
-        color: white;
-        font-family: "Roboto Mono", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 100;
-        font-style: normal;
-        font-size: 2vh;
-        letter-spacing: 0.3rem;
-        line-height: 4vh;
-      }
-      
-      .bannerbkg {
-        height: 91vh;
-        width: 95vw;
-        margin-left: 2vw;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-      }
-      
-      .logobox2 {
-      }
-      
-      .logo2 {
-        height: 90vh;
-      }
-      
-      .logobkg {
-        height: 60vh;
-        position: absolute;
-        left: 4vw;
-        top: 90vh;
-        opacity: 0.7;
-      }
-      
-      .titles {
-        display: inline;
-        width: 57vw;
-        height: 25vh;
-        padding-top: 4vh;
-        margin-left: 7.2vw;
-        text-align: right;
-      }
-      
-      .titles-txt {
-        font-family: "Roboto Mono", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        text-align: right;
-        line-height: 4vh;
-        display: inline;
-        font-size: 2.4vh;
-        font-weight: 300;
-        color: white;
-        text-shadow: 2px 2px 5px black;
-      }
-      
-      a.Alink-title:link,
-      a.Alink-title:visited {
-        font-size: 2.4vh;
-        color: white;
-        text-decoration: none;
-        font-weight: 400;
-        text-shadow: 2px 2px 5px black;
-      }
-      
-      a.Alink-title:hover,
-      a.Alink-title:active {
-        color: #d6c09f;
-        font-size: 2.6vh;
-        font-weight: 400;
-        letter-spacing: 0.2rem;
-        text-shadow: 2px 2px 5px #880000;
-        transition: 0.5s ease-out;
-      }
-      
-      .about-section {
-        display: flex;
-        flex-direction: row;
-        width: 66vw;
-        height: 50vh;
-        justify-content: space-between;
-        margin-top: 23.6vh;
-      }
-      
-      .about-sec-img {
-        margin-left: 15.3vw;
-        margin-top: 0.3vh;
-        /*
-        background-image: url("images/IMG_6009.DNG");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position-x: 100%;
-        background-position-y: 77%;
-        background-size: 100%;
-        background-origin: padding-box;
-        height: 20vh;
-        object-fit: cover;
-        object-position: 100% 100%; */
-      }
-       /*
-      .about-img {
-        height: 15vh;
-        transition: height 17vh;
-       
-      }*/
-      
-      .about-img:hover {
-        height: 17vh;
-        transition: height 1s;
-      }
-      
-      .about-sec-title {
-        display: inline;
-        width: 37vw;
-        height: 26vh;
-        margin-top: 20vh;
-      }
-      
-      .about-sec-title-txt {
-        font-family: "Courier Prime", serif;
-        font-weight: 100;
-        font-size: 15vh;
-        color: #d6c09f;
-        text-align: right;
-        line-height: 11vh;
-        text-shadow: 2px 2px 10px black;
-        padding-top: 8vh;
-      }
-      
-      .really {
-        font-family: "Courier Prime", serif;
-        font-weight: 100;
-        font-size: 7vh;
-        color: #be0032;
-        text-align: right;
-        text-shadow: 2px 2px 10px black;
-      }
-      
-      .about-sec-txt {
-        position: absolute;
-        top: 155vh;
-        left: 31vw;
-        width: 42vw;
-        height: 20vh;
-        line-height: 8vh;
-      }
-      
-      .about-sec-txt-txt {
-        font-size: 8vh;
-        color: white;
-        text-align: left;
-        font-family: "Roboto Mono", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        line-height: 4vh;
-        letter-spacing: 0.2rem;
-        display: inline;
-        text-shadow: 2px 2px 10px black;
-      }
-      
-      .bio-sect {
-        height: 47vh;
-        /* background: linear-gradient(
-          180deg,
-          black,
-          #880000 
-        );*/
-        background-image: url("images/david\ ero\ bkg.png");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position-x: 100%;
-        background-position-y: 77%;
-        background-size: cover;
-        background-origin: padding-box;
-        object-fit: cover;
-        object-position: 100% 100%;
-        z-index: 0;
-        position: relative;
-      }
-      
-      .bio-sect-overlay {
-        height: 47vh;
-        background: linear-gradient(
-          180deg,
-          rgba(0, 0, 0, 0.954),
-          rgba(0, 0, 0, 0.524),
-          #d6c09f);
-        position: relative;
-        z-index: 1;
-      }
-      
-      .bio-sect-box {
-        margin: auto;
-        width: 90vw;
-        height: 45vh;
-        align-self: center;
-        padding-top: 4vh;
-        z-index: 2;
-        position: relative;
-        margin-top: -47vh;
-      }
-      
-      .bio-sect-txt {
-        font-size: 2.4vh;
-        color: white;
-        text-align: justify;
-        font-family: "Roboto Mono", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        line-height: 4.8vh;
-        letter-spacing: 0.1rem;
-        display: inline;
-        text-shadow: 2px 2px 2px #4137288f;
-        z-index: 3;
-      }
-      
-      .skills-spec {
-        background: linear-gradient(
-          180deg,
-          #d6c09f,
-          white,
-          white,
-          white
-        );
-        height: 105vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      
-      .skills-spec-box {
-        height: 20vh;
-        width: 50vw;
-        margin-top: 12vh;
-        padding-left: 2.2vw;
-        padding-top: 2vh;
-        display: flex;
-        justify-content: space-between;
-      }
-      
-      .skills-spec-txt {
-        color: black;
-        font-size: 15vh;
-        text-align: left;
-        line-height: 6vh;
-        display: block;
-        font-family: "Courier Prime", serif;
-        line-height: 12vh;
-        font-weight: 200;
-        top: 10vh;
-        position: sticky;
-        z-index: 0;
-        letter-spacing: -0.5vw;
-        padding-top: 4vh;
-      }
-      
-      .certificates {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 30vh;
-        margin: auto;
-        align-items: center;
-        margin-top: 0vh;
-      }
-      
-      .cert1 {
-        height: 20vh;
-      }
-      
-      .cert1:hover {
-        height: 25vh;
-        transition: 1s ease-in-out;
-        transform: scale(1.1,1.1)
-      }
-      
-      .cert2 {
-        height: 20vh;
-      }
-      
-      .cert2:hover {
-        height: 25vh;
-        transition: 1s ease-in-out;
-        transform: scale(1.1,1.1)
-      }
-      
-      .areas-of-practice {
-        display: flex;
-        width: 93vw;
-        margin: auto;
-        justify-content: space-between;
-        margin-top: -3vh;
-      }
-      
-      .area1box, .area2box, .area3box, .area4box {
-        width: 21vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      
-      .arealine {
-        border-right: 1.5px solid #be0032;
-      }
-      
-      .fa-solid {
-        color: #8e8e8e;
-        font-size: 2.5vh;
-        padding-bottom: 2vh;
-      }
-      
-      .areaheading {
-        font-size: 2.5vh;
-        color: black;
-        font-weight: 500;
-        font-family: "Roboto Mono", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        line-height: 3vh;
-        letter-spacing: 0.1rem;
-      }
-      
-      .areaul {
-        list-style-type: square;
-        padding-top: 2.5vh;
-      }
-      
-      .areali {
-        color: black;
-        font-weight: 400;
-        font-size: 1.9vh;
-        font-family: "Roboto Mono", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        line-height: 4vh;
-      }
-      
-      /*
-      .todolist {
-        background-image: url("images/bkg\ 2.png");
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position-x: 100%;
-        background-position-y: 77%;
-        background-size: 100%;
-        background-origin: padding-box;
-        height: 100vh;
-        object-fit: cover;
-        object-position: 100% 100%;
-        width: 100%;
-      }*/
-      
-      /*
-      .create {
-        background-color: black;
-        height: 120vh;
-      }
-      
-      .create-heading {
-        height: 40vh;
-        width: 95vw;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding-top: 3vh;
-      }
-      
-      .create-head {
-        width: 46vw;
-        height: 30vh;
-        align-self: self-end;
-        margin-top: 4vh;
-      }
-      
-      .create-head1 {
-        font-family: "Courier Prime", serif;
-        font-weight: 100;
-        font-size: 9vh;
-        font-optical-sizing: auto;
-        font-style: normal;
-        color: white;
-        padding-top: 5vh;
-      }
-      
-      .create-head2 {
-        font-family: "Courier Prime", serif;
-        font-weight: 100;
-        font-size: 18vh;
-        color: #be0032;
-        margin-left: 10vw;
-        margin-top: -3vh;
-        text-align: right;
-      }
-      
-      .create-subhead {
-        display: inline-block;
-        width: 40vw;
-      }
-      
-      .create-subhead-txt {
-        font-family: "Roboto Mono", serif;
-        color: white;
-        font-size: 3vh;
-        font-weight: 200;
-        font-optical-sizing: auto;
-        font-style: normal;
-      }
-      
-      .create-body {
-        height: 75vh;
-        margin-top: 5vh;
-        display: flex;
-      }
-      
-      .create-img {
-      
-      }
-      
-      .create-pic {
-        height: 74.8vh;
-        margin-left: 2.5vw;
-      }
-      
-      .create-logo {
-        display: inline;
-        padding-top: 12vh;
-        margin-left: -3vw;
-      }
-      
-      .create-logo-img {
-        height: 50vh;
-      }
-      
-      .create-contentbox {
-        background: linear-gradient(
-          180deg,
-          #be0032,
-          black 
-        );
-        height: 70vh;
-        width: 70vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-left: -4vw;
-        padding-top: 4vh;
-      }
-      
-      .create-content1, .create-content3 {
-        width: 18vw;
-        height: 38vh;
-      }
-      
-      .create-content1-img, .create-content3-img {
-        height: 38vh;
-      }
-      
-      .create-content2 {
-        width: 31vh;
-        height: 38vh;
-      }
-      
-      .create-content2-img {
-        height: 38vh;
-      }
-      
-      a.Alink-create-content:link, a.Alink-create-content:visited {
-        height: 38vh;
-      }
-      
-      a.Alink-create-content:hover, a.Alink-create-content:active {
-        height: 38vh;
-      }
-      
-      .create-content-heading {
-        font-family: "Roboto Mono", serif;
-        font-size: 2vh;
-        color: white;
-        text-align: left;
-        margin-top: 2vh;
-        padding-bottom: 1vh;
-      }
-      
-      .create-content-para {
-        font-family: "Roboto Mono", serif;
-        font-size: 1.6vh;
-        font-weight: 300;
-        color: white;
-        text-align: justify;
-      }
-      
-      .create-link {
-        width: 10vw;
-        height: 10vh;
-        position: relative;
-        top: -8vh;
-        left: 88vw;
-        display: inline;
-      }
-      
-      a.Alink-creations:link, a.Alink-creations:visited {
-        color: white;
-        font-family: "Roboto Mono", serif;
-        font-size: 2.6vh;
-        font-weight: 300;
-        text-decoration: none;
-      }
-      
-      a.Alink-creations:hover, a.Alink-creations:active {
-        font-family: "Roboto Mono", serif;
-        font-size: 3.1vh;
-        font-weight: 400;
-        color: #d6c09f;
-        text-shadow: 2px 2px 5px #be0032;
-        transition: .5s ease;
-      }
-      
-      .logos-created {
-        background-color: black;
-        height: 30vh;
-        padding-top: 6vh;
-      }
-      
-      .logos-inner {
-        height: 22vh;
-        width: 94vw;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-      }
-      
-      .logos-heading {
-        font-family: "Courier Prime", serif;
-        color: white;
-        font-size: 3vh;
-        font-weight: 300;
-        text-align: center;
-      }
-      
-      .logos-headbold {
-        color: #be0032;
-        letter-spacing: 0.03rem;
-        font-size: 4vh;
-      }
-      
-      .logos-box {
-        display: flex;
-        height: 12vh;
-        justify-content: space-between;
-        margin-top: 5vh;
-      }
-      
-      .logos {
-      
-      }
-      
-      .logo-img {
-        height: 8vh;
-      }
-      
-      .alonglogo {
-        height: 11vh;
-      }
-      
-      .adlogo {
-        height: 7vh;
-      }
-      
-      .pairedlogo {
-        height: 7vh;
-      }
-      
-      .yatilogo {
-        height: 11vh;
-      }
-      
-      .cclogo {
-        height: 6vh;
-      }
-      
-      .fklogo {
-        height: 7vh;
-      }
-      
-      */
-      
-      .collab {
-        height: 102vh;
-        background-image: url("images/david\ ero.png.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position-x: 100%;
-        background-position-y: 30%;
-        background-size: cover;
-        background-origin: padding-box;
-        object-fit: cover;
-        object-position: 100% 100%;
-      }
-      
-      .collabbkg {
-        height: 100vh;
-        width: 100%;
-      }
-      
-      .companiestxt {
-        color: #880000;
-        position: absolute;
-        font-size: 3.8vh;
-        font-weight: 500;
-        text-align: center;
-        width: 60vw;
-        display: block;
-        margin: auto;
-        left: 20vw;
-        padding-top: 8vh;
-      }
-      
-      .companieslogobox {
-        height: 8vh;
-        width: 95vw;
-        top: 87vh;
-        position: relative;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-      }
-      
-      .companieslogo {
-        height: 4vh;
-      }
-      
-      .companieslogo-ps {
-        height: 5vh;
-      }
-      
-      .companieslogo-dd {
-        height: 7vh;
-        margin-top: -2vh;
-      }
-      
-      .companieslogo-glo {
-        height: 6vh;
-        clip-path: circle(40%);
-      }
-      
-      .projects {
-        height: 402.6vh;
-        display: flex;
-        flex-direction: column;
-        background-image: url("images/IMG_2669.JPG");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position-x: 100%;
-        background-position-y: 40%;
-        background-size: cover;
-        background-origin: padding-box;
-        object-fit: cover;
-        object-position: 100% 100%;
-      }
-      
-      .projects1 {
-        height: 401vh;
-        padding-top: 4vh;
-      }
-      
-      .projects-heading-bold {
-        color: black;
-        font-size: 15vh;
-        font-weight: 200;
-        position: relative;
-        top: 35vh;
-        margin-left: 3vw;
-        position: sticky;
-        z-index: 0;
-        letter-spacing: -0.3vw;
-      }
-      
-      .projects-heading-para {
-        color: #be0032;
-        font-size: 2vh;
-        text-align: left;
-        position: relative;
-        position: sticky;
-        top: 50vh;
-        margin-left: 4vw;
-      }
-      
-      .projects-logo {
-        height: 15vh;
-        position: relative;
-        margin-top: 10vh;
-        position: sticky;
-        z-index: 0;
-        margin-left: 89vw;
-        top: 75vh;
-      }
-      
-      .projects2 {
-        height: 354.1vh;
-        z-index: 2;
-        background: linear-gradient(rgba(255, 255, 255, 0.108),#d6c09f5f, #d6c09fcd);
-        position: relative;
-        bottom: 0vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-top: 0vh;
-      }
-      
-      .project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8 {
-        width: 34.9vw;
-        height: 32.9vh;
-        margin: auto;
-        position: relative;
-        box-shadow: 1px 1px 4px black;
-      }
-      
-      .project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover, .project7:hover, .project8:hover {
-        width: 34.9vw;
-        height: 32.9vh;
-        margin: auto;
-        position: relative;
-        transition: 0.7s ease-in-out;
-        transform: scale(1.2,1.2);
-      }
-      
-      /* image */
-      .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8 {
-        opacity: 1;
-        display: block;
-        height: 32.9vh;
-        width: 34.9vw;
-        transition: .5s ease;
-        backface-visibility: hidden;
-      }
-      
-      /* what happens when the div and image are hovered */
-      .project1:hover, .code-grid-i1, .project2:hover, .code-grid-i2, .project3:hover, .code-grid-i3, .project4:hover, .code-grid-i4, .project5:hover, .code-grid-i5, .project6:hover, .code-grid-i6, .project7:hover, .code-grid-i7, .project8:hover, .code-grid-i8 {
-        opacity: 0.9;
-        box-shadow: 5px 10px 10px black;
-      }
-      
-      /* to show the text when the div is hovered */
-      .project1:hover .code-grid-img-txt, .project2:hover .code-grid-img-txt, .project3:hover .code-grid-img-txt, .project4:hover .code-grid-img-txt, .project5:hover .code-grid-img-txt, .project6:hover .code-grid-img-txt, .project7:hover .code-grid-img-txt, .project8:hover .code-grid-img-txt {
-        opacity: 1;
-      }
-      
-      /*
-      a.Alink-grid:link, a.Alink-grid:visited {}
-      a.Alink-grid:hover, a.Alink-grid:active {} */
-      
-      .code-grid-img-txt /* text div*/ {
-        transition: .5s ease;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-      }
-      
-      .cgi-txt {
-        font-size: 7vh;
-        color: white;
-        text-shadow: 2px 2px 10px black;
-      }
-      
-      .fa-brands {
-        font-size: 3vh;
-        color: #be0032;
-      }
-      
-      .shiftright {
-        left: 13vw;
-      }
-      
-      .shiftleft {
-        right: 18vw;
-      }
-      
-      .moreprojectslink {
-        height: 5vh;
-        width: 15vw;
-        position: relative;
-        left: 70vw;
-        bottom: 7vh;
-      }
-      
-      a.Alink-moreprojects:link, a.Alink-moreprojects:visited {
-        font-size: 2.8vh;
-        text-decoration: none;
-        color: #be0032;
-      }
-      
-      a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
-        font-size: 2.8vh;
-        text-decoration: none;
-        color: #880000;
-      }
-      
-      .services {
-        height: 100vh;
-        background: linear-gradient(#d6c09fcd, #d6c09f, #9e8461, #9e8461);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-      }
-      
-      .serv-heading {
-        text-align: center;
-        font-size: 6vh;
-        font-weight: 500;
-        color: black;
-        padding-top: 10vh;
-      }
-      
-      .serv-parting {
-        height: 7vh;
-        width: 30vw;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 7vh;
-      }
-      
-      .serv-label {
-        font-size: 2.2vh;
-        color: black;
-        font-weight: 300;
-        background-color: white;
-        padding: 1vw;
-        border-radius: 2vw;
-        width: 8vw;
-        text-align: center;
-        transform: rotate(-5deg);
-        animation-name: serv-ani;
-        animation-duration: 2s;
-        animation-delay: 0s;
-        animation-iteration-count: 15;
-        animation-direction: normal;
-        animation-timing-function: ease-in-out;
-        cursor: pointer;
-      }
-      
-      @keyframes serv-ani {
-        0% {transform: rotate(-5deg)}
-        25% {transform: rotate(0deg)}
-        50% {transform: rotate(5deg)}
-        75% {transform: rotate(0deg)}
-        100% {transform: rotate(-5deg)}
-      }
-      
-      .line {
-        color: #be0032;
-        size: 2px;
-        margin-top: 1.8vh;
-      }
-      
-      .serv-grid {
-        height: 40vh;
-        width: 80vw;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15vh;
-      }
-      
-      .serv1, .serv2, .serv3 {
-        width: 23vw;
-        height: 36vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: black;
-        padding: 3vh;
-        border-radius: 1vh;
-        cursor: pointer;
-      }
-      
-      .serv1:hover, .serv2:hover, .serv3:hover {
-        width: 23vw;
-        height: 33vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background: linear-gradient(rgba(0, 0, 0, 0.661), black);
-        padding: 3vh;
-        border-radius: 1vh;
-        cursor: pointer;
-        transform: scale(1.1, 1.1);
-        transition: 0.5s ease-in-out;
-      }
-      
-      .serv-title {
-        font-size: 3.6vh;
-        color: #880000;
-        font-weight: 700;
-      }
-      
-      .serv-para {
-        font-size: 2.4vh;
-        color: white;
-        text-align: left;
-        padding-bottom: 2vh;
-      }
-      
-      .fa-solid {
-        font-size: 4vh;
-        color: #9e8461;
-        padding-top: 1vh;
-      }
-      
-      .connect {
-        height: 90vh;
-        width: 100%;
-        background-color: #9e8461;
-        z-index: -1;
-        position: relative;
-      }
-      
-      .connect-inner {
-        height: 90vh;
-        background-image: url("images/IMG_1805.JPG");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position-x: 100%;
-        background-position-y: 5%;
-        background-size: cover;
-        background-origin: padding-box;
-        object-fit: cover;
-        object-position: 100% 100%;
-        display: flex;
-        flex-direction: column;
-        border-top-left-radius: 10vw;
-        border-top-right-radius: 10vw;
-      }
-      
-      .connect-overlay {
-        height: 90vh;
-        width: 99.8vw;
-        z-index: 1;
-        background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.583), black);
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-top-left-radius: 10vw;
-        border-top-right-radius: 10vw;
-      }
-      
-      .connect-inner-cta {
-        position: relative;
-        height: 40vh;
-        width: 60vw;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        z-index: 3;
-        align-items: center;
-        margin-top: 15vh;
-      }
-      
-      .solid2 {
-        color: white;
-        font-size: 10vh;
-        padding-left: 3vw;
-      }
-      
-      .cic-heading {
-        color: #d6c09f;
-        font-size: 6vh;
-        text-align: center;
-        font-weight: 500;
-        line-height: 7vh;
-        text-shadow: 2px 2px 6px black;
-      }
-      
-      .cic-buttons {
-        height: 10vh;
-        width: 35vw;
-        display: flex;
-        justify-content: space-around;
-        z-index: 4;
-        position: relative;
-      }
-      
-      a.cic-email:link, a.cic-email:visited {
-        height: 8vh;
-        width: 12vw;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        background-color: white;
-        border-bottom: 1.5px solid black;
-        cursor: pointer;
-        color: black;
-        font-weight: 300;
-        font-size: 2.3vh;
-        justify-content: center;
-        z-index: 4;
-      }
-      
-      a.cic-email:hover, a.cic-email:active {
-        background-color: #d6c09f;
-        height: 8vh;
-        width: 15vw;
-        text-decoration: none;
-      }
-      
-      a.cic-WA:link, a.cic-WA:visited {
-        background-color: black;
-        border-bottom: 1.5px solid white;
-        height: 8vh;
-        width: 12vw;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        cursor: pointer;
-        color: white;
-        font-weight: 300;
-        font-size: 2.3vh;
-        justify-content: center;
-      }
-      
-      a.cic-WA:hover, a.cic-WA:active {
-        width: 15vw;
-        background-color: green;
-      }
-      
-      .connect-inner-socials {
-        width: 90vw;
-        height: 4vh;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        z-index: 3;
-      }
-      
-      .cis1 {
-      
-      }
-      
-      .cis1-para {
-        color: white;
-        font-size: 1.7vh;
-        font-weight: 200;
-      }
-      
-      .cis2 {
-      
-      }
-      
-      a.Alink-socials:link, a.Alink-socials:active {
-        font-size: 1.7vh;
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-      }
-      
-      a.Alink-socials:hover, a.Alink-socials:visited {
-        color: #be0032;
-      }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    /* scroll bar */
+    /* width */
+    ::-webkit-scrollbar {
+      width: 0.2vw;
+    }
+  
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: black;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #be0032;
+    }
+  
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #be0032;
+      width: 0.5vw;
+    }
+  }
+  
+  body {
+    font-family: "Courier Prime", "Roboto Mono", "Space Grotesk", sans-serif;
+  }
+  
+  .header-background {
+    background-image: url("images/IMG_0220.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 100%;
+    background-position-y: 70%;
+    background-size: cover;
+    background-origin: padding-box;
+    z-index: 0;
+    height: 160vh;
+    object-fit: cover;
+    object-position: 100% 100%;
+    width: 100%;
+  }
+  
+  .header-background-inner {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 30vh;
+    width: 95vw;
+    z-index: 2;
+  }
+  
+  .logobox1 {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+  }
+  
+  .logobox1a {
+    display: inline-block;
+    margin-top: 3vh;
+    padding-left: 0.5vw;
+  }
+  
+  .logobox1b {
+    display: block;
+    margin-top: -1.5vh;
+  }
+  
+  .logo1a {
+    height: 5.2vh;
+  }
+  
+  .logo1b {
+    height: 9vh;
+  }
+  
+  .fa-brands {
+    color: rgba(211, 211, 211, 0.881);
+    font-size: 3vh;
+  }
+  
+  .navbox {
+    height: 30vh;
+    margin-top: 0vh;
+  }
+  
+  .navul {
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  
+  .navli {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2vh;
+    font-weight: 300;
+    text-align: right;
+    line-height: 7vh;
+  }
+  
+  .navlid {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    text-decoration: none;
+    font-size: 2vh;
+    text-align: right;
+    line-height: 3vh;
+  }
+  
+  a.Alink-nav:link,
+  a.Alink-nav:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+    font-weight: 400;
+  }
+  
+  a.Alink-nav:hover,
+  a.Alink-nav:active {
+    color: #be0032;
+    font-size: 2.5vh;
+    font-weight: 300;
+    transition: 0.5s ease-out;
+  }
+  
+  /*
+  .iconsbox {
+    display: flex;
+    justify-content: space-between;
+    width: 6vw;
+  }*/
+  
+  .bagicon {
+    display: flex;
+  }
+  
+  .searchicon {
+    display: flex;
+  }
+  
+  .barsicon {
+    display: none;
+  }
+  
+  .fa-solid {
+    color: white;
+    size: 2vh;
+  }
+  
+  header {
+    
+  }
+  
+  .headercontainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .biotextimgbox {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    width: 95vw;
+    margin: auto;
+  }
+  
+  .biotb-title {
+    display: inline;
+    width: 30vw;
+    height: 33vh;
+    text-align: left;
+    padding-top: 3.3vh;
+    margin-top: -5vh;
+  }
+  
+  .imgtitles {
+    display: flex;
+    flex-direction: column;
+  }
+   
+  .biotb-img {
+    display: inline;
+    margin-top: 0vh;
+    position: relative;
+    animation-name: myani;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    width: 16vw;
+    height: 25vh;
+    align-self: flex-end;
+  }
+  
+  .biotb-image {
+    width: 16vw;
+    height: 25vh;
+  }
+  
+  @keyframes myani {
+    0% {border-bottom: 2px solid #be0032; right:0px; top:0px;}
+    25% {border-bottom: 2px solid #880000; right:350px; top:0px;}
+    50% {border-bottom: 2px solid #006aad; right:350px; top:0px;}
+    75% {border-bottom: 2px solid #032b44; right:0px; top:0px;}
+    100% {border-bottom: 2px solid #9e8461; right:0px; top:0px;}
+  }
+  
+  .bioheading {
+    color: white;
+    font-family: "Courier Prime", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 8.4vh;
+    line-height: 6vh;
+    letter-spacing: 0vw;
+    font-weight: 100;
+    margin-top: 8vh;
+  }
+  
+  .biosup {
+    font-size: 2.3vh;
+    color: #006aad;
+  }
+  
+  .folio-txt {
+    padding-left: 2.2vw;
+  }
+  
+  .biopara {
+    color: white;
+    font-family: "Roboto Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2vh;
+    letter-spacing: 0.3rem;
+    line-height: 4vh;
+  }
+  
+  .bannerbkg {
+    height: 75vh;
+    width: 95vw;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logobox2 {
+    margin-top: 2vh;
+  }
+  
+  .logo2 {
+    height: 40vh;
+  }
+  
+  .logobkg {
+    height: 28vh;
+    position: absolute;
+    left: 4.5vw;
+    top: 84vh;
+    opacity: 0.7;
+  }
+  
+  .titles {
+    display: inline;
+    width: 84vw;
+    height: 20vh;
+    padding-top: 4vh;
+    margin-left: -20vw;
+    text-align: right;
+    margin-top: 8vh;
+  }
+  
+  .titles-txt {
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: right;
+    line-height: 4vh;
+    display: inline;
+    font-size: 2vh;
+    font-weight: 300;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  a.Alink-title:link,
+  a.Alink-title:visited {
+    font-size: 1.8vh;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  a.Alink-title:hover,
+  a.Alink-title:active {
+    color: #d6c09f;
+    font-size: 2vh;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px 5px #880000;
+    transition: 0.5s ease-out;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 30vh;
+    justify-content: space-between;
+    margin-top: 0vh;
+    margin: auto;
+  }
+  
+  .about-sec-img {
+    margin-left: 15.3vw;
+    margin-top: 0.3vh;
+    /*
+    background-image: url("images/IMG_6009.DNG");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: 100%;
+    background-position-y: 77%;
+    background-size: 100%;
+    background-origin: padding-box;
+    height: 20vh;
+    object-fit: cover;
+    object-position: 100% 100%; */
+  }
+   /*
+  .about-img {
+    height: 15vh;
+    transition: height 17vh;
+   
+  }*/
+  
+  .about-img:hover {
+    height: 17vh;
+    transition: height 1s;
+  }
+  
+  .about-sec-title {
+    display: inline;
+    width: 60vw;
+    height: 9vh;
+    margin-top: -26vh;
+  }
+  
+  .about-sec-title-txt {
+    font-family: "Courier Prime", serif;
+    font-weight: 100;
+    font-size: 8vh;
+    color: #d6c09f;
+    text-align: right;
+    line-height: 7vh;
+    text-shadow: 2px 2px 10px black;
+    padding-top: 0vh;
+  }
+  
+  .really {
+    font-family: "Courier Prime", serif;
+    font-weight: 100;
+    font-size: 4vh;
+    color: #be0032;
+    text-align: right;
+    text-shadow: 2px 2px 10px black;
+  }
+  
+  .about-sec-txt {
+    position: absolute;
+    top: 130vh;
+    left: 5vw;
+    width: 65vw;
+    height: 23vh;
+    line-height: 8vh;
+  }
+  
+  .about-sec-txt-txt {
+    font-size: 6vh;
+    color: white;
+    text-align: left;
+    font-family: "Roboto Mono", serif;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+    display: inline;
+    text-shadow: 2px 2px 10px black;
+  }
+  
+  .bio-sect {
+    height: 90vh;
+    /* background: linear-gradient(
+      180deg,
+      black,
+      #880000 
+    );*/
+    background-image: url("images/david\ ero\ bkg.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: 100%;
+    background-position-y: 77%;
+    background-size: cover;
+    background-origin: padding-box;
+    object-fit: cover;
+    object-position: 100% 100%;
+    z-index: 0;
+    position: relative;
+  }
+  
+  .bio-sect-overlay {
+    height: 90vh;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.954),
+      rgba(0, 0, 0, 0.158),
+      #d6c09f);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .bio-sect-box {
+    margin: auto;
+    width: 92vw;
+    height: 82vh;
+    align-self: center;
+    padding-top: 4vh;
+    z-index: 2;
+    position: relative;
+    margin-top: -88vh;
+  }
+  
+  .bio-sect-txt {
+    font-size: 2.0vh;
+    color: white;
+    text-align: justify;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 4.8vh;
+    letter-spacing: 0rem;
+    display: inline;
+    text-shadow: 2px 2px 2px #4137288f;
+    z-index: 3;
+  }
+  
+  .skills-spec {
+    background: linear-gradient(
+      180deg,
+      #d6c09f,
+      white,
+      white,
+      white
+    );
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .skills-spec-box {
+    height: 15vh;
+    width: 90vw;
+    margin: auto;
+    margin-top: 0vh;
+    padding-left: 2.2vw;
+    padding-top: 0vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .skills-spec-txt {
+    color: black;
+    font-size: 7vh;
+    text-align: center;
+    line-height: 1vh;
+    display: block;
+    font-family: "Courier Prime", serif;
+    line-height: 6vh;
+    font-weight: 200;
+    top: 1vh;
+    position: sticky;
+    z-index: 0;
+    padding-top: 2vh;
+  }
+  
+  .certificates {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 25vh;
+    margin: auto;
+    align-items: center;
+    margin-top: 0vh;
+  }
+  
+  .cert1 {
+    height: 17vh;
+  }
+  
+  .cert1:hover {
+    height: 20vh;
+    transition: 1s ease-in-out;
+    transform: scale(1.1,1.1)
+  }
+  
+  .cert2 {
+    height: 18vh;
+  }
+  
+  .cert2:hover {
+    height: 20vh;
+    transition: 1s ease-in-out;
+    transform: scale(1.1,1.1)
+  }
+  
+  .areas-of-practice {
+    display: flex;
+    width: 95vw;
+    height: 70vh;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: -2vh;
+    flex-wrap: wrap;
+  }
+  
+  .area1box, .area2box, .area3box, .area4box {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+  }
+  
+  .arealine {
+    /* border-right: 1.5px solid #be0032;*/
+    border: none;
+  }
+  
+  .fa-solid {
+    color: #8e8e8e;
+    font-size: 2vh;
+    padding-bottom: 2vh;
+  }
+  
+  .areaheading {
+    font-size: 2.2vh;
+    color: black;
+    font-weight: 500;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 3vh;
+    letter-spacing: 0.1rem;
+  }
+  
+  .areaul {
+    list-style-type: square;
+    padding-top: 2vh;
+  }
+  
+  .areali {
+    color: black;
+    font-weight: 400;
+    font-size: 1.8vh;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 3vh;
+  }
+  
+  /*
+  .todolist {
+    background-image: url("images/bkg\ 2.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: 100%;
+    background-position-y: 77%;
+    background-size: 100%;
+    background-origin: padding-box;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 100% 100%;
+    width: 100%;
+  }*/
+  
+  /*
+  .create {
+    background-color: black;
+    height: 120vh;
+  }
+  
+  .create-heading {
+    height: 40vh;
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 3vh;
+  }
+  
+  .create-head {
+    width: 46vw;
+    height: 30vh;
+    align-self: self-end;
+    margin-top: 4vh;
+  }
+  
+  .create-head1 {
+    font-family: "Courier Prime", serif;
+    font-weight: 100;
+    font-size: 9vh;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    padding-top: 5vh;
+  }
+  
+  .create-head2 {
+    font-family: "Courier Prime", serif;
+    font-weight: 100;
+    font-size: 18vh;
+    color: #be0032;
+    margin-left: 10vw;
+    margin-top: -3vh;
+    text-align: right;
+  }
+  
+  .create-subhead {
+    display: inline-block;
+    width: 40vw;
+  }
+  
+  .create-subhead-txt {
+    font-family: "Roboto Mono", serif;
+    color: white;
+    font-size: 3vh;
+    font-weight: 200;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  .create-body {
+    height: 75vh;
+    margin-top: 5vh;
+    display: flex;
+  }
+  
+  .create-img {
+  
+  }
+  
+  .create-pic {
+    height: 74.8vh;
+    margin-left: 2.5vw;
+  }
+  
+  .create-logo {
+    display: inline;
+    padding-top: 12vh;
+    margin-left: -3vw;
+  }
+  
+  .create-logo-img {
+    height: 50vh;
+  }
+  
+  .create-contentbox {
+    background: linear-gradient(
+      180deg,
+      #be0032,
+      black 
+    );
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -4vw;
+    padding-top: 4vh;
+  }
+  
+  .create-content1, .create-content3 {
+    width: 18vw;
+    height: 38vh;
+  }
+  
+  .create-content1-img, .create-content3-img {
+    height: 38vh;
+  }
+  
+  .create-content2 {
+    width: 31vh;
+    height: 38vh;
+  }
+  
+  .create-content2-img {
+    height: 38vh;
+  }
+  
+  a.Alink-create-content:link, a.Alink-create-content:visited {
+    height: 38vh;
+  }
+  
+  a.Alink-create-content:hover, a.Alink-create-content:active {
+    height: 38vh;
+  }
+  
+  .create-content-heading {
+    font-family: "Roboto Mono", serif;
+    font-size: 2vh;
+    color: white;
+    text-align: left;
+    margin-top: 2vh;
+    padding-bottom: 1vh;
+  }
+  
+  .create-content-para {
+    font-family: "Roboto Mono", serif;
+    font-size: 1.6vh;
+    font-weight: 300;
+    color: white;
+    text-align: justify;
+  }
+  
+  .create-link {
+    width: 10vw;
+    height: 10vh;
+    position: relative;
+    top: -8vh;
+    left: 88vw;
+    display: inline;
+  }
+  
+  a.Alink-creations:link, a.Alink-creations:visited {
+    color: white;
+    font-family: "Roboto Mono", serif;
+    font-size: 2.6vh;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  a.Alink-creations:hover, a.Alink-creations:active {
+    font-family: "Roboto Mono", serif;
+    font-size: 3.1vh;
+    font-weight: 400;
+    color: #d6c09f;
+    text-shadow: 2px 2px 5px #be0032;
+    transition: .5s ease;
+  }
+  
+  .logos-created {
+    background-color: black;
+    height: 30vh;
+    padding-top: 6vh;
+  }
+  
+  .logos-inner {
+    height: 22vh;
+    width: 94vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logos-heading {
+    font-family: "Courier Prime", serif;
+    color: white;
+    font-size: 3vh;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .logos-headbold {
+    color: #be0032;
+    letter-spacing: 0.03rem;
+    font-size: 4vh;
+  }
+  
+  .logos-box {
+    display: flex;
+    height: 12vh;
+    justify-content: space-between;
+    margin-top: 5vh;
+  }
+  
+  .logos {
+  
+  }
+  
+  .logo-img {
+    height: 8vh;
+  }
+  
+  .alonglogo {
+    height: 11vh;
+  }
+  
+  .adlogo {
+    height: 7vh;
+  }
+  
+  .pairedlogo {
+    height: 7vh;
+  }
+  
+  .yatilogo {
+    height: 11vh;
+  }
+  
+  .cclogo {
+    height: 6vh;
+  }
+  
+  .fklogo {
+    height: 7vh;
+  }
+  
+  */
+  
+  .collab {
+    height: 40vh;
+    background-image: url("images/david\ ero.png.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-size: cover;
+    background-origin: padding-box;
+    object-fit: cover;
+    object-position: 100% 100%;
+  }
+  
+  .collabbkg {
+    height: 40vh;
+    width: 100%;
+  }
+  
+  .companiestxt {
+    color: #d6c09f;
+    position: absolute;
+    font-size: 2.2vh;
+    font-weight: 400;
+    text-align: center;
+    width: 85vw;
+    display: block;
+    margin: auto;
+    left: 7vw;
+    padding-top: 4vh;
+    text-shadow: 2px 2px 7px black;
+  }
+  
+  .companieslogobox {
+    height: 5vh;
+    width: 98vw;
+    top: 33vh;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .companieslogo {
+    height: 2vh;
+  }
+  
+  .companieslogo-ps {
+    height: 2vh;
+  }
+  
+  .companieslogo-dd {
+    height: 4vh;
+    margin-top: -1vh;
+  }
+  
+  .companieslogo-glo {
+    height: 3vh;
+    clip-path: circle(40%);
+  }
+  
+  .projects {
+    height: 344.3vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/IMG_2669.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 100%;
+    background-position-y: 40%;
+    background-size: cover;
+    background-origin: padding-box;
+    object-fit: cover;
+    object-position: 100% 100%;
+  }
+  
+  .projects1 {
+    height: 345vh;
+    padding-top: 4vh;
+  }
+  
+  .projects-heading-bold {
+    color: black;
+    font-size: 7vh;
+    font-weight: 200;
+    position: relative;
+    top: 35vh;
+    margin-left: 3vw;
+    position: sticky;
+    z-index: 0;
+    letter-spacing: -0.3vw;
+  }
+  
+  .projects-heading-para {
+    color: #be0032;
+    font-size: 2vh;
+    text-align: left;
+    position: relative;
+    position: sticky;
+    top: 43vh;
+    margin-left: 4vw;
+  }
+  
+  .projects-logo {
+    height: 10vh;
+    position: relative;
+    margin-top: 10vh;
+    position: sticky;
+    z-index: 0;
+    margin-left: 80vw;
+    top: 80vh;
+  }
+  
+  .projects2 {
+    height: 310vh;
+    z-index: 2;
+    background: linear-gradient(rgba(255, 255, 255, 0.108),#d6c09f5f, #d6c09fcd);
+    position: relative;
+    bottom: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0vh;
+  }
+  
+  .project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8 {
+    width: 60vw;
+    height: 21vh;
+    margin: auto;
+    position: relative;
+    box-shadow: 1px 1px 4px black;
+  }
+  
+  .project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover, .project7:hover, .project8:hover {
+    width: 60vw;
+    height: 21vh;
+    margin: auto;
+    position: relative;
+    transition: 0.7s ease-in-out;
+    transform: scale(1.2,1.2);
+  }
+  
+  /* image */
+  .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8 {
+    opacity: 1;
+    display: block;
+    width: 60vw;
+    height: 21vh;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  /* what happens when the div and image are hovered */
+  .project1:hover, .code-grid-i1, .project2:hover, .code-grid-i2, .project3:hover, .code-grid-i3, .project4:hover, .code-grid-i4, .project5:hover, .code-grid-i5, .project6:hover, .code-grid-i6, .project7:hover, .code-grid-i7, .project8:hover, .code-grid-i8 {
+    opacity: 0.9;
+    box-shadow: 5px 10px 10px black;
+  }
+  
+  /* to show the text when the div is hovered */
+  .project1:hover .code-grid-img-txt, .project2:hover .code-grid-img-txt, .project3:hover .code-grid-img-txt, .project4:hover .code-grid-img-txt, .project5:hover .code-grid-img-txt, .project6:hover .code-grid-img-txt, .project7:hover .code-grid-img-txt, .project8:hover .code-grid-img-txt {
+    opacity: 1;
+  }
+  
+  /*
+  a.Alink-grid:link, a.Alink-grid:visited {}
+  a.Alink-grid:hover, a.Alink-grid:active {} */
+  
+  .code-grid-img-txt /* text div*/ {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  .cgi-txt {
+    font-size: 3vh;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+  }
+  
+  .fa-brands {
+    font-size: 2vh;
+    color: #be0032;
+  }
+  
+  .shiftright {
+    left: 11vw;
+  }
+  
+  .shiftleft {
+    right: 12vw;
+  }
+  
+  .moreprojectslink {
+    height: 5vh;
+    width: 30vw;
+    position: relative;
+    left: 35vw;
+    bottom: 3vh;
+  } 
+  
+  a.Alink-moreprojects:link, a.Alink-moreprojects:visited {
+    font-size: 2.2vh;
+    text-align: center;
+    text-decoration: none;
+    color: #be0032;
+  }
+  
+  a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
+    font-size: 2.2vh;
+    text-decoration: none;
+    color: #880000;
+  }
+  
+  .services {
+    height: 88vh;
+    background: linear-gradient(#d6c09fcd, #d6c09f, #9e8461, #9e8461);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .serv-heading {
+    text-align: center;
+    font-size: 3.3vh;
+    font-weight: 500;
+    color: black;
+    padding-top: 3vh;
+    width: 85vw;
+    margin: auto;
+  }
+  
+  .serv-parting {
+    height: 5.3vh;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0vh;
+  }
+  
+  .serv-label {
+    font-size: 2.2vh;
+    color: black;
+    font-weight: 300;
+    background-color: white;
+    padding-top: 1.2vh;
+    border-radius: 2.2vw;
+    width: 20vw;
+    text-align: center;
+    transform: rotate(-5deg);
+    animation-name: serv-ani;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 15;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+  }
+  
+  @keyframes serv-ani {
+    0% {transform: rotate(-5deg)}
+    25% {transform: rotate(0deg)}
+    50% {transform: rotate(5deg)}
+    75% {transform: rotate(0deg)}
+    100% {transform: rotate(-5deg)}
+  }
+  
+  .line {
+    color: #be0032;
+    size: 2px;
+    margin-top: 1.8vh;
+  }
+  
+  .serv-grid {
+    height: 39vh;
+    width: 93vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+  }
+  
+  .serv1, .serv2, .serv3 {
+    width: 28vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    padding: 2vh;
+    border-radius: 1.2vh;
+    cursor: pointer;
+  }
+  
+  .serv1:hover, .serv2:hover, .serv3:hover {
+    width: 28vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(rgba(0, 0, 0, 0.479), black);
+    padding: 2vh;
+    border-radius: 1.2vh;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: 0.5s ease-in-out;
+  }
+  
+  .serv-title {
+    font-size: 2.4vh;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .serv-para {
+    font-size: 1.8vh;
+    color: white;
+    text-align: left;
+    padding-bottom: 2vh;
+    left: 4vh;
+    line-height: 2vh;
+  }
+  
+  .fa-solid {
+    font-size: 4vh;
+    color: #880000;
+    padding-top: 1vh;
+  }
+  
+  .connect {
+    height: 90vh;
+    width: 100%;
+    background-color: #9e8461;
+    z-index: -1;
+    position: relative;
+  }
+  
+  .connect-inner {
+    height: 90vh;
+    background-image: url("images/IMG_1805.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 100%;
+    background-position-y: 5%;
+    background-size: cover;
+    background-origin: padding-box;
+    object-fit: cover;
+    object-position: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+  }
+  
+  .connect-overlay {
+    height: 90vh;
+    width: 99.8vw;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, 0.419), rgba(0, 0, 0, 0.583), black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+  }
+  
+  .connect-inner-cta {
+    position: relative;
+    height: 40vh;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    align-items: center;
+    margin-top: 15vh;
+  }
+  
+  .solid2 {
+    color: white;
+    font-size: 8vh;
+    padding-left: 3vw;
+  }
+  
+  .cic-heading {
+    color: #d6c09f;
+    font-size: 5vh;
+    text-align: center;
+    font-weight: 500;
+    line-height: 5vh;
+    text-shadow: 2px 2px 6px black;
+  }
+  
+  .cic-buttons {
+    height: 10vh;
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    z-index: 4;
+    position: relative;
+  }
+  
+  a.cic-email:link, a.cic-email:visited {
+    height: 7vh;
+    width: 22vw;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1.5px solid black;
+    cursor: pointer;
+    color: black;
+    font-weight: 300;
+    font-size: 2.3vh;
+    justify-content: center;
+    z-index: 4;
+  }
+  
+  a.cic-email:hover, a.cic-email:active {
+    background-color: #d6c09f;
+    height: 7vh;
+    width: 22vw;
+    text-decoration: none;
+  }
+  
+  a.cic-WA:link, a.cic-WA:visited {
+    background-color: black;
+    border-bottom: 1.5px solid white;
+    height: 7vh;
+    width: 22vw;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 300;
+    font-size: 2.3vh;
+    justify-content: center;
+  }
+  
+  a.cic-WA:hover, a.cic-WA:active {
+    width: 22vw;
+    height: 7vh;
+    background-color: green;
+  }
+  
+  .connect-inner-socials {
+    width: 90vw;
+    height: 4vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+  }
+  
+  .cis1 {
+  
+  }
+  
+  .cis1-para {
+    color: white;
+    font-size: 1.5vh;
+    font-weight: 200;
+  }
+  
+  .cis2 {
+  
+  }
+  
+  a.Alink-socials:link, a.Alink-socials:active {
+    font-size: 1.5vh;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a.Alink-socials:hover, a.Alink-socials:visited {
+    color: #be0032;
+  }
     
 }
