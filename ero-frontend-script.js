@@ -90,3 +90,10 @@ setTimeout(hi, 3000); // example, it will take 3000msecs before displaying. it r
 // setInterval(hello, 5000); // this keeps running after the time runs out
 
 // using setInterval for the carousel
+
+/*
+const preview = document.getElementsByClassName("ftb1-preview");
+
+preview.onmouseover = function() {
+    preview.style.margin-top = "-10vh";
+} */
