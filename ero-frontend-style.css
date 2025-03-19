@@ -1513,6 +1513,7 @@
       width: 30vw;
       padding-left: 2vw;
       padding-top: 1.7vh;
+      display: none;
     }
     
     .code-head1 {
@@ -2613,7 +2614,7 @@
     background-image: url("images/Untitled\ design\ -\ 2.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position-x: 30%;
+    background-position-x: 52%;
     background-position-y: 100%;
     background-size: cover;
     background-origin: padding-box;
@@ -2628,35 +2629,52 @@
     display: flex;
     flex-direction: column;
     margin-left: 2vw;
+    position: relative;
+    z-index: 1;
   }
   
   .logobox1a {
     display: inline-block;
-    margin-top: 3vh;
+    margin-top: 2vh;
     padding-left: 1vw;
   }
   
   .logobox1b {
     display: block;
-    margin-top: -2vh;
+    margin-top: -1.4vh;
   }
   
   .logo1a {
-    height: 6vh;
+    height: 4.5vh;
   }
   
   .logo1b {
-    height: 10vh;
+    height: 7.5vh;
     margin-left: 0.5vw;
   }
 
   .navbox {
-    height: 95vh;
-    width: 40vw;
-    margin-right: 3vw;
+    height: 40vh;
+    width: 34vw;
     margin-top: 2vh;
+    margin-left: -10vw;
+    list-style: none;
+    display: flex;
+    display: none;
+    flex-direction: column;
+    margin-right: 8vw;
+    position: relative;
+    z-index: 2;
+    border-radius: 1vw;
+    background-color: rgba(3, 3, 3, 0.038);
+    box-shadow: 2px 2px 10px black;
   }
-  
+
+  .navbox .show {
+    display: flex;
+    transition: 1s ease-in-out;
+}
+
   .navul {
     list-style: none;
     list-style-type: none;
@@ -2671,10 +2689,10 @@
     font-optical-sizing: auto;
     font-style: normal;
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 1.5vh;
     font-weight: 300;
-    text-align: right;
-    line-height: 7vh;
+    text-align: center;
+    line-height: 5vh;
   }
   
   .navlid {
@@ -2683,37 +2701,50 @@
     font-style: normal;
     text-decoration: none;
     text-decoration: none;
-    font-size: 2vh;
-    text-align: right;
-    line-height: 1vh;
+    font-size: 1.5vh;
+    text-align: center;
+    line-height: 3vh;
   }
   
   a.Alink-nav:link,
   a.Alink-nav:visited {
     text-decoration: none;
     color: #9e8461;
-    font-size: 2vh;
-    font-weight: 400;
+    font-size: 1.5vh;
+    font-weight: 500;
   }
   
   a.Alink-nav:hover,
   a.Alink-nav:active {
     color: #006aad;
-    font-size: 2vh;
-    font-weight: 400;
+    font-size: 1.5vh;
+    font-weight: 500;
     transition: 0.5s ease-out;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.42);
   }
 
+  .barsicon {
+    display: flex;
+    margin-left: -20vw;
+    margin-right: 2vw;
+    margin-top: 2vh;
+    height: 5vh;
+    width: 10vw;
+  }
+
+  .fa-solid {
+    color: black;
+    font-size: 3vh;
+  }
+
   .hero-buttons {
-    height: 16vh;
-    width: 38vw;
+    height: 13vh;
+    width: 30vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto;
-    padding-left: 1.5vw;
-    margin-top: 58vh;
-    margin-left: -58vw; /* remove this to keep the buttons on the right*/
+    margin-top: 0vh;
   }
   
   a.Alink-hbutt1:link, a.Alink-hbutt1:visited {
@@ -2722,11 +2753,11 @@
     border-top: 1px solid #006aad;
     border-left: 1px solid #006aad;
     border-bottom: 1px solid #006aad;
-    background-color: #006bad2f;
-    font-size: 2.5vh;
+    background-color: #006bad7f;
+    font-size: 1.8vh;
     text-shadow: 2px 2px 5px black;
     text-decoration: none;
-    width: 35vw;
+    width: 25vw;
     height: 5vh;
     text-align: center;
     display: flex;
@@ -2740,10 +2771,10 @@
     border-top: 1px solid #006aad;
     border-left: 1px solid #006aad;
     border-bottom: 1px solid #006aad;
-    background-color: #006bad2f;
-    font-size: 2.5vh;
-    width: 35vw;
-    height: 7vh;
+    background-color: #006badb3;
+    font-size: 1.8vh;
+    width: 26vw;
+    height: 5vh;
     transition: 1s ease-in-out;
     box-shadow: 2px 2px 10px #9e8461;
   }
@@ -2753,11 +2784,11 @@
     border-top: 1.3px solid #9e8461;
     border-right: 1.3px solid #9e8461;
     border-bottom: 1.3px solid #9e8461;
-    background: linear-gradient(#d6c09f6e, #9e84612c);
-    font-size: 2.5vh;
+    background: linear-gradient(#d6c09f71, #9e84612c);
+    font-size: 1.8vh;
     text-shadow: 2px 2px 5px black;
     text-decoration: none;
-    width: 35vw;
+    width: 25vw;
     height: 5vh;
     text-align: center;
     /* margin-left: 1.2vw; */
@@ -2769,13 +2800,13 @@
   
   a.Alink-hbutt2:hover, a.Alink-hbutt2:active {
     color: white;
-    background: linear-gradient(#d6c09fa0, #9e846159);
+    background: linear-gradient(#d6c09fa9, #9e846159);
     border-top: 1.3px solid #9e8461;
     border-right: 1.3px solid #9e8461;
     border-bottom: 1.3px solid #9e8461;
-    font-size: 2.5vh;
-    width: 35vw;
-    height: 6vh;
+    font-size: 1.8vh;
+    width: 26vw;
+    height: 5vh;
     transition: 1s ease-in-out;
     box-shadow: 2px 2px 4px black;
     box-shadow: 2px 2px 10px #006badb9;
@@ -2787,14 +2818,18 @@
     font-size: 8vh;
     color: #d6c09f;
     text-align: left;
-    line-height: 6vh;
+    line-height: 7vh;
     /* text-shadow: 2px 2px 2px black; */
-    padding-left: 1vw;
-    margin-top: 28vh;
+    padding-left: 0vw;
+    margin-left: -30vw;
+    margin-top: 50vh;
+    rotate: -90deg;
+    display: inline;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.42);
   }
 
   .code {
-    height: 119vh;
+    height: 180vh;
     background-color: white;
     padding-top: 0vh;
   }
@@ -2811,15 +2846,16 @@
     margin: auto;
     rotate: 0deg;
     height: 15vh;
-    width: 30vw;
+    width: 60vw;
     padding-left: 2vw;
     padding-top: 1.7vh;
+    display: none;
   }
   
   .code-head1 {
     font-family: "Courier Prime", serif;
     font-weight: 100;
-    font-size: 3.6vh;
+    font-size: 3.3vh;
     font-optical-sizing: auto;
     font-style: normal;
     color: black;
@@ -2830,24 +2866,25 @@
   .code-head2 {
     font-family: "Courier Prime", serif;
     font-weight: 300;
-    font-size: 8vh;
+    font-size: 7.8vh;
     color: #006aad;
-    margin-left: 0vw;
+    margin-left: 12vw;
     margin-top: -1vh;
   }
   
   .code-images {
-    width: 85vw;
+    width: 64vw;
     display: flex;
     flex-direction: row;
     margin-left: 4vw;
     margin-top: 0vh;
     justify-content: space-between;
+    z-index: 0;
   }
   
   .code-img1 {
     border: 2px solid #9e8461;
-    height: 9.8vh;
+    height: 7vh;
   }
   
   .code-img2 {
@@ -2855,21 +2892,22 @@
   }
   
   .code-i1 {
-    width: 50.7vw;
+    width: 58vw;
     filter: grayscale(100%);
   }
   
   .code-i2 {
-    height: 8vh;
-    margin-left: 14vw;
-    border-bottom: 3px solid #9e8461;
+    height: 6vh;
+    margin-left: 0vw;
+    border-bottom: 2px solid #9e8461;
+    opacity: 0.9;
     /* filter: grayscale(100%); */
     /* margin-top: -10vh; */
   }
   
   .code-body {
-    width: 98vw;
-    height: 100vh;
+    width: 99.9vw;
+    height: 179.6vh;
     background: linear-gradient(
       180deg,
       #006aad,
@@ -2877,9 +2915,8 @@
       black
     );
     align-self: self-end;
-    /* border-top: 2px solid #be0032; */
-    border-top: 3px solid #d6c09f;
-    border-bottom: 3px solid #d6c09f;
+    /* border-top: 2px solid #be0032;
+    border-bottom: 2px solid #d6c09f; */
   }
   
   .code-body-content {
@@ -2889,7 +2926,7 @@
   
   .code-body-text {
     width: 90vw;
-    height: 23vh;
+    height: 30vh;
     margin-top: 4vh;
     margin-left: 4vw;
   }
@@ -2897,7 +2934,7 @@
   .code-body-text-heading {
     font-family: "Roboto Mono", serif;
     color: #d6c09f;
-    font-size: 2.5vh;
+    font-size: 2.2vh;
     font-weight: 300;
     font-optical-sizing: auto;
     font-style: normal;
@@ -2913,21 +2950,25 @@
     font-style: normal;
     margin-top: 2vh;
     line-height: 2.6vh;
+    text-align: justify;
   }
   
   .codeicon, .fa-code {
-    color: #d6c09f;
+    color: #006aad;
     display: inline;
+    font-size: 1.3vh;
   }
   
   .code-body-grid {
-    width: 90vw;
-    height: 52vh;
-    margin-left: 4vw;
-    margin-top: 5vh;
+    width: 62vw;
+    height: 130vh;
+    margin: auto;
+    margin-left: 19vw;
+    margin-top: 6vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: scroll;
   }
   
   a.Alink-code:link, a.Alink-code:visited {
@@ -2959,7 +3000,7 @@
   }
   
   .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9, .code-grid-i10, .code-grid-i11, .code-grid-i12 /* image */{
-    width: 27vw;
+    width: 60vw;
     opacity: 1;
     display: block;
     height: auto;
@@ -3024,14 +3065,14 @@
   }
   
   .experience {
-    height: 125vh;
+    height: 120vh;
     background-color: white;
     padding-top: 3vh;
   }
   
   .exper-inner {
     margin: auto;
-    height: 120vh;
+    height: 112vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -3043,8 +3084,8 @@
   }
   
   .exper-inner-head1 {
-    width: 93vw;
-    height: 30vh;
+    width: 90vw;
+    height: 35vh;
     margin-top: 0vh;
     margin: auto;
     border-bottom: 1px solid #757575;
@@ -3052,7 +3093,7 @@
   }
   
   .exper-ih-txt {
-    font-size: 3.3vh;
+    font-size: 2.5vh;
     color: black;
     font-family: "Courier Prime", serif;
     font-optical-sizing: auto;
@@ -3066,13 +3107,13 @@
   .exper-span {
     color: black;
     font-weight: 500;
-    font-size: 3.6vh;
+    font-size: 2.8vh;
     font-family: "Courier Prime", serif;
     text-shadow: 2px 2px 7px #d6c09f;
   }
 
   .exper-span-red {
-    font-size: 2.2vh;
+    font-size: 2vh;
     color: #880000;
     font-family: "Courier Prime", serif;
     font-optical-sizing: auto;
@@ -3080,14 +3121,15 @@
     font-weight: 400;
     font-style: normal;
     text-align: right;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
   }
   
   .exper-ih-para {
     font-family: "Roboto Mono", serif;
-    font-size: 1.7vh;
+    font-size: 1.5vh;
     color: black;
     font-weight: 400;
+    line-height: 2.3vh;
     text-align: justify;
   }
 
@@ -3114,13 +3156,13 @@
   }
   
   .exper-inner-img {
-    height: 41.41vh;
+    height: 37vh;
     position: absolute;
   }
   
   .exper-inner-box {
     width: 94vw;
-    height: 84vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -3134,9 +3176,9 @@
     rotate: 0deg;
     display: inline;
     position: relative;
-    top: 79vh;
+    top: 72vh;
     margin: auto;
-    margin-top: 2vh;
+    margin-top: 0vh;
   }
   
   .slider {
@@ -3188,24 +3230,24 @@
   
   .exper-info-logo {
     width: 10vw;
-    height: 7vh;
+    height: 4.6vh;
   }
   
   .exper-info-txt {
-    width: 80vw;
+    width: 77vw;
     height: 30vh;
   }
   
   .exper-ift-heading {
     font-family: "Roboto Mono", serif;
-    font-size: 2.2vh;
+    font-size: 2vh;
     color: black;
     font-weight: 400;
   }
   
   .exper-ift-para {
     font-family: "Roboto Mono", serif;
-    font-size: 1.6vh;
+    font-size: 1.5vh;
     color: #006aad;
     font-weight: 300;
   }
@@ -3217,11 +3259,12 @@
   
   .exper-ift-para2 {
     font-family: "Roboto Mono", serif;
-    font-size: 1.5vh;
+    font-size: 1.4vh;
     color: black;
     font-weight: 300;
-    line-height: 2.7vh;
+    line-height: 2.2vh;
     text-align: justify;
+    width: 73vw;
   }
   
   a.Alink-exper:link,
@@ -3229,14 +3272,14 @@
     font-family: "Roboto Mono", serif;
     text-decoration: none;
     color: #006aad;
-    font-size: 1.6vh;
+    font-size: 1.4vh;
     font-weight: 400;
   }
   
   a.Alink-exper:hover,
   a.Alink-exper:active {
     color: #032b44;
-    font-size: 1.6vh;
+    font-size: 1.4vh;
     font-weight: 400;
     transition: 0.5s ease-out;
   }
@@ -3246,23 +3289,23 @@
   }
   
   .exper-cert {
-    margin-left: 0vw;
     margin: auto;
-    width: 69vw;
-    height: 59vh;
+    width: 90vw;
+    height: 55vh;
     display: flex;
     padding-left: 0vw;
   }
   
   .exper-cert-img {
-    height: 30vh;
+    height: 24vh;
+    margin-left: 0vw;
     align-self: center;
     transform: skewX(-10deg);
     box-shadow: 2px 2px 20px black;
   }
   
   .exper-cert-img:hover {
-    height: 35vh;
+    height: 29.5vh;
     align-self: center;
     transform: skewX(0deg);
     box-shadow: 2px 2px 20px black;
@@ -3270,13 +3313,13 @@
   }
   
   .featured-projects {
-    height: 133vh;
+    height: 125vh;
     background-color: black;
   }
   
   .featured-inner {
     width: 94vw;
-    height: 140vh;
+    height: 120vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -3294,8 +3337,8 @@
     font-optical-sizing: auto;
     font-style: normal;
     color: white;
-    font-size: 8vh;
-    line-height: 6vh;
+    font-size: 5vh;
+    line-height: 5vh;
     font-weight: 300;
     text-align: center;
   }
@@ -3304,7 +3347,9 @@
     font-family: "Roboto Mono", serif;
     color: rgb(206, 206, 206);
     text-align: center;
-    font-size: 2.4vh;
+    font-size: 1.8vh;
+    width: 80vw;
+    margin: auto;
   }
   
   .featured-body {
@@ -3335,7 +3380,7 @@
   }
   
   .ftb1, .ftb2, .ftb3, .ftb4, .ftb5 {
-    width: 80vw;
+    width: 77vw;
     height: 75vh;
     display: flex;
     flex-direction: column;
@@ -3345,15 +3390,15 @@
     margin-left: 0vw;
     margin: auto;
     border-radius: 0vh;
-    border: 1px solid white;
+    border: 2px solid white;
     background: linear-gradient(white, whitesmoke, #d6c09f);
     position: relative;
     z-index: 0;
   }
   
   .ftb1-deets {
-    width: 73vw;
-    height: 30vh;
+    width: 70vw;
+    height: 27vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -3361,12 +3406,12 @@
   }
   
   .ftb1-preview {
-    width: 80vw;
-    height: 40vh;
+    width: 76vw;
+    height: 44vh;
     position: absolute;
     z-index: 1;
     left: 0vw;
-    top: 35vh;
+    top: 31vh;
     display: flex;
     flex-direction: column;
     background-color: #9e84610c;
@@ -3374,31 +3419,32 @@
   }
 
   .ftb1-preview:hover {
-    width: 80vw;
-    height: 78vh;
+    width: 76vw;
+    height: 50vh;
     position: absolute;
     z-index: 1;
     left: 0vw;
-    top: -3vh;
-    transition: 0.5s ease-in-out;
-    background-color: #9e84613c;
-    box-shadow: 2px 2px 15px #9e8461;
+    top: 24.5vh;
+    transition: 0.7s ease-in-out;
+    background: linear-gradient(#d6c09f4d, #d6c09f90, #d6c09f, #9e8461, black);
+    box-shadow: 2px 2px 15px black;
   }
   
   a.Alink-preview:link, a.Alink-preview:active {
-    height: 30vh;
+    height: 16.8vh;
   }
+
   a.Alink-preview:hover, a.Alink-preview:visited {
-    height: 33vh;
+    height: 16.8vh;
   }
   
   .preview-scnsht {
-    height: 25vh;
+    height: 14.5vh;
     box-shadow: 2px 2px 2px #d6c09f23;
   }
 
   .preview-scnsht2 {
-    height: 28vh;
+    height: 16.3vh;
     box-shadow: 2px 2px 2px #d6c09f23;
   }
 
@@ -3406,41 +3452,41 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 20vh;
-    width: 27vw;
+    height: 16vh;
+    width: 50vw;
   }
   
   .ftb1-head-logo {
     width: 30vw;
-    height: 10vh;
+    height: 8vh;
     padding-top: 1.5vh;
   }
   
   .ftb1-head-logo-img {
-    height: 7vh;
+    height: 5vh;
   }
 
   .ftb2-head-logo-img {
-    height: 7vh;
+    height: 5vh;
   }
 
   .ftb3-head-logo-img {
-    height: 6vh;
+    height: 4vh;
   }
 
   .ftb4-head-logo-img {
-    height: 8vh;
+    height: 6vh;
   }
 
   .ftb5-head-logo-img {
-    height: 4vh;
+    height: 3vh;
   }
   
   .ftb1-head-deets {
-    width: 30vw;
+    width: 45vw;
     display: flex;
     flex-direction: column;
-    height: 6vh;
+    height: 5vh;
     justify-content: space-between;
     margin-left: 0vw;
   }
@@ -3449,7 +3495,7 @@
     width: 35vw;
     display: flex;
     flex-direction: column;
-    height: 9vh;
+    height: 6vh;
     justify-content: space-between;
     margin-left: 0vw;
   }
@@ -3464,7 +3510,7 @@
   
   .fhd-tools {
    display: flex;
-   width: 26vw;
+   width: 43vw;
    justify-content: space-between;
   }
   
@@ -3477,7 +3523,7 @@
     border-radius: 2vh;
     font-size: 1vh;
     box-shadow: 2px 2px 8px #9e8461;
-    padding: 6px 10px 2px 10px; /*top, right, bottom, left */
+    padding: 3px 10px 2px 10px; /*top, right, bottom, left */
     cursor: pointer;
   }
   
@@ -3490,7 +3536,7 @@
     border-radius: 2vh;
     font-size: 1vh;
     box-shadow: 2px 2px 8px #9e8461;
-    padding: 6px 10px 2px 10px;
+    padding: 3px 10px 2px 10px;
     cursor: pointer;
   }
   
@@ -3503,53 +3549,55 @@
     border-radius: 2vh;
     font-size: 1vh;
     box-shadow: 2px 2px 8px #9e8461;
-    padding: 6px 10px 2px 10px;
+    padding: 3px 10px 2px 10px;
     cursor: pointer;
   }
   
   .fhd-para-timeline {
     font-family: "Roboto Mono", serif;
-    color: black;
-    font-size: 1.5vh;
+    color: #626262;
+    font-size: 1.3vh;
     padding-left: 0.5vw;
   }
   
   .ftb1-devices {
     display: flex;
+    flex-direction: column;
     border: 0.1px solid #9e8461;
-    background: linear-gradient(black, rgba(0, 0, 0, 0.47));
+    background: linear-gradient(rgba(0, 0, 0, 0.486), #d6c09f37);
     width: 50vw;
-    height: 3vh;
-    border-radius: 5vw; 
+    height: 14vh;
+    border-radius: 3vw; 
     padding: 5px;
     margin-top: 0vh;
     margin: auto;
-    box-shadow: 2px 2px 2px #9e846149;
+    box-shadow: 2px 2px 2px #69574069;
     justify-content: space-between;
   }
   
   .ftb1-devices-desk {
-    width: 10vw;
+    width: 40vw;
     display: flex;
+    justify-content: space-between;
     margin: auto;
     cursor: pointer;
   }
   
   .ftb1-devices-mobile {
-    width: 13vw;
+    width: 40vw;
     border-left: 0.5px solid #626262;
     display: flex;
+    justify-content: space-between;
     margin: auto;
-    margin-left: 1vw;
     cursor: pointer;
-  }
+  } 
   
   .ftb1-devices-iPad {
-    width: 9vw;
+    width: 40vw;
     border-left: 0.5px solid #626262;
     display: flex;
+    justify-content: space-between;
     margin: auto;
-    margin-left: 1vw;
     cursor: pointer;
   }
   
@@ -3570,21 +3618,21 @@
 
   .ftb-name {
     color: black;
-    font-size: 3vh;
+    font-size: 2vh;
     font-weight: 100;
   }
   
   .ftb1-para {
     font-family: "Roboto Mono", serif;
     color: black;
-    font-size: 1.6vh;
+    font-size: 1.3vh;
     text-align: left;
     display: block;
   }
   
   .ftb1-info {
-    height: 7vh;
-    width: 77vw;
+    height: 6vh;
+    width: 76vw;
     display: flex;
     margin: auto;
   }
@@ -3593,12 +3641,12 @@
     color: white;
     border: 1px solid #9e8461;
     background: linear-gradient(#d6c09f35, #9e84619b);
-    font-size: 1.8vh;
+    font-size: 1.2vh;
     text-decoration: none;
-    width: 30vw;
+    width: 34vw;
     height: 4vh;
     text-align: center;
-    padding-top: 1.1vh;
+    align-content: center;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -3608,7 +3656,7 @@
     color: white;
     border: 1px solid #9e8461;
     background-color: #63523c4c;
-    font-size: 1.8vh;
+    font-size: 1.2vh;
     width: 34vw;
     height: 4vh;
     transition: 1s ease-in-out;
@@ -3619,13 +3667,13 @@
     color: white;
     /* border: 1px solid #be0032; */
     background: #006aad;
-    font-size: 1.8vh;
+    font-size: 1.2vh;
     text-decoration: none;
-    width: 30vw;
+    width: 34vw;
     height: 4vh;
     margin: auto;
     text-align: center;
-    padding-top: 1.1vh;
+    align-content: center;
     /* margin-left: 1.2vw; */
     display: flex;
     justify-content: space-evenly;
@@ -3634,7 +3682,7 @@
   a.Alink-feat2:hover, a.Alink-feat2:active {
     color: white;
     background: #032b44;
-    font-size: 1.8vh;
+    font-size: 1.2vh;
     width: 34vw;
     height: 4vh;
     transition: 1s ease-in-out;
@@ -3651,21 +3699,21 @@
     margin-top: -22px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 50%;
     user-select: none;
     z-index: 2;
   }
   
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 50%;
   }
   
   .prev:hover,
   .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #006bad45;
   }
   
   .dots {
@@ -3676,8 +3724,8 @@
   
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 13px;
+    width: 13px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -3694,7 +3742,7 @@
     .prev,
     .next,
     .text {
-      font-size: 11px;
+      font-size: 15px;
     }
   }
   
@@ -3722,7 +3770,7 @@
     background-image: url("images/Untitled\ design\ -\ 7.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x: 100%;
+    background-position-x: 25%;
     background-position-y: 5%;
     background-size: cover;
     background-origin: padding-box;
@@ -3761,13 +3809,13 @@
   
   .solid2 {
     color: white;
-    font-size: 7vh;
+    font-size: 6vh;
     padding-left: 3vw;
   }
   
   .cic-heading {
     color: #006aad;
-    font-size: 5vh;
+    font-size: 3.8vh;
     text-align: center;
     font-weight: 500;
     line-height: 5vh;
@@ -3776,7 +3824,7 @@
   
   .cic-buttons {
     height: 10vh;
-    width: 60vw;
+    width: 70vw;
     display: flex;
     justify-content: space-around;
     z-index: 4;
@@ -3785,7 +3833,7 @@
   
   a.cic-email:link, a.cic-email:visited {
     height: 5vh;
-    width: 20vw;
+    width: 25vw;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -3795,7 +3843,7 @@
     cursor: pointer;
     color: black;
     font-weight: 300;
-    font-size: 2vh;
+    font-size: 1.8vh;
     justify-content: center;
     z-index: 4;
   }
@@ -3803,7 +3851,7 @@
   a.cic-email:hover, a.cic-email:active {
     background-color: #d6c09f;
     height: 5vh;
-    width: 25vw;
+    width: 30vw;
     text-decoration: none;
   }
   
@@ -3811,7 +3859,7 @@
     background-color: black;
     border-bottom: 1.5px solid white;
     height: 5vh;
-    width: 20vw;
+    width: 25vw;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -3819,13 +3867,13 @@
     cursor: pointer;
     color: white;
     font-weight: 300;
-    font-size: 2vh;
+    font-size: 1.8vh;
     justify-content: center;
   }
   
   a.cic-WA:hover, a.cic-WA:active {
     height: 5vh;
-    width: 25vw;
+    width: 30vw;
     background-color: green;
   }
   
@@ -3844,7 +3892,7 @@
   
   .cis1-para {
     color: white;
-    font-size: 1.5vh;
+    font-size: 1vh;
     font-weight: 200;
   }
   
@@ -3853,7 +3901,7 @@
   }
   
   a.Alink-socials:link, a.Alink-socials:visited {
-    font-size: 1.5vh;
+    font-size: 1vh;
     color: white;
     text-decoration: none;
     cursor: pointer;
