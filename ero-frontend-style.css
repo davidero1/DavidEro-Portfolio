@@ -79,6 +79,7 @@
     height: 92vh;
     width: 29vw;
     margin-right: 2vw;
+    margin-left: 40vw;
     margin-top: 2vh;
   }
   
@@ -1351,9 +1352,14 @@
   
     .navbox {
       height: 95vh;
-      width: 40vw;
-      margin-right: 3vw;
+      width: 45vw;
+      margin-right: 0vw;
       margin-top: 2vh;
+      margin-left: -20vw;
+    }
+
+    .barsicon {
+      display: none;
     }
     
     .navul {
@@ -1405,14 +1411,14 @@
     }
   
     .hero-buttons {
-      height: 16vh;
+      height: 15vh;
       width: 38vw;
       display: flex;
       flex-direction: column;
       margin: auto;
       padding-left: 1.5vw;
-      margin-top: 58vh;
-      margin-left: -58vw; /* remove this to keep the buttons on the right*/
+      margin-top: 50vh;
+      margin-left: 0vw; /* remove this to keep the buttons on the right*/
     }
     
     a.Alink-hbutt1:link, a.Alink-hbutt1:visited {
@@ -1483,7 +1489,7 @@
     h1 {
       font-family: "Courier Prime", serif;
       font-weight: 100;
-      font-size: 8vh;
+      font-size: 7.7vh;
       color: #d6c09f;
       text-align: left;
       line-height: 6vh;
@@ -2654,20 +2660,19 @@
   }
 
   .navbox {
-    height: 40vh;
-    width: 34vw;
+    height: 50vh;
+    width: 40vw;
     margin-top: 2vh;
-    margin-left: -10vw;
+    margin-left: -20vw;
     list-style: none;
     display: flex;
-    display: none;
     flex-direction: column;
     margin-right: 8vw;
     position: relative;
     z-index: 2;
     border-radius: 1vw;
     background-color: rgba(3, 3, 3, 0.038);
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.453);
   }
 
   .navbox .show {
@@ -2730,6 +2735,7 @@
     margin-top: 2vh;
     height: 5vh;
     width: 10vw;
+    z-index: 3;
   }
 
   .fa-solid {
@@ -2821,7 +2827,7 @@
     line-height: 7vh;
     /* text-shadow: 2px 2px 2px black; */
     padding-left: 0vw;
-    margin-left: -30vw;
+    margin-left: -25vw;
     margin-top: 50vh;
     rotate: -90deg;
     display: inline;
@@ -2829,7 +2835,7 @@
   }
 
   .code {
-    height: 180vh;
+    height: 185vh;
     background-color: white;
     padding-top: 0vh;
   }
@@ -2845,31 +2851,37 @@
     margin-left: 0vw;
     margin: auto;
     rotate: 0deg;
-    height: 15vh;
-    width: 60vw;
-    padding-left: 2vw;
+    height: 8vh;
+    width: 50vw;
+    padding-left: 0vw;
     padding-top: 1.7vh;
+    position: sticky;
+    top: 10vh;
+    z-index: 0;
+    display: flex;
     display: none;
   }
   
   .code-head1 {
     font-family: "Courier Prime", serif;
     font-weight: 100;
-    font-size: 3.3vh;
+    font-size: 2.3vh;
     font-optical-sizing: auto;
     font-style: normal;
-    color: black;
+    color: rgba(0, 0, 0, 0.3);
     padding-top: 1vh;
     padding-left: 0vw;
+    z-index: 0;
   }
   
   .code-head2 {
     font-family: "Courier Prime", serif;
     font-weight: 300;
-    font-size: 7.8vh;
-    color: #006aad;
-    margin-left: 12vw;
+    font-size: 6.7vh;
+    color: #006bada3;
+    margin-left: 1vw;
     margin-top: -1vh;
+    z-index: 0;
   }
   
   .code-images {
@@ -2907,7 +2919,7 @@
   
   .code-body {
     width: 99.9vw;
-    height: 179.6vh;
+    height: 180vh;
     background: linear-gradient(
       180deg,
       #006aad,
@@ -2922,6 +2934,7 @@
   .code-body-content {
     width: 62.6vw;
     height: 126vh;
+    z-index: 5;
   }
   
   .code-body-text {
@@ -2929,6 +2942,7 @@
     height: 30vh;
     margin-top: 4vh;
     margin-left: 4vw;
+    z-index: 6;
   }
   
   .code-body-text-heading {
@@ -2939,6 +2953,8 @@
     font-optical-sizing: auto;
     font-style: normal;
     padding-top: 1vh;
+    position: absolute;
+    z-index: 4;
   }
   
   .code-body-text-para {
@@ -2948,9 +2964,17 @@
     font-weight: 300;
     font-optical-sizing: auto;
     font-style: normal;
-    margin-top: 2vh;
+    top: 7vh;
     line-height: 2.6vh;
     text-align: justify;
+    position: relative;
+    z-index: 4;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .really {
+    display: inline;
   }
   
   .codeicon, .fa-code {
@@ -3758,7 +3782,7 @@
   }
   
   .connect {
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     background-color: black;
     z-index: -1;
@@ -3766,7 +3790,7 @@
   }
   
   .connect-inner {
-    height: 90vh;
+    height: 80vh;
     background-image: url("images/Untitled\ design\ -\ 7.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -3783,7 +3807,7 @@
   }
   
   .connect-overlay {
-    height: 90vh;
+    height: 80vh;
     width: 99.8vw;
     z-index: 1;
     background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, 0.279), rgba(0, 0, 0, 0.463), black);
@@ -3884,6 +3908,7 @@
     display: flex;
     justify-content: space-between;
     z-index: 3;
+    margin-top: 15vh;
   }
   
   .cis1 {
