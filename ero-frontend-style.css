@@ -2893,14 +2893,14 @@
     display: flex;
     flex-direction: row;
     margin-left: 4vw;
-    margin-top: 0vh;
+    margin-top: -3vh;
     justify-content: space-between;
     z-index: 0;
   }
   
   .code-img1 {
     border: 2px solid #9e8461;
-    height: 7vh;
+    height: 7.1vh;
   }
   
   .code-img2 {
@@ -3326,7 +3326,7 @@
   
   .exper-cert-img {
     height: 24vh;
-    margin-left: 0vw;
+    margin-left: 2vw;
     align-self: center;
     transform: skewX(-10deg);
     box-shadow: 2px 2px 20px black;
