@@ -228,7 +228,7 @@
   }
   
   .code-title {
-    display: inline;
+    display: none;
     margin-top: 60vh;
     rotate: 270deg;
     height: 30vh;
@@ -254,10 +254,10 @@
   }
   
   .code-images {
-    width: 94vw;
+    width: 50vw;
     margin: auto;
     display: flex;
-    margin-left: -31.3vw;
+    margin-left: 3vw;
     margin-top: 6vh;
     justify-content: space-between;
   }
@@ -274,16 +274,18 @@
   .code-i1 {
     width: 45vw;
     filter: grayscale(100%);
+    box-shadow: 2px 2px 15px black;
   }
   
   .code-i2 {
     height: 20vh;
+    opacity: 0.9;
     /* filter: grayscale(100%); */
     /* margin-top: -10vh; */
   }
   
   .code-body {
-    width: 80vw;
+    width: 99.8vw;
     height: 170vh;
     background: linear-gradient(
       180deg,
@@ -303,7 +305,7 @@
   }
   
   .code-body-text {
-    width: 60vw;
+    width: 93vw;
     height: 23vh;
     margin-top: 6vh;
     margin-left: 3vw;
@@ -336,7 +338,7 @@
   }
   
   .code-body-grid {
-    width: 59.5vw;
+    width: 86vw;
     height: 95vh;
     margin-left: 3vw;
     margin-top: 3vh;
@@ -355,7 +357,7 @@
   
   a.Alink-code:hover, a.Alink-code:active {
     font-family: "Roboto Mono", serif;
-    font-size: 2.5vh;
+    font-size: 2.3vh;
     font-weight: 500;
     color: #d6c09f;
     transition: 1s ease-in-out;
@@ -2660,14 +2662,14 @@
   }
 
   .navbox {
-    height: 50vh;
+    height: 44vh;
     width: 40vw;
     margin-top: 2vh;
     margin-left: -20vw;
     list-style: none;
     display: flex;
     flex-direction: column;
-    margin-right: 5vw;
+    margin-right: 1vw;
     position: relative;
     z-index: 2;
     border-radius: 1vw;
@@ -2697,7 +2699,7 @@
     text-decoration: none;
     font-size: 1.5vh;
     font-weight: 300;
-    text-align: center;
+    text-align: right;
     line-height: 5vh;
   }
   
@@ -2708,7 +2710,7 @@
     text-decoration: none;
     text-decoration: none;
     font-size: 1.5vh;
-    text-align: center;
+    text-align: right;
     line-height: 3vh;
   }
   
@@ -2751,7 +2753,8 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 0vh;
+    margin-top: 5vh;
+    margin-left: -50vw;
   }
   
   a.Alink-hbutt1:link, a.Alink-hbutt1:visited {
@@ -2764,7 +2767,7 @@
     font-size: 1.8vh;
     text-shadow: 2px 2px 5px black;
     text-decoration: none;
-    width: 25vw;
+    width: 30vw;
     height: 5vh;
     text-align: center;
     display: flex;
@@ -2780,7 +2783,7 @@
     border-bottom: 1px solid #006aad;
     background-color: #006badb3;
     font-size: 1.8vh;
-    width: 26vw;
+    width: 30vw;
     height: 5vh;
     transition: 1s ease-in-out;
     box-shadow: 2px 2px 10px #9e8461;
@@ -2795,7 +2798,7 @@
     font-size: 1.8vh;
     text-shadow: 2px 2px 5px black;
     text-decoration: none;
-    width: 25vw;
+    width: 30vw;
     height: 5vh;
     text-align: center;
     /* margin-left: 1.2vw; */
@@ -2812,7 +2815,7 @@
     border-right: 1.3px solid #9e8461;
     border-bottom: 1.3px solid #9e8461;
     font-size: 1.8vh;
-    width: 26vw;
+    width: 30vw;
     height: 5vh;
     transition: 1s ease-in-out;
     box-shadow: 2px 2px 4px black;
@@ -3006,7 +3009,7 @@
   
   a.Alink-code:hover, a.Alink-code:active {
     font-family: "Roboto Mono", serif;
-    font-size: 1.6vh;
+    font-size: 1.5vh;
     font-weight: 500;
     color: #d6c09f;
     transition: 1s ease-in-out;
@@ -3070,7 +3073,7 @@
   .code-grid-img11:hover .code-grid-i11,
   .code-grid-img12:hover .code-grid-i12 {
     opacity: 0.3;
-    width: 20vw;
+    width: 65vw;
     box-shadow: 5px 10px 10px black;
   }
   
