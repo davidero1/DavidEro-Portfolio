@@ -35,7 +35,7 @@
 
   .frontend-hero {
     height: 100vh;
-    background-image: url("images/Untitled\ design\ -\ 2.png");
+    background-image: url("images/Untitled\ design\ -\ 7.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position-x: 100%;
@@ -63,15 +63,15 @@
   
   .logobox1b {
     display: block;
-    margin-top: -4vh;
+    margin-top: -2vh;
   }
   
   .logo1a {
-    height: 10vh;
+    height: 7vh;
   }
   
   .logo1b {
-    height: 17vh;
+    height: 12vh;
     margin-left: 0.5vw;
   }
 
@@ -217,8 +217,25 @@
     margin-top: 47vh;
   }
 
+  .herotitle {
+    font-size: 25vh;
+    color: rgba(255, 255, 255, 0.33);
+    position: absolute;
+    margin: auto;
+    align-self: center;
+    font-weight: 100;
+    left: 18vw;
+    top: 35vh;
+    text-shadow: 2px 2px 6px black;
+  }
+
+  .herotitlemin {
+    font-size: 5vh;
+    color: white;
+  }
+
   .code {
-    height: 180vh;
+    height: 474vh;
     background-color: white;
     padding-top: 0vh;
   }
@@ -258,7 +275,7 @@
     margin: auto;
     display: flex;
     margin-left: 3vw;
-    margin-top: 6vh;
+    margin-top: -3vh;
     justify-content: space-between;
   }
   
@@ -268,7 +285,7 @@
   }
   
   .code-img2 {
-  
+    padding-top: 3vh;
   }
   
   .code-i1 {
@@ -279,29 +296,28 @@
   
   .code-i2 {
     height: 20vh;
-    opacity: 0.9;
-    /* filter: grayscale(100%); */
+    opacity: 1;
+    filter: grayscale(100%);
     /* margin-top: -10vh; */
   }
   
   .code-body {
-    width: 99.8vw;
-    height: 170vh;
+    width: 100%;
+    height: 470vh;
     background: linear-gradient(
       180deg,
       #006aad,
       #032b44,
       black
     );
-    align-self: self-end;
     /* border-top: 2px solid #be0032; */
     border-left: 2px solid #9e8461;
     border-bottom: 2px solid #d6c09f;
   }
   
   .code-body-content {
-    width: 62.6vw;
-    height: 126vh;
+    width: 100%;
+    height: 460vh;
   }
   
   .code-body-text {
@@ -336,7 +352,185 @@
     color: #d6c09f;
     display: inline;
   }
+
+   
+  a.Alink-code:link, a.Alink-code:visited {
+    color: #d6c09f;
+    font-family: "Roboto Mono", serif;
+    font-size: 2.2vh;
+    font-weight: 500;
+    text-decoration: none;
+  }
   
+  a.Alink-code:hover, a.Alink-code:active {
+    font-family: "Roboto Mono", serif;
+    font-size: 2.3vh;
+    font-weight: 500;
+    color: #d6c09f;
+    transition: 1s ease-in-out;
+    text-shadow: 2px 2px 5px #9e8461;
+  }
+  
+
+  .projects {
+    height: 400vh;
+    display: flex;
+    flex-direction: column;
+    /*
+    background-image: url("images/IMG_0214.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 100%;
+    background-position-y: 40%;
+    background-size: cover;
+    background-origin: padding-box;
+    object-fit: cover;
+    object-position: 100% 100%;*/
+  }
+  
+  .projects1 {
+    height: 401vh;
+    padding-top: 4vh;
+  }
+  
+  .projects-heading-bold {
+    color: #006badb4;
+    font-size: 10vh;
+    font-weight: 200;
+    position: relative;
+    top: 35vh;
+    margin-left: 3vw;
+    position: sticky;
+    z-index: 0;
+    letter-spacing: -0.3vw;
+    text-shadow: 2px 2px 6px black;
+  }
+  
+  .projects-heading-para {
+    color: white;
+    font-size: 2vh;
+    text-align: left;
+    position: relative;
+    position: sticky;
+    top: 50vh;
+    margin-left: 4vw;
+  }
+  
+  .projects-logo {
+    height: 15vh;
+    position: relative;
+    margin-top: 10vh;
+    position: sticky;
+    z-index: 0;
+    margin-left: 89vw;
+    top: 75vh;
+  }
+  
+  .projects2 {
+    height: 358vh;
+    z-index: 2;
+    background: linear-gradient(#006bad04,#006bad27, #006bad2e, #006bad20, #032b4471, #032b4471, #032b449a, black);
+    position: relative;
+    bottom: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0vh;
+  }
+  
+  .project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8 {
+    width: 34.9vw;
+    height: 32.9vh;
+    margin: auto;
+    position: relative;
+    box-shadow: 1px 1px 4px black;
+  }
+  
+  .project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover, .project7:hover, .project8:hover {
+    width: 34.9vw;
+    height: 32.9vh;
+    margin: auto;
+    position: relative;
+    transition: 0.7s ease-in-out;
+    transform: scale(1.2,1.2);
+  }
+  
+  /* image */
+  .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8 {
+    opacity: 1;
+    display: block;
+    height: 32.9vh;
+    width: 34.9vw;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  /* what happens when the div and image are hovered */
+  .project1:hover, .code-grid-i1, .project2:hover, .code-grid-i2, .project3:hover, .code-grid-i3, .project4:hover, .code-grid-i4, .project5:hover, .code-grid-i5, .project6:hover, .code-grid-i6, .project7:hover, .code-grid-i7, .project8:hover, .code-grid-i8 {
+    opacity: 0.9;
+    box-shadow: 5px 10px 10px black;
+  }
+  
+  /* to show the text when the div is hovered */
+  .project1:hover .code-grid-img-txt, .project2:hover .code-grid-img-txt, .project3:hover .code-grid-img-txt, .project4:hover .code-grid-img-txt, .project5:hover .code-grid-img-txt, .project6:hover .code-grid-img-txt, .project7:hover .code-grid-img-txt, .project8:hover .code-grid-img-txt {
+    opacity: 1;
+  }
+  
+  /*
+  a.Alink-grid:link, a.Alink-grid:visited {}
+  a.Alink-grid:hover, a.Alink-grid:active {} */
+  
+  .code-grid-img-txt /* text div*/ {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  .cgi-txt {
+    font-size: 7vh;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+  }
+  
+  .fa-brands {
+    font-size: 3vh;
+    color: #006aad;
+  }
+  
+  .shiftright {
+    left: 13vw;
+  }
+  
+  .shiftleft {
+    right: 18vw;
+  }
+  
+  .moreprojectslink {
+    height: 5vh;
+    width: 15vw;
+    position: relative;
+    left: 70vw;
+    bottom: 0vh;
+  }
+  
+  a.Alink-moreprojects:link, a.Alink-moreprojects:visited {
+    font-size: 2.8vh;
+    text-decoration: none;
+    color: #d6c09f;
+  }
+  
+  a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
+    font-size: 2.8vh;
+    text-decoration: none;
+    color: #9e8461;
+  }
+  
+  
+  /*
   .code-body-grid {
     width: 86vw;
     height: 95vh;
@@ -369,11 +563,13 @@
     justify-content: space-between;
   }
   
-  .code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9, .code-grid-img10, .code-grid-img11, .code-grid-img12 /* container */{
+  .code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9, .code-grid-img10, .code-grid-img11, .code-grid-img12 /* container */
+  
+  /* {
     position: relative;
   } 
   
-  .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9, .code-grid-i10, .code-grid-i11, .code-grid-i12 /* image */{
+  .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9, .code-grid-i10, .code-grid-i11, .code-grid-i12 /* image */ /* {
     width: 18.5vw;
     opacity: 1;
     display: block;
@@ -390,7 +586,7 @@
     width: 18.5vw;
   }
   
-  .code-grid-img-txt /* middle*/ {
+  .code-grid-img-txt /* middle*/ /* {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -437,11 +633,13 @@
   .code-grid-img12:hover .code-grid-img-txt {
     opacity: 1;
   }
+  */
   
   .experience {
     height: 120vh;
     background-color: white;
     padding-top: 8vh;
+    border: 2px solid white;
   }
   
   .exper-inner {
@@ -681,7 +879,7 @@
   
   .featured-projects {
     height: 150vh;
-    background-color: black;
+    background-color: white;
   }
   
   .featured-inner {
@@ -703,7 +901,7 @@
     font-family: "Courier Prime", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: white;
+    color: black;
     font-size: 8vh;
     font-weight: 300;
     text-align: center;
@@ -711,7 +909,7 @@
   
   .feat-para {
     font-family: "Roboto Mono", serif;
-    color: rgb(206, 206, 206);
+    color: rgb(88, 88, 88);
     text-align: center;
     font-size: 2.4vh;
   }
@@ -1056,7 +1254,7 @@
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -1072,7 +1270,7 @@
   
   .prev:hover,
   .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #006bad72;
   }
   
   .dots {
@@ -1094,7 +1292,7 @@
   
   .active,
   .dot:hover {
-    background-color: #be0032;
+    background-color: #006aad;
   }
   
   @media only screen and (max-width: 500px) {
@@ -1119,14 +1317,17 @@
   .connect {
     height: 90vh;
     width: 100%;
-    background-color: black;
-    z-index: -1;
-    position: relative;
+    background-color: white;
+    z-index: -1; 
   }
   
   .connect-inner {
     height: 90vh;
-    background-image: url("images/Untitled\ design\ -\ 7.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-image: url("images/david\ ero.png.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: 100%;
@@ -1135,35 +1336,35 @@
     background-origin: padding-box;
     object-fit: cover;
     object-position: 100% 100%;
-    display: flex;
-    flex-direction: column;
     border-top-left-radius: 10vw;
     border-top-right-radius: 10vw;
+    z-index: 0;
   }
   
+  /*
   .connect-overlay {
     height: 90vh;
     width: 99.8vw;
     z-index: 1;
     background: linear-gradient(rgba(0, 0, 0, 0.955), rgba(0, 0, 0, 0.279), rgba(0, 0, 0, 0.463), black);
-    position: absolute;
-    top: 0;
+    position: relative;
     left: 0;
     border-top-left-radius: 10vw;
     border-top-right-radius: 10vw;
-  }
+  } */
   
   .connect-inner-cta {
-    position: relative;
+    position: absolute;
     height: 40vh;
     width: 60vw;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 3;
     align-items: center;
-    margin-top: 15vh;
+    top: 15vh;
+    z-index: 3;
+    left: 20vw;
   }
   
   .solid2 {
@@ -1173,7 +1374,7 @@
   }
   
   .cic-heading {
-    color: #006aad;
+    color: white;
     font-size: 6vh;
     text-align: center;
     font-weight: 500;
@@ -1186,7 +1387,6 @@
     width: 35vw;
     display: flex;
     justify-content: space-around;
-    z-index: 4;
     position: relative;
   }
   
@@ -1198,25 +1398,27 @@
     align-items: center;
     text-align: center;
     background-color: white;
-    border-bottom: 1.5px solid black;
+    border-bottom: 2px solid #006aad;
     cursor: pointer;
     color: black;
     font-weight: 300;
     font-size: 2.3vh;
     justify-content: center;
-    z-index: 4;
   }
   
   a.cic-email:hover, a.cic-email:active {
-    background-color: #d6c09f;
+    background-color: #032b446f;
+    border: 2px solid #006aad;
+    color: white;
     height: 8vh;
     width: 15vw;
     text-decoration: none;
+    transition: 0.5s ease-in-out;
   }
   
   a.cic-WA:link, a.cic-WA:visited {
     background-color: black;
-    border-bottom: 1.5px solid white;
+    border-bottom: 2px solid greenyellow;
     height: 8vh;
     width: 12vw;
     text-decoration: none;
@@ -1232,7 +1434,9 @@
   
   a.cic-WA:hover, a.cic-WA:active {
     width: 15vw;
-    background-color: green;
+    border: 2px solid greenyellow;
+    background-color: rgba(0, 48, 0, 0.292);
+    transition: 0.5s ease-in-out;
   }
   
   .connect-inner-socials {
@@ -1241,7 +1445,9 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    z-index: 3;
+    position: absolute;
+    top: 83vh;
+    left: 5vw;
   }
   
   .cis1 {
@@ -1266,7 +1472,9 @@
   }
   
   a.Alink-socials:hover, a.Alink-socials:active {
-    color: #be0032;
+    color: #006aad;
+    font-size: 2.7vh;
+    transition: 0.5s ease-in-out;
   }
 
   /* TABLET SCREEN */
@@ -1312,10 +1520,10 @@
   
     .frontend-hero {
       height: 100vh;
-      background-image: url("images/Untitled\ design\ -\ 2.png");
+      background-image: url("images/Untitled\ design\ -\ 7.png");
       background-repeat: no-repeat;
       background-attachment: scroll;
-      background-position-x: 30%;
+      background-position-x: 80%;
       background-position-y: 100%;
       background-size: cover;
       background-origin: padding-box;
@@ -1419,7 +1627,7 @@
       flex-direction: column;
       margin: auto;
       padding-left: 1.5vw;
-      margin-top: 50vh;
+      margin-top: 60vh;
       margin-left: 0vw; /* remove this to keep the buttons on the right*/
     }
     
@@ -1429,7 +1637,7 @@
       border-top: 1px solid #006aad;
       border-left: 1px solid #006aad;
       border-bottom: 1px solid #006aad;
-      background-color: #006bad2f;
+      background-color: #006bad92;
       font-size: 2.5vh;
       text-shadow: 2px 2px 5px black;
       text-decoration: none;
@@ -1460,7 +1668,7 @@
       border-top: 1.3px solid #9e8461;
       border-right: 1.3px solid #9e8461;
       border-bottom: 1.3px solid #9e8461;
-      background: linear-gradient(#d6c09f6e, #9e84612c);
+      background: linear-gradient(#d6c09fba, #9e846174);
       font-size: 2.5vh;
       text-shadow: 2px 2px 5px black;
       text-decoration: none;
@@ -1476,7 +1684,7 @@
     
     a.Alink-hbutt2:hover, a.Alink-hbutt2:active {
       color: white;
-      background: linear-gradient(#d6c09fa0, #9e846159);
+      background: linear-gradient(#d6c09fc6, #9e84619b);
       border-top: 1.3px solid #9e8461;
       border-right: 1.3px solid #9e8461;
       border-bottom: 1.3px solid #9e8461;
@@ -1491,17 +1699,36 @@
     h1 {
       font-family: "Courier Prime", serif;
       font-weight: 100;
-      font-size: 7.7vh;
+      font-size: 9vh;
       color: #d6c09f;
       text-align: left;
       line-height: 6vh;
       /* text-shadow: 2px 2px 2px black; */
       padding-left: 1vw;
-      margin-top: 28vh;
+      margin-top: 48vh;
+    }
+
+    .herotitle {
+      font-size: 8vh;
+      color: rgba(255, 255, 255, 0.33);
+      position: absolute;
+      margin: auto;
+      align-self: center;
+      font-weight: 100;
+      left: 18vw;
+      top: 35vh;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    
+    .herotitlemin {
+      color: white;
+      font-size: 3vh;
     }
   
     .code {
-      height: 119vh;
+      height: 380vh;
+      width: 100%;
       background-color: white;
       padding-top: 0vh;
     }
@@ -1545,7 +1772,7 @@
     }
     
     .code-images {
-      width: 85vw;
+      width: 50vw;
       display: flex;
       flex-direction: row;
       margin-left: 4vw;
@@ -1555,7 +1782,8 @@
     
     .code-img1 {
       border: 2px solid #9e8461;
-      height: 9.8vh;
+      height: 11.6vh;
+      margin-top: -3vh;
     }
     
     .code-img2 {
@@ -1563,21 +1791,20 @@
     }
     
     .code-i1 {
-      width: 50.7vw;
+      width: 30vw;
       filter: grayscale(100%);
     }
     
     .code-i2 {
       height: 8vh;
-      margin-left: 14vw;
-      border-bottom: 3px solid #9e8461;
-      /* filter: grayscale(100%); */
-      /* margin-top: -10vh; */
+      margin-left: 0vw;
+      filter: grayscale(100%);
+      margin-top: -5vh;
     }
     
     .code-body {
-      width: 98vw;
-      height: 100vh;
+      width: 100%;
+      height: 380vh;
       background: linear-gradient(
         180deg,
         #006aad,
@@ -1586,13 +1813,13 @@
       );
       align-self: self-end;
       /* border-top: 2px solid #be0032; */
-      border-top: 3px solid #d6c09f;
-      border-bottom: 3px solid #d6c09f;
+      border-top: 2px solid #9e8461;
+      border-bottom: 2px solid #d6c09f;
     }
     
     .code-body-content {
       width: 62.6vw;
-      height: 126vh;
+      height: 380vh;
     }
     
     .code-body-text {
@@ -1627,7 +1854,167 @@
       color: #d6c09f;
       display: inline;
     }
+
+    .projects {
+      height: 330vh;
+      display: flex;
+      flex-direction: column;
+      width: 99vw;
+      /*
+      background-image: url("images/IMG_2669.JPG");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position-x: 100%;
+      background-position-y: 40%;
+      background-size: cover;
+      background-origin: padding-box;
+      object-fit: cover;
+      object-position: 100% 100%; */
+    }
     
+    .projects1 {
+      height: 325vh;
+      padding-top: 4vh;
+    }
+ 
+    .projects-heading-bold {
+      color: #006badb4;
+      font-size: 7vh;
+      font-weight: 200;
+      position: relative;
+      top: 35vh;
+      margin-left: 3vw;
+      position: sticky;
+      z-index: 0;
+      letter-spacing: -0.3vw;
+      text-shadow: 2px 2px 6px black;
+    }
+    
+    .projects-heading-para {
+      color: white;
+      font-size: 1.8vh;
+      text-align: left;
+      position: relative;
+      position: sticky;
+      top: 43vh;
+      margin-left: 4vw;
+    }
+    
+    .projects-logo {
+      height: 10vh;
+      position: relative;
+      margin-top: 10vh;
+      position: sticky;
+      z-index: 0;
+      margin-left: 80vw;
+      top: 80vh;
+    }
+    
+    .projects2 {
+      height: 305vh;
+      z-index: 2;
+      background: linear-gradient(#006bad04,#006bad27, #006bad2e, #006bad20, #032b4471, #032b4471, #032b449a, black);
+      position: relative;
+      bottom: 0vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 0vh;
+    }
+    
+    .project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8 {
+      width: 60vw;
+      height: 21vh;
+      margin: auto;
+      position: relative;
+      box-shadow: 1px 1px 4px black;
+    }
+    
+    .project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover, .project7:hover, .project8:hover {
+      width: 60vw;
+      height: 21vh;
+      margin: auto;
+      position: relative;
+      transition: 0.7s ease-in-out;
+      transform: scale(1.2,1.2);
+    }
+    
+    /* image */
+    .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8 {
+      opacity: 1;
+      display: block;
+      width: 60vw;
+      height: 21vh;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    
+    /* what happens when the div and image are hovered */
+    .project1:hover, .code-grid-i1, .project2:hover, .code-grid-i2, .project3:hover, .code-grid-i3, .project4:hover, .code-grid-i4, .project5:hover, .code-grid-i5, .project6:hover, .code-grid-i6, .project7:hover, .code-grid-i7, .project8:hover, .code-grid-i8 {
+      opacity: 0.9;
+      box-shadow: 5px 10px 10px black;
+    }
+    
+    /* to show the text when the div is hovered */
+    .project1:hover .code-grid-img-txt, .project2:hover .code-grid-img-txt, .project3:hover .code-grid-img-txt, .project4:hover .code-grid-img-txt, .project5:hover .code-grid-img-txt, .project6:hover .code-grid-img-txt, .project7:hover .code-grid-img-txt, .project8:hover .code-grid-img-txt {
+      opacity: 1;
+    }
+    
+    /*
+    a.Alink-grid:link, a.Alink-grid:visited {}
+    a.Alink-grid:hover, a.Alink-grid:active {} */
+    
+    .code-grid-img-txt /* text div*/ {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+    
+    .cgi-txt {
+      font-size: 3vh;
+      color: white;
+      text-shadow: 2px 2px 10px black;
+    }
+    
+    .fa-brands {
+      font-size: 2vh;
+      color: #be0032;
+    }
+    
+    .shiftright {
+      left: 11vw;
+    }
+    
+    .shiftleft {
+      right: 12vw;
+    }
+    
+    .moreprojectslink {
+      height: 5vh;
+      width: 30vw;
+      position: relative;
+      left: 35vw;
+      bottom: 3vh;
+    } 
+    
+    a.Alink-moreprojects:link, a.Alink-moreprojects:visited {
+      font-size: 1.8vh;
+      text-align: center;
+      text-decoration: none;
+      color: #d6c09f;
+    }
+    
+    a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
+      font-size: 2.2vh;
+      text-decoration: none;
+      color: #880000;
+    }
+    
+    /*
     .code-body-grid {
       width: 90vw;
       height: 52vh;
@@ -1661,12 +2048,12 @@
       flex-wrap: wrap;
     }
     
-    .code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9, .code-grid-img10, .code-grid-img11, .code-grid-img12 /* container */{
+    .code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9, .code-grid-img10, .code-grid-img11, .code-grid-img12 /* container {
       position: relative;
       margin-bottom: 2vh;
     }
     
-    .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9, .code-grid-i10, .code-grid-i11, .code-grid-i12 /* image */{
+    .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9, .code-grid-i10, .code-grid-i11, .code-grid-i12 /* image {
       width: 27vw;
       opacity: 1;
       display: block;
@@ -1683,7 +2070,7 @@
       width: 18.5vw;
     }
     
-    .code-grid-img-txt /* middle*/ {
+    .code-grid-img-txt /* middle {
       transition: .5s ease;
       opacity: 0;
       position: absolute;
@@ -1730,6 +2117,7 @@
     .code-grid-img12:hover .code-grid-img-txt {
       opacity: 1;
     }
+    */
     
     .experience {
       height: 125vh;
@@ -1837,7 +2225,7 @@
     
     .scale {
       height: 3vh;
-      width: 40vw;
+      width: 80vw;
       /*rotate: 90deg; flex-direction: column;*/
       rotate: 0deg;
       display: inline;
@@ -1845,40 +2233,44 @@
       top: 79vh;
       margin: auto;
       margin-top: 2vh;
+      height: 7vh;
+      align-self: center;
+      align-content: center;
+      z-index: 3;
     }
-    
+  
     .slider {
-      appearance: none;
-      -webkit-appearance: none;
-      width: 100%;
-      height: 3px;
-      background: black;
-      outline: none;
-      opacity: 0.7;
-      -webkit-transition: .2s;
-      transition: opacity .2s;
-    }
-    
-    .slider:hover {
-      opacity: 1;
-    }
-    
-    .slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background: #006aad;
-      cursor: pointer;
-    }
-    
-    .slider::-moz-range-thumb {
-      width: 20px;
-      height: 25px;
-      border-radius: 50%;
-      background: #006aad;
-      cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        width: 80vw;
+        height: 1px;
+        background: #006aad;
+        outline: none;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+      
+      .slider:hover {
+        opacity: 0.5;
+      }
+      
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: white;
+        border: 1px solid #9e8461;
+        cursor: pointer;
+      }
+      
+      .slider::-moz-range-thumb {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #006aad;
+        cursor: pointer;
     }
     
     .exper-info {
@@ -1979,7 +2371,7 @@
     
     .featured-projects {
       height: 133vh;
-      background-color: black;
+      background-color: white;
     }
     
     .featured-inner {
@@ -2001,7 +2393,7 @@
       font-family: "Courier Prime", serif;
       font-optical-sizing: auto;
       font-style: normal;
-      color: white;
+      color: black;
       font-size: 8vh;
       line-height: 6vh;
       font-weight: 300;
@@ -2010,7 +2402,7 @@
     
     .feat-para {
       font-family: "Roboto Mono", serif;
-      color: rgb(206, 206, 206);
+      color: rgb(88, 88, 88);
       text-align: center;
       font-size: 2.4vh;
     }
@@ -2420,18 +2812,17 @@
     .connect {
       height: 90vh;
       width: 100%;
-      background-color: black;
-      z-index: -1;
+      background-color: white;
       position: relative;
     }
     
     .connect-inner {
       height: 90vh;
-      background-image: url("images/Untitled\ design\ -\ 7.png");
+      background-image: url("images/david\ ero.png.png");
       background-repeat: no-repeat;
       background-attachment: fixed;
-      background-position-x: 100%;
-      background-position-y: 5%;
+      background-position-x: 50%;
+      background-position-y: 100%;
       background-size: cover;
       background-origin: padding-box;
       object-fit: cover;
@@ -2442,6 +2833,7 @@
       border-top-right-radius: 10vw;
     }
     
+    /*
     .connect-overlay {
       height: 90vh;
       width: 99.8vw;
@@ -2452,19 +2844,19 @@
       left: 0;
       border-top-left-radius: 10vw;
       border-top-right-radius: 10vw;
-    }
+    } */
     
     .connect-inner-cta {
-      position: relative;
+      position: absolute;
       height: 40vh;
       width: 70vw;
       margin: auto;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      z-index: 3;
       align-items: center;
-      margin-top: 15vh;
+      top: 19vh;
+      left: 17vw;
     }
     
     .solid2 {
@@ -2474,7 +2866,7 @@
     }
     
     .cic-heading {
-      color: #006aad;
+      color: white;
       font-size: 5vh;
       text-align: center;
       font-weight: 500;
@@ -2499,17 +2891,17 @@
       align-items: center;
       text-align: center;
       background-color: white;
-      border-bottom: 1.5px solid black;
+      border-bottom: 2px solid #006aad;
       cursor: pointer;
       color: black;
       font-weight: 300;
       font-size: 2vh;
       justify-content: center;
-      z-index: 4;
     }
     
     a.cic-email:hover, a.cic-email:active {
-      background-color: #d6c09f;
+      background-color: #032b4470;
+      border: 2px solid #006aad;
       height: 5vh;
       width: 25vw;
       text-decoration: none;
@@ -2517,7 +2909,7 @@
     
     a.cic-WA:link, a.cic-WA:visited {
       background-color: black;
-      border-bottom: 1.5px solid white;
+      border-bottom: 2px solid greenyellow;
       height: 5vh;
       width: 20vw;
       text-decoration: none;
@@ -2534,7 +2926,9 @@
     a.cic-WA:hover, a.cic-WA:active {
       height: 5vh;
       width: 25vw;
-      background-color: green;
+      border: 2px solid greenyellow;
+      background-color: rgba(0, 48, 0, 0.292);
+      transition: 0.5s ease-in-out;
     }
     
     .connect-inner-socials {
@@ -2542,8 +2936,8 @@
       height: 4vh;
       margin: auto;
       display: flex;
+      position: absolute;
       justify-content: space-between;
-      z-index: 3;
     }
     
     .cis1 {
@@ -2568,7 +2962,8 @@
     }
     
     a.Alink-socials:hover, a.Alink-socials:active {
-      color: #be0032;
+      color: #006aad;
+      font-size: 2vh;
     }
   }
 
@@ -2618,11 +3013,12 @@
   }
 
   .frontend-hero {
+    width: 100%;
     height: 100vh;
-    background-image: url("images/Untitled\ design\ -\ 2.png");
+    background-image: url("images/Untitled\ design\ -\ 7.png");
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position-x: 52%;
+    background-attachment: fixed;
+    background-position-x: 70%;
     background-position-y: 100%;
     background-size: cover;
     background-origin: padding-box;
@@ -2653,19 +3049,19 @@
   }
   
   .logo1a {
-    height: 4.5vh;
+    height: 4vh;
   }
   
   .logo1b {
-    height: 7.5vh;
+    height: 6.7vh;
     margin-left: 0.5vw;
   }
 
   .navbox {
-    height: 44vh;
-    width: 40vw;
-    margin-top: 2vh;
-    margin-left: -20vw;
+    height: 94vh;
+    width: 44vw;
+    margin-top: 0vh;
+    margin-left: -26vw;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -2690,6 +3086,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     margin: auto;
+    margin-top: 0vh;
+    width: 42vw;
+    height: 24vh;
   }
   
   .navli {
@@ -2697,7 +3096,6 @@
     font-optical-sizing: auto;
     font-style: normal;
     text-decoration: none;
-    font-size: 1.5vh;
     font-weight: 300;
     text-align: right;
     line-height: 5vh;
@@ -2709,7 +3107,6 @@
     font-style: normal;
     text-decoration: none;
     text-decoration: none;
-    font-size: 1.5vh;
     text-align: right;
     line-height: 3vh;
   }
@@ -2717,20 +3114,21 @@
   a.Alink-nav:link,
   a.Alink-nav:visited {
     text-decoration: none;
-    color: #9e8461;
-    font-size: 1.5vh;
+    color: #d6c09f;
+    font-size: 1.6vh;
     font-weight: 500;
   }
   
   a.Alink-nav:hover,
   a.Alink-nav:active {
-    color: #006aad;
-    font-size: 1.5vh;
+    color: #9e8461;
+    font-size: 1.8vh;
     font-weight: 500;
     transition: 0.5s ease-out;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.42);
   }
 
+  /*
   .barsicon {
     display: flex;
     margin-left: -20vw;
@@ -2744,7 +3142,7 @@
   .fa-solid {
     color: black;
     font-size: 3vh;
-  }
+  }*/
 
   .hero-buttons {
     height: 13vh;
@@ -2754,7 +3152,7 @@
     align-items: center;
     margin: auto;
     margin-top: 5vh;
-    margin-left: -50vw;
+    margin-bottom: 0vh;
   }
   
   a.Alink-hbutt1:link, a.Alink-hbutt1:visited {
@@ -2763,11 +3161,11 @@
     border-top: 1px solid #006aad;
     border-left: 1px solid #006aad;
     border-bottom: 1px solid #006aad;
-    background-color: #006bad7f;
+    background-color: #006badec;
     font-size: 1.8vh;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 10px black;
     text-decoration: none;
-    width: 30vw;
+    width: 33vw;
     height: 5vh;
     text-align: center;
     display: flex;
@@ -2783,7 +3181,7 @@
     border-bottom: 1px solid #006aad;
     background-color: #006badb3;
     font-size: 1.8vh;
-    width: 30vw;
+    width: 35vw;
     height: 5vh;
     transition: 1s ease-in-out;
     box-shadow: 2px 2px 10px #9e8461;
@@ -2794,11 +3192,11 @@
     border-top: 1.3px solid #9e8461;
     border-right: 1.3px solid #9e8461;
     border-bottom: 1.3px solid #9e8461;
-    background: linear-gradient(#d6c09f71, #9e84612c);
+    background: linear-gradient(#d6c09fb0, #9e846178);
     font-size: 1.8vh;
     text-shadow: 2px 2px 5px black;
     text-decoration: none;
-    width: 30vw;
+    width: 33vw;
     height: 5vh;
     text-align: center;
     /* margin-left: 1.2vw; */
@@ -2815,7 +3213,7 @@
     border-right: 1.3px solid #9e8461;
     border-bottom: 1.3px solid #9e8461;
     font-size: 1.8vh;
-    width: 30vw;
+    width: 35vw;
     height: 5vh;
     transition: 1s ease-in-out;
     box-shadow: 2px 2px 4px black;
@@ -2825,21 +3223,43 @@
   h1 {
     font-family: "Courier Prime", serif;
     font-weight: 100;
-    font-size: 8vh;
+    font-size: 7vh;
     color: #d6c09f;
     text-align: left;
-    line-height: 7vh;
+    line-height: 6vh;
     /* text-shadow: 2px 2px 2px black; */
     padding-left: 0vw;
     margin-left: -25vw;
-    margin-top: 50vh;
+    margin-top: 55vh;
     rotate: -90deg;
     display: inline;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.42);
   }
 
+  .herotitle {
+    font-size: 5vh;
+    color: rgba(255, 255, 255, 0.33);
+    position: absolute;
+    margin: auto;
+    align-self: center;
+    font-weight: 100;
+    left: 3vw;
+    top: 35vh;
+    width: 65vw;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 2px 2px 6px black;
+  }
+
+  .herotitlemin {
+    color: white;
+    font-size: 2.5vh;
+  }
+
   .code {
-    height: 185vh;
+    height: 272vh;
+    width: 100%;
     background-color: white;
     padding-top: 0vh;
   }
@@ -2900,7 +3320,7 @@
   
   .code-img1 {
     border: 2px solid #9e8461;
-    height: 7.1vh;
+    height: 7vh;
   }
   
   .code-img2 {
@@ -2915,15 +3335,15 @@
   .code-i2 {
     height: 6vh;
     margin-left: 0vw;
-    border-bottom: 2px solid #9e8461;
+    margin-top: -2vh;
     opacity: 0.9;
-    /* filter: grayscale(100%); */
+    filter: grayscale(100%);
     /* margin-top: -10vh; */
   }
   
   .code-body {
-    width: 99.9vw;
-    height: 180vh;
+    width: 100%;
+    height: 270vh;
     background: linear-gradient(
       180deg,
       #006aad,
@@ -2931,13 +3351,14 @@
       black
     );
     align-self: self-end;
+    border-bottom: 2px solid #9e8461; 
     /* border-top: 2px solid #be0032;
     border-bottom: 2px solid #d6c09f; */
   }
   
   .code-body-content {
-    width: 62.6vw;
-    height: 126vh;
+    width: 100%;
+    height: 270vh;
     z-index: 5;
   }
   
@@ -2986,7 +3407,168 @@
     display: inline;
     font-size: 1.3vh;
   }
+
+  .projects {
+    height: 230vh;
+    display: flex;
+    flex-direction: column;
+    /*
+    background-image: url("images/IMG_2669.JPG");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 60%;
+    background-position-y: 100%;
+    background-size: cover;
+    background-origin: padding-box;
+    object-fit: cover;
+    object-position: 100% 100%; */
+  } 
   
+  .projects1 {
+    height: 230vh;
+    padding-top: 4vh;
+  }
+  
+  .projects-heading-bold {
+    font-size: 5vh;
+    color: #006badb4;
+    font-weight: 200;
+    position: relative;
+    top: 40vh;
+    margin-left: 3vw;
+    position: sticky;
+    z-index: 0;
+    letter-spacing: -0.3vw;
+    text-shadow: 2px 2px 6px black;
+  }
+  
+  .projects-heading-para {
+    color: white;
+    font-size: 1.4vh;
+    text-align: left;
+    position: relative;
+    position: sticky;
+    top: 45vh;
+    margin-left: 4vw;
+  }
+  
+  .projects-logo {
+    height: 7vh;
+    position: relative;
+    margin-top: 10vh;
+    position: sticky;
+    z-index: 0;
+    margin-left: 83vw;
+    top: 85vh;
+  }
+  
+  .projects2 {
+    height: 202vh;
+    z-index: 2;
+    background: linear-gradient(#006bad04,#006bad27, #006bad2e, #006bad20, #032b4471, #032b4471, #032b449a, black);
+    position: relative;
+    bottom: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0vh;
+  }
+  
+  .project1, .project2, .project3, .project4, .project5, .project6, .project7, .project8, .project9 {
+    width: 70vw;
+    height: 15vh;
+    margin: auto;
+    position: relative;
+    box-shadow: 1px 1px 4px black;
+  }
+  
+  .project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover, .project7:hover, .project8:hover, .project9:hover {
+    width: 70vw;
+    height: 15vh;
+    margin: auto;
+    position: relative;
+    transition: 0.7s ease-in-out;
+    transform: scale(1.2,1.2);
+  }
+  
+  /* image */
+  .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9 {
+    opacity: 1;
+    display: block;
+    width: 70vw;
+    height: 15vh;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  /* what happens when the div and image are hovered */
+  .project1:hover, .code-grid-i1, .project2:hover, .code-grid-i2, .project3:hover, .code-grid-i3, .project4:hover, .code-grid-i4, .project5:hover, .code-grid-i5, .project6:hover, .code-grid-i6, .project7:hover, .code-grid-i7, .project8:hover, .code-grid-i8,
+  .project9:hover, .code-grid-i9 {
+    opacity: 0.9;
+    box-shadow: 5px 10px 10px black;
+  }
+  
+  /* to show the text when the div is hovered */
+  .project1:hover .code-grid-img-txt, .project2:hover .code-grid-img-txt, .project3:hover .code-grid-img-txt, .project4:hover .code-grid-img-txt, .project5:hover .code-grid-img-txt, .project6:hover .code-grid-img-txt, .project7:hover .code-grid-img-txt, .project8:hover .code-grid-img-txt, .project9:hover .code-grid-img-txt {
+    opacity: 1;
+  }
+  
+  /*
+  a.Alink-grid:link, a.Alink-grid:visited {}
+  a.Alink-grid:hover, a.Alink-grid:active {} */
+  
+  .code-grid-img-txt /* text div*/ {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  
+  .cgi-txt {
+    font-size: 2vh;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+  }
+  
+  .fa-brands {
+    font-size: 1.2vh;
+    color: #be0032;
+  }
+  
+  .shiftright {
+    left: 7vw;
+  }
+  
+  .shiftleft {
+    right: 7vw;
+  }
+  
+  .moreprojectslink {
+    height: 5vh;
+    width: 40vw;
+    position: relative;
+    left: 30vw;
+    bottom: 3vh;
+  } 
+  
+  a.Alink-moreprojects:link, a.Alink-moreprojects:visited {
+    font-size: 1.3vh;
+    text-align: center;
+    text-decoration: none;
+    color: #d6c09f;
+    margin: auto;
+  }
+  
+  a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
+    font-size: 1.3vh;
+    text-decoration: none;
+    color: #9e8461;
+  }
+  
+  /*
   .code-body-grid {
     width: 62vw;
     height: 130vh;
@@ -3022,12 +3604,12 @@
     flex-wrap: wrap;
   }
   
-  .code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9, .code-grid-img10, .code-grid-img11, .code-grid-img12 /* container */{
+  .code-grid-img1, .code-grid-img2, .code-grid-img3, .code-grid-img4, .code-grid-img5, .code-grid-img6, .code-grid-img7, .code-grid-img8, .code-grid-img9, .code-grid-img10, .code-grid-img11, .code-grid-img12 /* container {
     position: relative;
     margin-bottom: 2vh;
   }
   
-  .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9, .code-grid-i10, .code-grid-i11, .code-grid-i12 /* image */{
+  .code-grid-i1, .code-grid-i2, .code-grid-i3, .code-grid-i4, .code-grid-i5, .code-grid-i6, .code-grid-i7, .code-grid-i8, .code-grid-i9, .code-grid-i10, .code-grid-i11, .code-grid-i12 /* image {
     width: 60vw;
     opacity: 1;
     display: block;
@@ -3044,7 +3626,7 @@
     width: 18.5vw;
   }
   
-  .code-grid-img-txt /* middle*/ {
+  .code-grid-img-txt /* middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -3091,16 +3673,17 @@
   .code-grid-img12:hover .code-grid-img-txt {
     opacity: 1;
   }
+    */
   
   .experience {
-    height: 120vh;
+    height: 137vh;
     background-color: white;
     padding-top: 3vh;
   }
   
   .exper-inner {
     margin: auto;
-    height: 112vh;
+    height: 126vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -3113,7 +3696,7 @@
   
   .exper-inner-head1 {
     width: 90vw;
-    height: 35vh;
+    height: 45vh;
     margin-top: 0vh;
     margin: auto;
     border-bottom: 1px solid #757575;
@@ -3133,11 +3716,11 @@
   }
   
   .exper-span {
-    color: black;
+    color: white;
     font-weight: 500;
-    font-size: 2.8vh;
+    font-size: 5vh;
     font-family: "Courier Prime", serif;
-    text-shadow: 2px 2px 7px #d6c09f;
+    text-shadow: 2px 2px 5px #006aad;
   }
 
   .exper-span-red {
@@ -3198,49 +3781,46 @@
   }
   
   .scale {
-    height: 3vh;
-    width: 40vw;
-    /*rotate: 90deg; flex-direction: column;*/
-    rotate: 0deg;
-    display: inline;
-    position: relative;
-    top: 72vh;
-    margin: auto;
     margin-top: 0vh;
-  }
-  
+    height: 7vh;
+    align-self: center;
+    align-content: center;
+    z-index: 3;
+    width: 80vw;
+}
+
   .slider {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 100%;
-    height: 3px;
-    background: black;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  
-  .slider:hover {
-    opacity: 1;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #006aad;
-    cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 20px;
-    height: 25px;
-    border-radius: 50%;
-    background: #006aad;
-    cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      width: 80vw;
+      height: 1px;
+      background: #006aad;
+      outline: none;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+    
+    .slider:hover {
+      opacity: 0.5;
+    }
+    
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: white;
+      border: 1px solid #9e8461;
+      cursor: pointer;
+    }
+    
+    .slider::-moz-range-thumb {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #006aad;
+      cursor: pointer;
   }
   
   .exper-info {
@@ -3342,7 +3922,7 @@
   
   .featured-projects {
     height: 125vh;
-    background-color: black;
+    background-color: white;
   }
   
   .featured-inner {
@@ -3364,7 +3944,7 @@
     font-family: "Courier Prime", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: white;
+    color: black;
     font-size: 5vh;
     line-height: 5vh;
     font-weight: 300;
@@ -3373,7 +3953,7 @@
   
   .feat-para {
     font-family: "Roboto Mono", serif;
-    color: rgb(206, 206, 206);
+    color: rgb(88, 88, 88);
     text-align: center;
     font-size: 1.8vh;
     width: 80vw;
@@ -3725,7 +4305,7 @@
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -3786,20 +4366,19 @@
   }
   
   .connect {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
-    background-color: black;
-    z-index: -1;
+    background-color:white;
     position: relative;
   }
   
   .connect-inner {
-    height: 80vh;
-    background-image: url("images/Untitled\ design\ -\ 7.png");
+    height: 100vh;
+    background-image: url("images/david\ ero.png.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x: 25%;
-    background-position-y: 5%;
+    background-position-x: 51%;
+    background-position-y: 100%;
     background-size: cover;
     background-origin: padding-box;
     object-fit: cover;
@@ -3810,6 +4389,7 @@
     border-top-right-radius: 10vw;
   }
   
+  /*
   .connect-overlay {
     height: 80vh;
     width: 99.8vw;
@@ -3820,19 +4400,18 @@
     left: 0;
     border-top-left-radius: 10vw;
     border-top-right-radius: 10vw;
-  }
+  } */
   
   .connect-inner-cta {
-    position: relative;
+    position: absolute;
     height: 40vh;
     width: 70vw;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 3;
     align-items: center;
-    margin-top: 15vh;
+    top: 15vh;
   }
   
   .solid2 {
@@ -3842,11 +4421,11 @@
   }
   
   .cic-heading {
-    color: #006aad;
-    font-size: 3.8vh;
+    color: white;
+    font-size: 3.7vh;
     text-align: center;
     font-weight: 500;
-    line-height: 5vh;
+    line-height: 4vh;
     text-shadow: 2px 2px 6px black;
   }
   
@@ -3855,8 +4434,6 @@
     width: 70vw;
     display: flex;
     justify-content: space-around;
-    z-index: 4;
-    position: relative;
   }
   
   a.cic-email:link, a.cic-email:visited {
@@ -3867,17 +4444,17 @@
     align-items: center;
     text-align: center;
     background-color: white;
-    border-bottom: 1.5px solid black;
+    border-bottom: 2px solid #006aad;
     cursor: pointer;
     color: black;
     font-weight: 300;
     font-size: 1.8vh;
     justify-content: center;
-    z-index: 4;
   }
   
   a.cic-email:hover, a.cic-email:active {
-    background-color: #d6c09f;
+    background-color: #032b44;
+    border: 2px solid #006aad;
     height: 5vh;
     width: 30vw;
     text-decoration: none;
@@ -3885,7 +4462,7 @@
   
   a.cic-WA:link, a.cic-WA:visited {
     background-color: black;
-    border-bottom: 1.5px solid white;
+    border-bottom: 2px solid greenyellow;
     height: 5vh;
     width: 25vw;
     text-decoration: none;
@@ -3902,17 +4479,19 @@
   a.cic-WA:hover, a.cic-WA:active {
     height: 5vh;
     width: 30vw;
-    background-color: green;
+    background-color: rgba(0, 48, 0, 0.292);
+    border: 2px solid greenyellow;
   }
   
   .connect-inner-socials {
     width: 90vw;
-    height: 4vh;
+    height: 10vh;
     margin: auto;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    z-index: 3;
-    margin-top: 15vh;
+    top: 85vh;
+    position: absolute;
   }
   
   .cis1 {
@@ -3921,7 +4500,7 @@
   
   .cis1-para {
     color: white;
-    font-size: 1vh;
+    font-size: 1.5vh;
     font-weight: 200;
   }
   
@@ -3930,13 +4509,14 @@
   }
   
   a.Alink-socials:link, a.Alink-socials:visited {
-    font-size: 1vh;
+    font-size: 2vh;
     color: white;
     text-decoration: none;
     cursor: pointer;
   }
   
   a.Alink-socials:hover, a.Alink-socials:active {
-    color: #be0032;
+    color: #006aad;
+    font-size: 2.5vh;
   }
 }
