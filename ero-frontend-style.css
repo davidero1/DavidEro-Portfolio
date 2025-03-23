@@ -290,15 +290,15 @@
   
   .code-i1 {
     width: 45vw;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     box-shadow: 2px 2px 15px black;
   }
   
   .code-i2 {
     height: 20vh;
     opacity: 1;
-    filter: grayscale(100%);
-    /* margin-top: -10vh; */
+    /* filter: grayscale(100%);
+     margin-top: -10vh; */
   }
   
   .code-body {
@@ -1792,7 +1792,7 @@
     
     .code-i1 {
       width: 30vw;
-      filter: grayscale(100%);
+      /* filter: grayscale(100%);*/
     }
     
     .code-i2 {
@@ -3329,7 +3329,7 @@
   
   .code-i1 {
     width: 58vw;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%);*/
   }
   
   .code-i2 {
