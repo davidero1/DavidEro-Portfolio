@@ -19,12 +19,12 @@
     
     /* Handle */
     ::-webkit-scrollbar-thumb {
-      background: #004aad;
+      background: #ff3131;
     }
   
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-      background: #004aad;
+      background: #ff3131;
       width: 0.5vw;
     }
   }
@@ -141,7 +141,7 @@
     color: white;
     font-size: 2.6vh;
     font-weight: 500;
-    text-shadow: 2px 2px 8px #004badaa;
+    text-shadow: 2px 2px 8px #b62713;
   }
   
   a.Alink-nav:hover,
@@ -150,7 +150,7 @@
     font-size: 3vh;
     font-weight: 300;
     transition: 0.5s ease-out;
-    text-shadow: 2px 2px 5px #004aad;
+    text-shadow: 2px 2px 5px #ff3131;
   }
 
   .hero-buttons {
@@ -189,13 +189,12 @@
     width: 15vw;
     height: 7.9vh;
     transition: 1s ease-in-out;
-    box-shadow: 2px 2px 10px #9e8461;
+    box-shadow: 2px 2px 10px #b62713;
   }
   
   a.Alink-hbutt2:link, a.Alink-hbutt2:visited {
     color: white;
-    border-top: 2px solid #9e8461;
-    background: linear-gradient(#9e8461bf, #9e84617a);
+    background: linear-gradient(#ff3131a9, #b6261343);
     font-size: 3.1vh;
     text-shadow: 2px 2px 5px black;
     text-decoration: none;
@@ -206,13 +205,12 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 2px 2px 2px #032b44;
   }
   
   a.Alink-hbutt2:hover, a.Alink-hbutt2:active {
     color: white;
     border: 1px solid white;
-    background: linear-gradient(#9e846191, #9e846133);
+    background: linear-gradient(#ff3131b1, #b6261342);
     font-size: 3.1vh;
     width: 15vw;
     height: 8vh;
@@ -296,8 +294,8 @@
   }
   
   .code-img1 {
-    border: 2px solid #9e8461;
-    height: 27.2vh;
+    border: 2px solid #ff3131;
+    height: 27.3vh;
     border-radius: 5vw;
   }
   
@@ -330,8 +328,8 @@
       black
     );
     /* border-top: 2px solid #be0032; */
-    border-left: 2px solid #9e8461;
-    border-bottom: 2px solid #9e8461;
+    border-left: 2px solid #ff3131;
+    border-bottom: 2px solid #b62713;
   }
   
   .code-body-content {
@@ -368,13 +366,13 @@
   }
   
   .codeicon, .fa-code {
-    color: #9e8461;
+    color: #ff3131;
     display: inline;
   }
 
    
   a.Alink-code:link, a.Alink-code:visited {
-    color: #d6c09f;
+    color: #ff3131;
     font-family: "Roboto Mono", serif;
     font-size: 2.2vh;
     font-weight: 500;
@@ -385,7 +383,7 @@
     font-family: "Roboto Mono", serif;
     font-size: 2.3vh;
     font-weight: 500;
-    color: #9e8461;
+    color: #b62713;
     transition: 1s ease-in-out;
   }
   
@@ -515,7 +513,7 @@
   
   .fa-brands {
     font-size: 3vh;
-    color: #9e8461;
+    color: #ff3131;
   }
   
   .shiftright {
@@ -537,13 +535,14 @@
   a.Alink-moreprojects:link, a.Alink-moreprojects:visited {
     font-size: 2.5vh;
     text-decoration: none;
-    color: #9e8461;
+    color: #ff3131;
   }
   
   a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
     font-size: 2.7vh;
     text-decoration: none;
     transition: 0.5s ease-in-out;
+    color: #b62713;
   }
   
   
@@ -702,7 +701,7 @@
 
   .exper-span-red {
     font-size: 4vh;
-    color: #9e8461;
+    color: #ff3131;
     font-family: "Courier Prime", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -891,7 +890,7 @@
     height: 58vh;
     align-self: center;
     transform: skewX(0deg);
-    box-shadow: 2px 2px 20px black;
+    box-shadow: 2px 2px 20px #004aad;
     transition: 0.5s ease-in-out;
   }
   
@@ -975,6 +974,7 @@
     z-index: 0;
     border-radius: 6vw;
     border: 2px solid black;
+    box-shadow: 2px 2px 20px #002f6c;
   }
   
   .ftb1-deets {
@@ -992,11 +992,12 @@
     position: absolute;
     z-index: 1;
     left: 37vw;
-    top: 10vh;
+    top: 9.7vh;
     display: flex;
     flex-direction: column;
-    background-color: #9e84610c;
-    box-shadow: 2px 2px 10px black;
+    justify-content: space-between;
+    /*
+    box-shadow: 2px 2px 10px #002f6c;*/
   }
 
   .ftb1-preview:hover {
@@ -1005,10 +1006,10 @@
     position: absolute;
     z-index: 1;
     left: 37vw;
-    top: -3vh;
+    top: -3.3vh;
     transition: 0.7s ease-in-out;
     background: linear-gradient(rgba(0, 0, 0, 0.129), rgba(0, 0, 0, 0.311), black);
-    box-shadow: 2px 2px 15px #9e8461;
+    box-shadow: 2px 2px 15px #002f6c;
   }
   
   a.Alink-preview:link, a.Alink-preview:active {
@@ -1021,12 +1022,12 @@
   
   .preview-scnsht {
     height: 33vh;
-    box-shadow: 2px 2px 2px #d6c09f23;
+    box-shadow: 2px 2px 2px #b6261343;
   }
 
   .preview-scnsht2 {
     height: 37vh;
-    box-shadow: 2px 2px 2px #d6c09f23;
+    box-shadow: 2px 2px 2px #b6261343;
   }
 
   .ftb1-head {
@@ -1099,12 +1100,12 @@
   .fhd-tools-para-p1 {
     font-family: "Roboto Mono", serif;
     display: block;
-    background-color: rgba(0, 0, 0, 0.468);
+    background-color: rgba(0, 0, 0, 0.148);
     color: rgb(255, 175, 27);
     font-weight: 200;
     border-radius: 5vw;
     font-size: 1.8vh;
-    box-shadow: 2px 2px 8px #9e8461;
+    box-shadow: 2px 2px 8px black;
     padding: 2px 10px 2px 10px; /*top, right, bottom, left */
     cursor: pointer;
   }
@@ -1113,11 +1114,11 @@
     font-family: "Roboto Mono", serif;
     font-weight: 200;
     display: block;
-    background-color: rgba(0, 0, 0, 0.468);
-    color: rgb(98, 158, 247);
+    background-color: rgba(0, 0, 0, 0.148);
+    color: #a3cbff;
     border-radius: 5vw;
     font-size: 1.8vh;
-    box-shadow: 2px 2px 8px #9e8461;
+    box-shadow: 2px 2px 8px black;
     padding: 2px 10px 2px 10px;
     cursor: pointer;
   }
@@ -1126,11 +1127,11 @@
     font-family: "Roboto Mono", serif;
     font-weight: 200;
     display: block;
-    background-color: rgba(0, 0, 0, 0.468);
+    background-color: rgba(0, 0, 0, 0.148);
     color: rgb(239, 223, 0);
     border-radius: 5vw;
     font-size: 1.8vh;
-    box-shadow: 2px 2px 8px #9e8461;
+    box-shadow: 2px 2px 8px black;
     padding: 2px 10px 2px 10px;
     cursor: pointer;
   }
@@ -1145,15 +1146,15 @@
   
   .ftb1-devices {
     display: flex;
-    border: 0.1px solid rgba(255, 255, 255, 0.145);
+    border: 0.2px solid rgba(255, 255, 255, 0.145);
     background-color: #002f6c09;
     width: 25vw;
     height: 5vh;
     border-radius: 1vw; 
     padding: 5px;
-    margin-top: 0vh;
     margin: auto;
-    box-shadow: 2px 2px 2px #9e846149;
+    margin-top: 7vh;
+    box-shadow: 1px 1px 2px black;
     justify-content: space-between;
   }
   
@@ -1218,61 +1219,69 @@
   }
   
   .ftb1-info {
-    height: 9vh;
-    width: 28vw;
+    height: 11vh;
+    width: 35vw;
     display: flex;
     margin: auto;
-    margin-top: -2vw;
+    margin-top: 0vw;
   }
   
   a.Alink-feat1:link, a.Alink-feat1:visited {
     color: white;
-    border: 2px solid #d6c09f;
+    border: 1px solid white;
+    background: #004bad68;
     font-size: 2.1vh;
     text-decoration: none;
-    width: 12vw;
-    height: 7vh;
+    width: 15vw;
+    height: 8vh;
     text-align: center;
-    padding-top: 2vh;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1vw;
   }
   
   a.Alink-feat1:hover, a.Alink-feat1:active {
     color: white;
-    border: 1px solid #9e8461;
-    background-color: #9e8461c8;
+    border: 1px solid white;
+    background: linear-gradient(#004badc6, #002f6ca9);
     font-size: 2.1vh;
-    width: 16vw;
-    height: 6.7vh;
-    transition: 1s ease-in-out;
-    box-shadow: 2px 2px 4px black;
+    width: 15vw;
+    height: 9.5vh;
+    transition: 0.8s ease-in-out;
+    transform: scale(1.1, 1.1);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 0;
   }
   
   a.Alink-feat2:link, a.Alink-feat2:visited {
     color: white;
-    border: 1.7px solid white;
+    border: 1px solid #ff3131;
     font-size: 2.1vh;
     text-decoration: none;
-    width: 12vw;
-    height: 7vh;
+    width: 15vw;
+    height: 8vh;
     margin: auto;
     text-align: center;
-    padding-top: 2vh;
     /* margin-left: 1.2vw; */
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1vw;
   }
   
   a.Alink-feat2:hover, a.Alink-feat2:active {
     color: white;
-    background: #004badb4;
+    background: linear-gradient(#ff3131db, #4b1008);
     font-size: 2.1vh;
-    width: 16vw;
-    height: 7vh;
+    border: 1px solid #ff3131;
+    width: 15vw;
+    height: 9.5vh;
     transition: 1s ease-in-out;
-    box-shadow: 2px 2px 4px black;
+    transform: scale(1.1, 1.1);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 0;
   }
   
   .prev,
@@ -1285,7 +1294,7 @@
     margin-top: -22px;
     color: black;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -1533,12 +1542,12 @@
       
       /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: #004aad;
+        background: #ff3131;
       }
     
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
-        background: #004aad;
+        background: #ff3131;
         width: 0.5vw;
       }
     }
@@ -1637,7 +1646,7 @@
       color: white;
       font-size: 2.2vh;
       font-weight: 400;
-      text-shadow: 2px 2px 8px #004badaa;
+      text-shadow: 2px 2px 8px #b62713;
     }
     
     a.Alink-nav:hover,
@@ -1646,7 +1655,7 @@
       font-size: 2.4vh;
       font-weight: 300;
       transition: 0.5s ease-out;
-      text-shadow: 2px 2px 5px #004aad;
+      text-shadow: 2px 2px 5px #ff3131;
     }
   
     .hero-buttons {
@@ -1687,13 +1696,12 @@
       width: 35vw;
       height: 7vh;
       transition: 1s ease-in-out;
-      box-shadow: 2px 2px 10px #9e8461;
+      box-shadow: 2px 2px 10px #b62713;
     }
     
     a.Alink-hbutt2:link, a.Alink-hbutt2:visited {
       color: white;
-      border-top: 2px solid #9e8461;
-      background: linear-gradient(#9e8461bf, #9e84617a);
+      background: linear-gradient(#ff3131a9, #b6261343);
       font-size: 2.5vh;
       text-shadow: 2px 2px 5px black;
       text-decoration: none;
@@ -1704,13 +1712,12 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      box-shadow: 2px 2px 2px #032b44;
     }
     
     a.Alink-hbutt2:hover, a.Alink-hbutt2:active {
       color: white;
       border: 1px solid white;
-      background: linear-gradient(#9e846191, #9e846133);
+      background: linear-gradient(#ff3131b1, #b6261342);
       font-size: 2.5vh;
       width: 35vw;
       height: 7vh;
@@ -1803,12 +1810,12 @@
     }
     
     .code-img1 {
-      border: 2px solid #9e8461;
+      border: 2px solid #ff3131;
       height: 17.1vh;
       margin-top: -3vh;
       border-radius: 5vw;
     }
-    
+     
     .code-img2 {
       padding-top: 3vh;
     }
@@ -1838,8 +1845,9 @@
        black
       );
       align-self: self-end;
-      border-top: 2px solid #9e8461;
-      border-bottom: 2px solid #d6c09f;
+      border-top: 2px solid #ff3131;
+      border-left: 2px solid #ff3131;
+    border-bottom: 2px solid #b62713;
     }
     
     .code-body-content {
@@ -1876,12 +1884,12 @@
     }
     
     .codeicon, .fa-code {
-      color: #d6c09f;
+      color: #ff3131;
       display: inline;
     }
      
     a.Alink-code:link, a.Alink-code:visited {
-      color: #d6c09f;
+      color: #ff3131;
       font-family: "Roboto Mono", serif;
       font-size: 1.5vh;
       font-weight: 500;
@@ -1892,7 +1900,7 @@
       font-family: "Roboto Mono", serif;
       font-size: 1.7vh;
       font-weight: 500;
-      color: #9e8461;
+      color: #b62713;
       transition: 1s ease-in-out;
     }
 
@@ -2023,7 +2031,7 @@
     
     .fa-brands {
       font-size: 2vh;
-      color: #9e8461;
+      color: #ff3131;
     }
     
     .shiftright {
@@ -2046,14 +2054,14 @@
       font-size: 1.8vh;
       text-align: center;
       text-decoration: none;
-      color: #d6c09f;
+      color: #ff3131;
     }
     
     a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
       font-size: 2.2vh;
       text-decoration: none;
       transition: 0.5s ease-in-out;
-      color: #9e8461;
+      color: #b62713;
     }
     
     /*
@@ -2211,7 +2219,7 @@
   
     .exper-span-red {
       font-size: 2.2vh;
-      color: #9e8461;
+      color: #ff3131;
       font-family: "Courier Prime", serif;
       font-optical-sizing: auto;
       font-style: normal;
@@ -2408,7 +2416,7 @@
       height: 35vh;
       align-self: center;
       transform: skewX(0deg);
-      box-shadow: 2px 2px 20px black;
+      box-shadow: 2px 2px 20px #004aad;
       transition: 0.5s ease-in-out;
     }
     
@@ -2492,7 +2500,24 @@
       background: linear-gradient(#004bad89, #004aad);
       position: relative;
       z-index: 0;
+      box-shadow: 2px 2px 30px #002f6c;
+      /*
+      animation-name: ftbani;
+      animation-duration: 4s;
+      animation-delay: 0s;
+      animation-iteration-count: 10;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out; */
     }
+    
+    /*
+    @keyframes htbani {
+        0% {top:20px; bottom:0px;}
+        25% {top:0px; bottom:20px;}
+        50% {top:20px; bottom:0px;}
+        75% {top:0px; bottom:20px;}
+        100% {top:20px; bottom:0px;}
+    } */
     
     .ftb1-deets {
       width: 73vw;
@@ -2513,7 +2538,6 @@
       display: flex;
       flex-direction: column;
       background-color: #9e84610c;
-      box-shadow: 2px 2px 10px black;
       border-bottom-right-radius: 6vw;
       border-bottom-left-radius: 6vw;
     }
@@ -2527,7 +2551,7 @@
       top: -3vh;
       transition: 0.5s ease-in-out;
       background: linear-gradient(rgba(0, 0, 0, 0.129), rgba(0, 0, 0, 0.311), black);
-      box-shadow: 2px 2px 15px #9e8461;
+      box-shadow: 2px 2px 15px #002f6c;
     }
     
     a.Alink-preview:link, a.Alink-preview:active {
@@ -2539,12 +2563,12 @@
     
     .preview-scnsht {
       height: 25vh;
-      box-shadow: 2px 2px 2px #d6c09f23;
+      box-shadow: 2px 2px 2px #b6261343;
     }
   
     .preview-scnsht2 {
       height: 28vh;
-      box-shadow: 2px 2px 2px #d6c09f23;
+      box-shadow: 2px 2px 2px #b6261343;
     }
   
     .ftb1-head {
@@ -2616,12 +2640,12 @@
     .fhd-tools-para-p1 {
       font-family: "Roboto Mono", serif;
       display: block;
-      background-color: rgba(0, 0, 0, 0.468);
+      background-color: rgba(0, 0, 0, 0.148);
       color: rgb(255, 175, 27);
       font-weight: 200;
       border-radius: 2vh;
       font-size: 1vh;
-      box-shadow: 2px 2px 8px #9e8461;
+      box-shadow: 2px 2px 8px #002f6c;
       padding: 6px 10px 2px 10px; /*top, right, bottom, left */
       cursor: pointer;
     }
@@ -2630,11 +2654,11 @@
       font-family: "Roboto Mono", serif;
       font-weight: 200;
       display: block;
-      background-color: rgba(0, 0, 0, 0.468);
-      color: rgb(82, 134, 212);
+      background-color: rgba(0, 0, 0, 0.148);
+      color: #a3cbff;
       border-radius: 2vh;
       font-size: 1vh;
-      box-shadow: 2px 2px 8px #9e8461;
+      box-shadow: 2px 2px 8px #002f6c;
       padding: 6px 10px 2px 10px;
       cursor: pointer;
     }
@@ -2643,11 +2667,11 @@
       font-family: "Roboto Mono", serif;
       font-weight: 200;
       display: block;
-      background-color: rgba(0, 0, 0, 0.468);
+      background-color: rgba(0, 0, 0, 0.148);
       color: rgb(239, 223, 0);
       border-radius: 2vh;
       font-size: 1vh;
-      box-shadow: 2px 2px 8px #9e8461;
+      box-shadow: 2px 2px 8px #002f6c;
       padding: 6px 10px 2px 10px;
       cursor: pointer;
     }
@@ -2670,7 +2694,7 @@
       padding: 5px;
       margin-top: 0vh;
       margin: auto;
-      box-shadow: 2px 2px 2px #9e846149;
+      box-shadow: 2px 2px 2px black;
       justify-content: space-between;
     }
     
@@ -2744,53 +2768,60 @@
     
     a.Alink-feat1:link, a.Alink-feat1:visited {
       color: white;
-      border: 2px solid #d6c09f;
+      border: 2px solid white;
+      background: #004bad68;
       font-size: 1.8vh;
       text-decoration: none;
-      width: 30vw;
+      width: 34vw;
       height: 4vh;
       text-align: center;
-      padding-top: 1.1vh;
       margin: auto;
       display: flex;
       justify-content: space-evenly;
+      align-items: center;
+      border-radius: 1vw;
     }
     
     a.Alink-feat1:hover, a.Alink-feat1:active {
       color: white;
-      border: 1px solid #9e8461;
-      background-color: #9e8461c8;
+      border: 1px solid white;
+      background: linear-gradient(#004badc6, #002f6ca9);
       font-size: 1.8vh;
-      width: 34vw;
-      height: 4vh;
+      width: 36vw;
+      height: 6vh;
       transition: 1s ease-in-out;
+      transform: scale(1.1, 1.1);
       box-shadow: 2px 2px 4px black;
+      border-radius: 0;
     }
     
     a.Alink-feat2:link, a.Alink-feat2:visited {
       color: white;
-      border: 1.7px solid white;
-      background: #004aad;
+      border: 1.7px solid #ff3131;
       font-size: 1.8vh;
       text-decoration: none;
-      width: 30vw;
+      width: 34vw;
       height: 4vh;
       margin: auto;
       text-align: center;
-      padding-top: 1.1vh;
       /* margin-left: 1.2vw; */
       display: flex;
       justify-content: space-evenly;
+      align-items: center;
+      border-radius: 1vw;
     }
     
     a.Alink-feat2:hover, a.Alink-feat2:active {
       color: white;
-      background: #004badb4;
+      background: linear-gradient(#ff3131db, #4b1008);
+      border: 1px solid #ff3131;
       font-size: 1.8vh;
-      width: 34vw;
-      height: 4vh;
+      width: 36vw;
+      height: 6vh;
       transition: 1s ease-in-out;
+      transform: scale(1.1, 1.1);
       box-shadow: 2px 2px 4px black;
+      border-radius: 0;
     }
     
     .prev,
@@ -2803,7 +2834,7 @@
       margin-top: -22px;
       color: black;
       font-weight: bold;
-      font-size: 30px;
+      font-size: 40px;
       transition: 0.6s ease;
       border-radius: 50%;
       user-select: none;
@@ -3056,12 +3087,12 @@
     
     /* Handle */
     ::-webkit-scrollbar-thumb {
-      background: #004aad;
+      background: #ff3131;
     }
   
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-      background: #004aad;
+      background: #ff3131;
       width: 0.5vw;
     }
   }
@@ -3116,7 +3147,7 @@
   }
 
   .navbox {
-    height: 94vh;
+    height: 85vh;
     width: 44vw;
     margin-top: 0vh;
     margin-left: -26vw;
@@ -3176,7 +3207,7 @@
     color: white;
     font-size: 1.6vh;
     font-weight: 500;
-    text-shadow: 2px 2px 8px #004badaa;
+    text-shadow: 2px 2px 8px #b62713;
   }
   
   a.Alink-nav:hover,
@@ -3185,7 +3216,7 @@
     font-size: 1.8vh;
     font-weight: 300;
     transition: 0.5s ease-out;
-    text-shadow: 2px 2px 5px #004aad;
+    text-shadow: 2px 2px 5px #ff3131;
   }
 
   /*
@@ -3211,7 +3242,7 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 0vh;
     margin-bottom: 0vh;
   }
   
@@ -3242,13 +3273,12 @@
     width: 35vw;
     height: 5vh;
     transition: 1s ease-in-out;
-    box-shadow: 2px 2px 10px #9e8461;
+    box-shadow: 2px 2px 10px #b62713;
   }
   
   a.Alink-hbutt2:link, a.Alink-hbutt2:visited {
     color: white;
-    border-top: 2px solid #9e8461;
-    background: linear-gradient(#9e8461bf, #9e84617a);
+    background: linear-gradient(#ff3131a9, #b6261343);
     font-size: 1.8vh;
     text-shadow: 2px 2px 5px black;
     text-decoration: none;
@@ -3259,12 +3289,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 2px 2px 2px #032b44;
   }
   
   a.Alink-hbutt2:hover, a.Alink-hbutt2:active {
     color: white;
-    background: linear-gradient(#9e846191, #9e846133);
+    background: linear-gradient(#ff3131b1, #b6261342);
     border: 1px solid white;
     font-size: 1.8vh;
     width: 35vw;
@@ -3284,7 +3313,7 @@
     /* text-shadow: 2px 2px 2px black; */
     padding-left: 0vw;
     margin-left: -30vw;
-    margin-top: 50vh;
+    margin-top: 43vh;
     rotate: -90deg;
     display: inline;
     text-shadow: 2px 2px 10px black;
@@ -3373,7 +3402,7 @@
   }
   
   .code-img1 {
-    border: 2px solid #9e8461;
+    border: 2px solid #ff3131;
     height: 9.66vh;
     border-radius: 6vw;
   }
@@ -3408,9 +3437,9 @@
        black
     );
     align-self: self-end;
-    border-bottom: 2px solid #9e8461; 
-    border-top: 2px solid #9e8461;
-    border-bottom: 2px solid #9e8461;
+    border-top: 2px solid #ff3131;
+    border-left: 2px solid #ff3131;
+  border-bottom: 2px solid #b62713;
   }
   
   .code-body-content {
@@ -3458,13 +3487,13 @@
   }
   
   .codeicon, .fa-code {
-    color: #d6c09f;
+    color: #ff3131;
     display: inline;
     font-size: 1.3vh;
   }
 
   a.Alink-code:link, a.Alink-code:visited {
-    color: #d6c09f;
+    color: #ff3131;
     font-family: "Roboto Mono", serif;
     font-size: 1.5vh;
     font-weight: 500;
@@ -3475,7 +3504,7 @@
     font-family: "Roboto Mono", serif;
     font-size: 1.7vh;
     font-weight: 500;
-    color: #9e8461;
+   color: #b62713;
     transition: 1s ease-in-out;
   }
 
@@ -3606,7 +3635,7 @@
   
   .fa-brands {
     font-size: 1.2vh;
-    color: #9e8461;
+    color: #ff3131;
   }
   
   .shiftright {
@@ -3629,14 +3658,14 @@
     font-size: 1.3vh;
     text-align: center;
     text-decoration: none;
-    color: #d6c09f;
+    color: #ff3131;
     margin: auto;
   }
   
   a.Alink-moreprojects:hover, a.Alink-moreprojects:active {
     font-size: 1.3vh;
     text-decoration: none;
-    color: #9e8461;
+    color: #b62713;
   }
   
   /*
@@ -3796,7 +3825,7 @@
 
   .exper-span-red {
     font-size: 2vh;
-    color: #9e8461;
+    color: #ff3131;
     font-family: "Courier Prime", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -3840,7 +3869,7 @@
   .exper-inner-img {
     height: 37vh;
     position: absolute; 
-    border-bottom: 2px solid #9e8461;
+    border-bottom: 2px solid #ff3131;
   }
   
   .exper-inner-box {
@@ -4074,6 +4103,7 @@
     background: linear-gradient(#004bad89, #004aad);
     position: relative;
     z-index: 0;
+    box-shadow: 2px 2px 30px #002f6c;
   }
   
   .ftb1-deets {
@@ -4109,7 +4139,7 @@
     top: 24.5vh;
     transition: 0.7s ease-in-out;
     background: linear-gradient(rgba(0, 0, 0, 0.129), rgba(0, 0, 0, 0.311), black);
-    box-shadow: 2px 2px 15px #9e8461;
+    box-shadow: 2px 2px 15px #002f6c;
   }
   
   a.Alink-preview:link, a.Alink-preview:active {
@@ -4122,12 +4152,12 @@
   
   .preview-scnsht {
     height: 14.5vh;
-    box-shadow: 2px 2px 2px #d6c09f23;
+    box-shadow: 2px 2px 2px #b6261343;
   }
 
   .preview-scnsht2 {
     height: 16.3vh;
-    box-shadow: 2px 2px 2px #d6c09f23;
+    box-shadow: 2px 2px 2px #b6261343;
   }
 
   .ftb1-head {
@@ -4199,12 +4229,12 @@
   .fhd-tools-para-p1 {
     font-family: "Roboto Mono", serif;
     display: block;
-    background-color: rgba(0, 0, 0, 0.468);
+    background-color: rgba(0, 0, 0, 0.148);
     color: rgb(255, 175, 27);
     font-weight: 200;
     border-radius: 2vh;
     font-size: 1.2vh;
-    box-shadow: 2px 2px 8px #9e8461;
+    box-shadow: 2px 2px 8px #002f6c;
     padding: 3px 10px 2px 10px; /*top, right, bottom, left */
     cursor: pointer;
   }
@@ -4213,11 +4243,11 @@
     font-family: "Roboto Mono", serif;
     font-weight: 200;
     display: block;
-    background-color: rgba(0, 0, 0, 0.468);
-    color: rgb(82, 134, 212);
+    background-color: rgba(0, 0, 0, 0.148);
+    color: #a3cbff;
     border-radius: 2vh;
     font-size: 1.2vh;
-    box-shadow: 2px 2px 8px #9e8461;
+    box-shadow: 2px 2px 8px #002f6c;
     padding: 3px 10px 2px 10px;
     cursor: pointer;
   }
@@ -4226,11 +4256,11 @@
     font-family: "Roboto Mono", serif;
     font-weight: 200;
     display: block;
-    background-color: rgba(0, 0, 0, 0.468);
+    background-color: rgba(0, 0, 0, 0.148);
     color: rgb(239, 223, 0);
     border-radius: 2vh;
     font-size: 1vh;
-    box-shadow: 2px 2px 8px #9e8461;
+    box-shadow: 2px 2px 8px #002f6c;
     padding: 3px 10px 2px 10px;
     cursor: pointer;
   }
@@ -4254,7 +4284,7 @@
     padding: 5px;
     margin-top: 0vh;
     margin: auto;
-    box-shadow: 2px 2px 2px #69574069;
+    box-shadow: 2px 2px 2px black;
     justify-content: space-between;
   }
   
@@ -4325,11 +4355,13 @@
     width: 76vw;
     display: flex;
     margin: auto;
+    
   }
   
   a.Alink-feat1:link, a.Alink-feat1:visited {
     color: white;
-    border: 2px solid #d6c09f;
+    border: 2px solid white;
+    background: #004bad68;
     font-size: 1.2vh;
     text-decoration: none;
     width: 34vw;
@@ -4339,23 +4371,25 @@
     margin: auto;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1vw;
   }
   
   a.Alink-feat1:hover, a.Alink-feat1:active {
     color: white;
-    border: 1px solid #9e8461;
-    background-color: #9e8461c8;
+    border: 1px solid white;
+    background: linear-gradient(#004badc6, #002f6ca9);
     font-size: 1.2vh;
     width: 34vw;
     height: 4vh;
     transition: 1s ease-in-out;
     box-shadow: 2px 2px 4px black;
+    border-radius: 0;
   }
   
   a.Alink-feat2:link, a.Alink-feat2:visited {
     color: white;
-    border: 1.7px solid white;
-    background: #004aad;
+    border: 1.7px solid #ff3131;
     font-size: 1.2vh;
     text-decoration: none;
     width: 34vw;
@@ -4366,16 +4400,20 @@
     /* margin-left: 1.2vw; */
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1vw;
   }
   
   a.Alink-feat2:hover, a.Alink-feat2:active {
     color: white;
-    background: #032b44;
+    background: linear-gradient(#ff3131db, #4b1008);
+    border: 1px solid #ff3131;
     font-size: 1.2vh;
     width: 34vw;
     height: 4vh;
     transition: 1s ease-in-out;
     box-shadow: 2px 2px 4px black;
+    border-radius: 0;
   }
   
   .prev,
