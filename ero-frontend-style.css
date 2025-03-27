@@ -34,8 +34,10 @@
   }
 
   .frontend-hero {
-    height: 100vh;
-    background-image: url("images/IMG_2946.JPG.jpeg");
+    height: 110vh;
+    background-color: #f5f5f5;
+    /*
+    background-image: url("images/david\ ero\ bkg.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position-x: 100%;
@@ -44,7 +46,7 @@
     background-origin: padding-box;
     z-index: 0;
     object-fit: cover;
-    object-position: 100% 100%;
+    object-position: 100% 100%; */
     display: flex;
     justify-content: space-between;
   }
@@ -98,9 +100,9 @@
 
   .navbox {
     height: 90vh;
-    width: 29vw;
+    width: 30vw;
     margin-right: 2vw;
-    margin-left: 30vw;
+    margin-left: 18vw;
     margin-top: 2vh;
   }
   
@@ -138,19 +140,18 @@
   a.Alink-nav:link,
   a.Alink-nav:visited {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 2.6vh;
     font-weight: 500;
-    text-shadow: 2px 2px 8px #b62713;
   }
   
   a.Alink-nav:hover,
   a.Alink-nav:active {
-    color: white;
+    color: black;
     font-size: 3vh;
     font-weight: 300;
     transition: 0.5s ease-out;
-    text-shadow: 2px 2px 5px #ff3131;
+    text-shadow: 1px 1px 2px #004aad;
   }
 
   .hero-buttons {
@@ -158,19 +159,16 @@
     width: 28.2vw;
     display: flex;
     margin: auto;
-    padding-left: 2vw;
+    justify-content: space-between;
     margin-top: 43vh;
   }
   
   a.Alink-hbutt1:link, a.Alink-hbutt1:visited {
-    color: white;
-    /* background-color: #006aad; */
-    border-top: 1px solid #004aad;
-    border-left: 1px solid #004aad;
-    border-bottom: 1px solid #004aad;
-    background: linear-gradient(#004bad69, #002f6c6b);
-    font-size: 3.1vh;
-    text-shadow: 2px 2px 5px black;
+    font-family: "Roboto Mono", sans-serif;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 3vh;
     text-decoration: none;
     width: 12vw;
     height: 7.9vh;
@@ -178,25 +176,24 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 2px 2px 6px black;
+    border-radius: 1vh;
   }
   
   a.Alink-hbutt1:hover, a.Alink-hbutt1:active {
     color: white;
-    border: 1px solid white;
-    background-color: #004bad2b;
-    font-size: 3.1vh;
+    background-color: black;
+    font-size: 3vh;
     width: 15vw;
     height: 7.9vh;
-    transition: 1s ease-in-out;
-    box-shadow: 2px 2px 10px #b62713;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 5px #004aad;
   }
   
   a.Alink-hbutt2:link, a.Alink-hbutt2:visited {
+    font-family: "Roboto Mono", sans-serif;
     color: white;
-    background: linear-gradient(#ff3131a9, #b6261343);
-    font-size: 3.1vh;
-    text-shadow: 2px 2px 5px black;
+    background-color: #ff3131;
+    font-size: 3vh;
     text-decoration: none;
     width: 12vw;
     height: 8vh;
@@ -205,32 +202,36 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 1vh;
+    border: 2px solid black;
   }
   
   a.Alink-hbutt2:hover, a.Alink-hbutt2:active {
     color: white;
-    border: 1px solid white;
-    background: linear-gradient(#ff3131b1, #b6261342);
-    font-size: 3.1vh;
+    background: linear-gradient(#ff3131, #b62613);
+    border: none;
+    font-size: 3vh;
     width: 15vw;
     height: 8vh;
-    transition: 1s ease-in-out;
-    box-shadow: 2px 2px 10px #004bad99;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 5px black;
   }
   
   h1 {
-    font-family: "Courier Prime", serif;
+    font-family: "Boldonse", system-ui;
     font-weight: 100;
-    font-size: 12vh;
-    color: white;
+    font-size: 15vh;
+    color: black;
     text-align: left;
-    line-height: 8vh;
+    line-height: 20vh;
     /* text-shadow: 2px 2px 2px black; */
     padding-left: 1.7vw;
-    margin-top: 50vh;
+    margin-top: 25vh;
+    width: 50vw;
     /* text-shadow: 2px 2px 8px #004aad;*/
   }
 
+  /*
   .herotitle {
     font-size: 25vh;
     color: rgba(255, 255, 255, 0.33);
@@ -247,9 +248,10 @@
     font-size: 5vh;
     color: white;
   }
+    */
 
   .code {
-    height: 474vh;
+    height: 480vh;
     background-color: white;
     padding-top: 0vh;
   }
@@ -289,14 +291,13 @@
     margin: auto;
     display: flex;
     margin-left: 25.5vw;
-    margin-top: -5vh;
+    margin-top: -14vh;
     justify-content: space-between;
   }
   
   .code-img1 {
-    border: 2px solid #ff3131;
     height: 27.3vh;
-    border-radius: 5vw;
+    border-radius: 5.2vw;
   }
   
   .code-img2 {
@@ -320,16 +321,18 @@
   
   .code-body {
     width: 100%;
-    height: 470vh;
+    height: 452vh;
     background: linear-gradient(
       180deg,
-      #004aad,
-      #002f6c,
-      black
+      #ffffff,
+      #fafafa,
+      #f5f5f5,
+      #e5e5e5,
+      #d4d4d4
     );
-    /* border-top: 2px solid #be0032; */
+    /* border-top: 2px solid #be0032; 
     border-left: 2px solid #ff3131;
-    border-bottom: 2px solid #b62713;
+    border-bottom: 2px solid #b62713; */
   }
   
   .code-body-content {
@@ -345,10 +348,10 @@
   }
   
   .code-body-text-heading {
-    font-family: "Roboto Mono", serif;
-    color: white;
+    font-family: "Cascadia Code", serif;
+    color: black;
     font-size: 3vh;
-    font-weight: 400;
+    font-weight: 500;
     font-optical-sizing: auto;
     font-style: normal;
     padding-top: 1vh;
@@ -356,7 +359,7 @@
   
   .code-body-text-para {
     font-family: "Roboto Mono", serif;
-    color: white;
+    color: black;
     font-size: 2vh;
     font-weight: 300;
     font-optical-sizing: auto;
@@ -388,11 +391,10 @@
   }
   
   .projects {
-    height: 400vh;
+    height: 409.7vh;
     display: flex;
     flex-direction: column;
-    /*
-    background-image: url("images/IMG_0214.JPG");
+    background-image: url("images/Marketing\ Portfolio\ and\ Resume\ Website\ in\ Black\ and\ White\ Neon\ Green\ Professional\ Style.png\ \(2\).png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: 100%;
@@ -400,51 +402,55 @@
     background-size: cover;
     background-origin: padding-box;
     object-fit: cover;
-    object-position: 100% 100%;*/
+    object-position: 100% 100%;
   }
   
   .projects1 {
-    height: 401vh;
+    height: 408vh;
     padding-top: 4vh;
+    padding-bottom: 10vh;
   }
   
   .projects-heading-bold {
-    color: #004aad;
-    font-size: 10vh;
+    font-family: "Boldonse", system-ui;
+    color: black;
+    font-size: 7vh;
     font-weight: 200;
     position: relative;
     top: 35vh;
     margin-left: 3vw;
     position: sticky;
     z-index: 0;
-    letter-spacing: -0.3vw;
-    text-shadow: 2px 2px 7px black;
+    letter-spacing: 0vw;
   }
   
   .projects-heading-para {
-    color: white;
+    color: black;
     font-size: 2vh;
     text-align: left;
     position: relative;
     position: sticky;
     top: 50vh;
-    margin-left: 4vw;
+    margin-left: 3.2vw;
   }
   
   .projects-logo {
     height: 15vh;
     position: relative;
-    margin-top: 10vh;
     position: sticky;
     z-index: 0;
     margin-left: 89vw;
-    top: 75vh;
+    top: 70vh;
   }
   
   .projects2 {
-    height: 358vh;
+    height: 374.5vh;
     z-index: 2;
-    background: linear-gradient(#006bad04,#006bad27, #006bad2e, #006bad20, #032b4471, #032b4471, #032b449a, black);
+    background: linear-gradient(#ffffff13,
+    #fafafa6f,
+    #f5f5f565,
+    #e5e5e570,
+    #d4d4d471);
     position: relative;
     bottom: 0vh;
     display: flex;
@@ -695,8 +701,8 @@
     color: black;
     font-weight: 500;
     font-size: 7vh;
-    font-family: "Courier Prime", serif;
-    text-shadow: 2px 2px 10px #004aad;
+    font-family: "Boldonse", system-ui;
+    text-shadow: 2px 2px 4px #004aad;
   }
 
   .exper-span-red {
@@ -900,7 +906,7 @@
   }
   
   .featured-inner {
-    width: 94vw;
+    width: 98vw;
     height: 140vh;
     margin: auto;
     display: flex;
@@ -915,11 +921,11 @@
   }
   
   .feat-heading {
-    font-family: "Courier Prime", serif;
+    font-family: "Boldonse", system-ui;
     font-optical-sizing: auto;
     font-style: normal;
     color: black;
-    font-size: 8vh;
+    font-size: 7vh;
     font-weight: 300;
     text-align: center;
   }
@@ -959,7 +965,7 @@
   }
   
   .ftb1, .ftb2, .ftb3, .ftb4, .ftb5 {
-    width: 80vw;
+    width: 90vw;
     height: 70vh;
     display: flex;
     flex-direction: row;
@@ -979,11 +985,11 @@
   
   .ftb1-deets {
     width: 33vw;
-    height: 55vh;
+    height: 53vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5vh;
+    margin-top: 3vh;
   }
   
   .ftb1-preview {
@@ -991,7 +997,7 @@
     height: 60vh;
     position: absolute;
     z-index: 1;
-    left: 37vw;
+    left: 48vw;
     top: 9.7vh;
     display: flex;
     flex-direction: column;
@@ -1005,7 +1011,7 @@
     height: 73vh;
     position: absolute;
     z-index: 1;
-    left: 37vw;
+    left: 48vw;
     top: -3.3vh;
     transition: 0.7s ease-in-out;
     background: linear-gradient(rgba(0, 0, 0, 0.129), rgba(0, 0, 0, 0.311), black);
@@ -1252,7 +1258,6 @@
     transition: 0.8s ease-in-out;
     transform: scale(1.1, 1.1);
     box-shadow: 2px 2px 5px black;
-    border-radius: 0;
   }
   
   a.Alink-feat2:link, a.Alink-feat2:visited {
@@ -1281,7 +1286,6 @@
     transition: 1s ease-in-out;
     transform: scale(1.1, 1.1);
     box-shadow: 2px 2px 5px black;
-    border-radius: 0;
   }
   
   .prev,
