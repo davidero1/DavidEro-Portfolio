@@ -462,7 +462,8 @@
     #fafafa6f,
     #f5f5f565,
     #e5e5e570,
-    #d4d4d471);
+    #d4d4d48a,
+      white);
     position: relative;
     bottom: 0vh;
     display: flex;
@@ -1965,7 +1966,7 @@
     .projects-logo {
       height: 8vh;
       position: relative;
-      margin-top: 1vh;
+      top: 3vh;
       position: sticky;
       z-index: 0;
       margin-left: 80vw;
@@ -1978,7 +1979,7 @@
       width: 2vw;
       position: relative;
       left: 94vw;
-      top: 90vh;
+      top: 94vh;
       position: fixed;
       z-index: 99;
     }
@@ -1990,7 +1991,8 @@
       #fafafa6f,
       #f5f5f565,
       #e5e5e570,
-      #d4d4d471);
+      #d4d4d48a,
+      white);
       position: relative;
       bottom: 0vh;
       display: flex;
