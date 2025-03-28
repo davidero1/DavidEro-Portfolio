@@ -251,7 +251,7 @@
     */
 
   .code {
-    height: 480vh;
+    height: 454vh;
     background-color: white;
     padding-top: 0vh;
   }
@@ -442,11 +442,22 @@
     margin-left: 89vw;
     top: 70vh;
   }
+
+  .toparrow {
+    font-size: 4vh;
+    display: inline;
+    width: 2vw;
+    position: relative;
+    left: 96vw;
+    top: 90vh;
+    position: fixed;
+    z-index: 99;
+  }
   
   .projects2 {
     height: 374.5vh;
     z-index: 2;
-    background: linear-gradient(#ffffff13,
+    background: linear-gradient(#ffffff05,
     #fafafa6f,
     #f5f5f565,
     #e5e5e570,
@@ -519,7 +530,7 @@
   
   .fa-brands {
     font-size: 3vh;
-    color: #ff3131;
+    color: black;
   }
   
   .shiftright {
@@ -660,7 +671,7 @@
   .experience {
     height: 120vh;
     background-color: white;
-    padding-top: 8vh;
+    padding-top: 5vh;
   }
   
   .exper-inner {
@@ -673,7 +684,9 @@
   
   .exper-inner-head {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    width: 90vw;
+    margin: auto;
   }
   
   .exper-inner-head1 {
@@ -702,7 +715,6 @@
     font-weight: 500;
     font-size: 7vh;
     font-family: "Boldonse", system-ui;
-    text-shadow: 2px 2px 4px #004aad;
   }
 
   .exper-span-red {
@@ -725,32 +737,18 @@
     text-align: center;
   }
 
-  .exper-inner-overlay {
-    position: absolute;
-    z-index: 1;
-    background-color: black;
-    height: 41.41vh;
-  }
-  
   .exper-inner-head2 {
-    position: absolute;
-    background-image: url("images/Untitled\ design\ -\ 2.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: 100%;
-    background-position-y: 100%;
-    background-size: cover;
-    background-origin: padding-box;
-    z-index: 0;
-    object-fit: cover;
-    object-position: 10% 100%;
-    filter: grayscale(100%, 100%);
+    width: 9vw;
+    height: 17vh;
+    align-content: center;
+    margin: auto;
   }
   
   .exper-inner-img {
-    height: 41.41vh;
-    position: absolute;
-    border-bottom: 2px solid #9e8461;
+    height: 14vh;
+    top: 0;
+    position: relative;
+    align-content: center;
   }
   
   .exper-inner-box {
@@ -843,6 +841,11 @@
     color: #004aad;
     font-weight: 300;
   }
+
+  .experyears {
+    color: black;
+    font-size: 1.4vh;
+  }
   
   .fa-brands {
     font-size: 3vh;
@@ -889,7 +892,7 @@
     height: 50vh;
     align-self: center;
     transform: skewX(-10deg);
-    box-shadow: 2px 2px 20px black;
+    box-shadow: 2px 8px 10px black;
   }
   
   .exper-cert-img:hover {
@@ -897,7 +900,7 @@
     align-self: center;
     transform: skewX(0deg);
     box-shadow: 2px 2px 20px #004aad;
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
   }
   
   .featured-projects {
@@ -980,7 +983,6 @@
     z-index: 0;
     border-radius: 6vw;
     border: 2px solid black;
-    box-shadow: 2px 2px 20px #002f6c;
   }
   
   .ftb1-deets {
@@ -1446,6 +1448,7 @@
     font-weight: 300;
     font-size: 2.3vh;
     justify-content: center;
+    border-radius: 1vw;
   }
   
   a.cic-email:hover, a.cic-email:active {
@@ -1460,7 +1463,7 @@
   
   a.cic-WA:link, a.cic-WA:visited {
     background-color: black;
-    border-bottom: 2px solid greenyellow;
+    border-bottom: 1px solid greenyellow;
     height: 8vh;
     width: 12vw;
     text-decoration: none;
@@ -1472,6 +1475,7 @@
     font-weight: 300;
     font-size: 2.3vh;
     justify-content: center;
+    border-radius: 1vw;
   }
   
   a.cic-WA:hover, a.cic-WA:active {
@@ -2035,7 +2039,7 @@
     
     .fa-brands {
       font-size: 2vh;
-      color: #ff3131;
+      color: black;
     }
     
     .shiftright {
@@ -2217,8 +2221,7 @@
       color: black;
       font-weight: 500;
       font-size: 3.6vh;
-      font-family: "Courier Prime", serif;
-      text-shadow: 2px 2px 10px #004aad;
+      font-family: "Boldonse", system-ui;
     }
   
     .exper-span-red {
@@ -2240,13 +2243,6 @@
       font-weight: 400;
       text-align: justify;
     }
-  
-    .exper-inner-overlay {
-      position: absolute;
-      z-index: 1;
-      background-color: black;
-      height: 41.41vh;
-    }
     
     .exper-inner-head2 {
       position: absolute;
@@ -2266,7 +2262,6 @@
     .exper-inner-img {
       height: 41.41vh;
       position: absolute;
-      border-bottom: 2px solid #9e8461;
     }
     
     .exper-inner-box {
@@ -2421,7 +2416,7 @@
       align-self: center;
       transform: skewX(0deg);
       box-shadow: 2px 2px 20px #004aad;
-      transition: 0.5s ease-in-out;
+      transition: 0.8s ease-in-out;
     }
     
     .featured-projects {
@@ -2987,6 +2982,7 @@
       font-weight: 300;
       font-size: 2vh;
       justify-content: center;
+      border-radius: 1vw;
     }
     
     a.cic-email:hover, a.cic-email:active {
@@ -3001,7 +2997,7 @@
     
     a.cic-WA:link, a.cic-WA:visited {
       background-color: black;
-      border-bottom: 2px solid greenyellow;
+      border-bottom: 1px solid greenyellow;
       height: 5vh;
       width: 20vw;
       text-decoration: none;
@@ -3013,6 +3009,7 @@
       font-weight: 300;
       font-size: 2vh;
       justify-content: center;
+      border-radius: 1vw;
     }
     
     a.cic-WA:hover, a.cic-WA:active {
@@ -3639,7 +3636,7 @@
   
   .fa-brands {
     font-size: 1.2vh;
-    color: #ff3131;
+    color: black;
   }
   
   .shiftright {
@@ -3823,8 +3820,7 @@
     color: black;
     font-weight: 500;
     font-size: 5vh;
-    font-family: "Courier Prime", serif;
-    text-shadow: 2px 2px 5px #004aad;
+    font-family: "Boldonse", system-ui;
   }
 
   .exper-span-red {
@@ -3847,13 +3843,6 @@
     line-height: 2.3vh;
     text-align: justify;
   }
-
-  .exper-inner-overlay {
-    position: absolute;
-    z-index: 1;
-    background-color: black;
-    height: 41.41vh;
-  }
   
   .exper-inner-head2 {
     position: absolute;
@@ -3873,7 +3862,6 @@
   .exper-inner-img {
     height: 37vh;
     position: absolute; 
-    border-bottom: 2px solid #ff3131;
   }
   
   .exper-inner-box {
@@ -4022,7 +4010,7 @@
     align-self: center;
     transform: skewX(0deg);
     box-shadow: 2px 2px 20px black;
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
   }
   
   .featured-projects {
@@ -4574,6 +4562,7 @@
     font-weight: 300;
     font-size: 1.8vh;
     justify-content: center;
+    border-radius: 1vw;
   }
   
   a.cic-email:hover, a.cic-email:active {
@@ -4587,7 +4576,7 @@
   
   a.cic-WA:link, a.cic-WA:visited {
     background-color: black;
-    border-bottom: 2px solid greenyellow;
+    border-bottom: 1px solid greenyellow;
     height: 5vh;
     width: 25vw;
     text-decoration: none;
@@ -4599,6 +4588,7 @@
     font-weight: 300;
     font-size: 1.8vh;
     justify-content: center;
+    border-radius: 1vw;
   }
   
   a.cic-WA:hover, a.cic-WA:active {
