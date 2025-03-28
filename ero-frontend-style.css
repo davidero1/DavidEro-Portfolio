@@ -425,6 +425,7 @@
   }
   
   .projects-heading-para {
+    font-family: "Roboto Mono", sans-serif;
     color: black;
     font-size: 2vh;
     text-align: left;
@@ -935,7 +936,7 @@
   
   .feat-para {
     font-family: "Roboto Mono", serif;
-    color: rgb(88, 88, 88);
+    color: rgb(65, 65, 65);
     text-align: center;
     font-size: 2.4vh;
   }
@@ -1435,6 +1436,7 @@
   }
   
   a.cic-email:link, a.cic-email:visited {
+    font-family: "Roboto Mono", sans-serif;
     height: 8vh;
     width: 12vw;
     text-decoration: none;
@@ -1445,7 +1447,7 @@
     border-bottom: 2px solid #004aad;
     cursor: pointer;
     color: black;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2.3vh;
     justify-content: center;
     border-radius: 1vw;
@@ -1462,6 +1464,7 @@
   }
   
   a.cic-WA:link, a.cic-WA:visited {
+    font-family: "Roboto Mono", sans-serif;
     background-color: black;
     border-bottom: 1px solid greenyellow;
     height: 8vh;
@@ -1472,7 +1475,7 @@
     text-align: center;
     cursor: pointer;
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2.3vh;
     justify-content: center;
     border-radius: 1vw;
@@ -1566,6 +1569,8 @@
   
     .frontend-hero {
       height: 100vh;
+      background-color: #f5f5f5;
+      /*
       background-image: url("images/IMG_2946.JPG.jpeg");
       background-repeat: no-repeat;
       background-attachment: scroll;
@@ -1575,7 +1580,7 @@
       background-origin: padding-box;
       z-index: 0;
       object-fit: cover;
-      object-position: 100% 100%;
+      object-position: 100% 100%; */
       display: flex;
       justify-content: space-between;
     }
@@ -1594,15 +1599,15 @@
     
     .logobox1b {
       display: block;
-      margin-top: -2vh;
+      margin-top: -1.2vh;
     }
     
     .logo1a {
-      height: 5.3vh;
+      height: 4vh;
     }
     
     .logo1b {
-      height: 9vh;
+      height: 7vh;
       margin-left: 0.5vw;
     }
   
@@ -1611,7 +1616,7 @@
       width: 42vw;
       margin-right: 0vw;
       margin-top: 0vh;
-      margin-left: -20vw;
+      margin-left: -33vw;
       padding-right: 3vw;
     }
 
@@ -1651,19 +1656,18 @@
     a.Alink-nav:link,
     a.Alink-nav:visited {
       text-decoration: none;
-      color: white;
-      font-size: 2.2vh;
+      color: black;
+      font-size: 2vh;
       font-weight: 400;
-      text-shadow: 2px 2px 8px #b62713;
     }
     
     a.Alink-nav:hover,
     a.Alink-nav:active {
-      color: white;
-      font-size: 2.4vh;
+      color: black;
+      font-size: 2.3vh;
       font-weight: 300;
       transition: 0.5s ease-out;
-      text-shadow: 2px 2px 5px #ff3131;
+      text-shadow: 2px 2px 5px #004aad;
     }
   
     .hero-buttons {
@@ -1678,14 +1682,11 @@
     }
     
     a.Alink-hbutt1:link, a.Alink-hbutt1:visited {
-      color: white;
-      /* background-color: #006aad; */
-      border-top: 1px solid #004aad;
-      border-left: 1px solid #004aad;
-      border-bottom: 1px solid #004aad;
-      background: linear-gradient(#004bad69, #002f6c6b);
+      color: black;
+      font-family: "Roboto Mono", sans-serif;
+      background-color: white;
+      border: 2px solid black;
       font-size: 2.5vh;
-      text-shadow: 2px 2px 5px black;
       text-decoration: none;
       width: 35vw;
       height: 6vh;
@@ -1693,25 +1694,23 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      box-shadow: 2px 2px 6px black;
     }
     
     a.Alink-hbutt1:hover, a.Alink-hbutt1:active {
       color: white;
-      border: 1px solid white;
-      background-color: #004bad2b;
+      background-color: black;
       font-size: 2.5vh;
       width: 35vw;
       height: 7vh;
       transition: 1s ease-in-out;
-      box-shadow: 2px 2px 10px #b62713;
+      box-shadow: 2px 2px 10px #004aad;
     }
     
     a.Alink-hbutt2:link, a.Alink-hbutt2:visited {
+      font-family: "Roboto Mono", sans-serif;
       color: white;
-      background: linear-gradient(#ff3131a9, #b6261343);
+      background-color: #ff3131;
       font-size: 2.5vh;
-      text-shadow: 2px 2px 5px black;
       text-decoration: none;
       width: 35vw;
       height: 6vh;
@@ -1720,32 +1719,35 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      border-radius: 1vh;
+      border: 2px solid black;
     }
     
     a.Alink-hbutt2:hover, a.Alink-hbutt2:active {
       color: white;
-      border: 1px solid white;
-      background: linear-gradient(#ff3131b1, #b6261342);
+      border: none;
+      background: linear-gradient(#ff3131, #b62613);
       font-size: 2.5vh;
       width: 35vw;
       height: 7vh;
       transition: 1s ease-in-out;
-      box-shadow: 2px 2px 10px #004bad99;
+      box-shadow: 2px 2px 10px black;
     }
     
     h1 {
-      font-family: "Courier Prime", serif;
+      font-family: "Boldonse", system-ui;
       font-weight: 100;
       font-size: 9vh;
-      color: white;
+      color: black;
       text-align: left;
-      line-height: 6vh;
+      line-height: 12vh;
       /* text-shadow: 2px 2px 2px black; */
       padding-left: 1vw;
-      margin-top: 38vh;
-      text-shadow: 2px 2px 8px black;
+      margin-top: 27vh;
+      width: 88vw;
     }
 
+    /*
     .herotitle {
       font-size: 8vh;
       color: rgba(255, 255, 255, 0.33);
@@ -1762,9 +1764,11 @@
       color: white;
       font-size: 3vh;
     }
+      */
   
+    
     .code {
-      height: 380vh;
+      height: 378vh;
       width: 100%;
       background-color: white;
       padding-top: 0vh;
@@ -1818,7 +1822,6 @@
     }
     
     .code-img1 {
-      border: 2px solid #ff3131;
       height: 17.1vh;
       margin-top: -3vh;
       border-radius: 5vw;
@@ -1845,17 +1848,19 @@
     
     .code-body {
       width: 100%;
-      height: 380vh;
+      height: 370vh;
       background: linear-gradient(
         180deg,
-       #004aad,
-       #002f6c,
-       black
+        #ffffff,
+        #fafafa,
+        #f5f5f5,
+        #e5e5e5,
+        #d4d4d4
       );
       align-self: self-end;
-      border-top: 2px solid #ff3131;
+      /* border-top: 2px solid #ff3131;
       border-left: 2px solid #ff3131;
-    border-bottom: 2px solid #b62713;
+      border-bottom: 2px solid #b62713; */
     }
     
     .code-body-content {
@@ -1871,8 +1876,8 @@
     }
     
     .code-body-text-heading {
-      font-family: "Roboto Mono", serif;
-      color: white;
+      font-family: "Cascadia Code", serif;
+      color: black;
       font-size: 2.5vh;
       font-weight: 400;
       font-optical-sizing: auto;
@@ -1882,7 +1887,7 @@
     
     .code-body-text-para {
       font-family: "Roboto Mono", serif;
-      color: white;
+      color: black;
       font-size: 1.5vh;
       font-weight: 300;
       font-optical-sizing: auto;
@@ -1913,42 +1918,42 @@
     }
 
     .projects {
-      height: 330vh;
+      height: 336vh;
       display: flex;
       flex-direction: column;
-      width: 99vw;
-      /*
-      background-image: url("images/IMG_2669.JPG");
+      width: 99.5vw;
+      background-image: url("images/Marketing\ Portfolio\ and\ Resume\ Website\ in\ Black\ and\ White\ Neon\ Green\ Professional\ Style.png\ \(2\).png");
       background-repeat: no-repeat;
       background-attachment: fixed;
-      background-position-x: 100%;
-      background-position-y: 40%;
+      background-position-x: 50%;
+      background-position-y: 100%;
       background-size: cover;
       background-origin: padding-box;
       object-fit: cover;
-      object-position: 100% 100%; */
+      object-position: 100% 100%;
     }
     
     .projects1 {
-      height: 325vh;
+      height: 336vh;
       padding-top: 4vh;
     }
  
     .projects-heading-bold {
-      color: #004aad;
+      font-family: "Boldonse", system-ui;
+      color: black;
       font-size: 7vh;
       font-weight: 200;
       position: relative;
-      top: 35vh;
+      top: 30vh;
       margin-left: 3vw;
       position: sticky;
       z-index: 0;
       letter-spacing: -0.3vw;
-      text-shadow: 2px 2px 7px black;
     }
     
     .projects-heading-para {
-      color: white;
+      font-family: "Roboto Mono", sans-serif;
+      color: black;
       font-size: 1.8vh;
       text-align: left;
       position: relative;
@@ -1958,19 +1963,34 @@
     }
     
     .projects-logo {
-      height: 10vh;
+      height: 8vh;
       position: relative;
-      margin-top: 10vh;
+      margin-top: 1vh;
       position: sticky;
       z-index: 0;
       margin-left: 80vw;
       top: 80vh;
     }
+
+    .toparrow {
+      font-size: 3vh;
+      display: inline;
+      width: 2vw;
+      position: relative;
+      left: 94vw;
+      top: 90vh;
+      position: fixed;
+      z-index: 99;
+    }
     
     .projects2 {
-      height: 305vh;
+      height: 308vh;
       z-index: 2;
-      background: linear-gradient(#006bad04,#006bad27, #006bad2e, #006bad20, #032b4471, #032b4471, #032b449a, black);
+      background: linear-gradient(#ffffff05,
+      #fafafa6f,
+      #f5f5f565,
+      #e5e5e570,
+      #d4d4d471);
       position: relative;
       bottom: 0vh;
       display: flex;
@@ -2178,14 +2198,14 @@
     */
     
     .experience {
-      height: 125vh;
+      height: 150vh;
       background-color: white;
       padding-top: 3vh;
     }
     
     .exper-inner {
       margin: auto;
-      height: 120vh;
+      height: 149vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -2193,12 +2213,15 @@
     
     .exper-inner-head {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      width: 90vw;
+      height: 50vh;
+      margin: auto;
     }
     
     .exper-inner-head1 {
-      width: 93vw;
-      height: 30vh;
+      width: 90vw;
+      height: 37vh;
       margin-top: 0vh;
       margin: auto;
       border-bottom: 1px solid #757575;
@@ -2220,12 +2243,12 @@
     .exper-span {
       color: black;
       font-weight: 500;
-      font-size: 3.6vh;
+      font-size: 7vh;
       font-family: "Boldonse", system-ui;
     }
   
     .exper-span-red {
-      font-size: 2.2vh;
+      font-size: 3vh;
       color: #ff3131;
       font-family: "Courier Prime", serif;
       font-optical-sizing: auto;
@@ -2245,32 +2268,28 @@
     }
     
     .exper-inner-head2 {
-      position: absolute;
-      background-image: url("images/Untitled\ design\ -\ 2.png");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position-x: 100%;
-      background-position-y: 100%;
-      background-size: cover;
-      background-origin: padding-box;
-      z-index: 0;
-      object-fit: cover;
-      object-position: 10% 100%;
-      filter: grayscale(100%, 100%);
+      width: 23vw;
+      height: 14vh;
+      align-content: center;
+      margin: auto;
     }
     
     .exper-inner-img {
-      height: 41.41vh;
-      position: absolute;
+      height: 10vh;
+      top: 0;
+      position: relative;
+      align-content: center;
+      margin: auto;
     }
     
     .exper-inner-box {
       width: 94vw;
-      height: 84vh;
+      height: 84.9vh;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       margin: auto;
+      margin-top: 0vh;
     }
     
     .scale {
@@ -2283,7 +2302,7 @@
       top: 79vh;
       margin: auto;
       margin-top: 2vh;
-      height: 7vh;
+      height: 5vh;
       align-self: center;
       align-content: center;
       z-index: 3;
@@ -2329,6 +2348,7 @@
       display: flex;
       margin: auto;
       margin-left: 0vw;
+      margin-top: 0vh;
     }
     
     .exper-info-logobox {
@@ -2399,7 +2419,7 @@
       margin-left: 0vw;
       margin: auto;
       width: 69vw;
-      height: 59vh;
+      height: 55vh;
       display: flex;
       padding-left: 0vw;
     }
@@ -2420,13 +2440,13 @@
     }
     
     .featured-projects {
-      height: 133vh;
+      height: 140vh;
       background-color: white;
     }
     
     .featured-inner {
-      width: 94vw;
-      height: 140vh;
+      width: 95vw;
+      height: 139vh;
       margin: auto;
       display: flex;
       flex-direction: column;
@@ -2435,33 +2455,33 @@
     
     .featured-head {
       margin: auto;
-      height: 12vh;
-      margin-top: 8vh;
+      height: 30vh;
+      margin-top: 5vh;
     }
     
     .feat-heading {
-      font-family: "Courier Prime", serif;
+      font-family: "Boldonse", system-ui;
       font-optical-sizing: auto;
       font-style: normal;
       color: black;
-      font-size: 8vh;
-      line-height: 6vh;
+      font-size: 7vh;
+      line-height: 10vh;
       font-weight: 300;
       text-align: center;
     }
     
     .feat-para {
       font-family: "Roboto Mono", serif;
-      color: rgb(88, 88, 88);
+      color: rgb(65, 65, 65);
       text-align: center;
-      font-size: 2.4vh;
+      font-size: 2.2vh;
     }
     
     .featured-body {
       display: flex;
-      height: 70vh;
-      width: 90vw;
-      margin-top: 2vh;
+      height: 90vh;
+      width: 95vw;
+      margin-top: 0vh;
       position: relative;
       margin: auto;
     }
@@ -2969,6 +2989,7 @@
     }
     
     a.cic-email:link, a.cic-email:visited {
+      font-family: "Roboto Mono", sans-serif;
       height: 5vh;
       width: 20vw;
       text-decoration: none;
@@ -2979,7 +3000,7 @@
       border-bottom: 2px solid #004aad;
       cursor: pointer;
       color: black;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 2vh;
       justify-content: center;
       border-radius: 1vw;
@@ -2996,6 +3017,7 @@
     }
     
     a.cic-WA:link, a.cic-WA:visited {
+      font-family: "Roboto Mono", sans-serif;
       background-color: black;
       border-bottom: 1px solid greenyellow;
       height: 5vh;
@@ -3006,7 +3028,7 @@
       text-align: center;
       cursor: pointer;
       color: white;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 2vh;
       justify-content: center;
       border-radius: 1vw;
