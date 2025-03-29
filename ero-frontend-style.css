@@ -3278,7 +3278,7 @@
     margin: auto;
     margin-top: 0vh;
     margin-right: -3vw;
-    margin-bottom: 0vh;
+    margin-bottom: 7vh;
   }
   
   a.Alink-hbutt1:link, a.Alink-hbutt1:visited {
@@ -3346,7 +3346,7 @@
     /* text-shadow: 2px 2px 2px black; */
     padding-left: 0vw;
     margin-left: -36vw;
-    margin-top: 40vh;
+    margin-top: 33vh;
     rotate: -90deg;
     display: inline-block;
     width: 120vw;
