@@ -19,12 +19,12 @@ html {
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #be0032;
+    background: #ff3131;
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #be0032;
+    background: #ff3131;
     width: 0.5vw;
   }
 }
@@ -34,70 +34,93 @@ body {
 }
 
 .header-background {
-  background-image: url("images/IMG_0220.JPG");
+  background-image: url("images/Marketing\ Portfolio\ and\ Resume\ Website\ in\ Black\ and\ White\ Neon\ Green\ Professional\ Style.png\ \(2\).png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position-x: 100%;
-  background-position-y: 77%;
-  background-size: 100%;
+  background-position-y: -26%;
+  background-size: contain;
   background-origin: padding-box;
   z-index: 0;
-  height: 177vh;
+  height: 200vh;
   object-fit: cover;
   object-position: 100% 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-background-inner {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
   margin: auto;
-  height: 55vh;
+  height: 12vh; /* adjust this for the space above the nav */
   width: 95vw;
   z-index: 2;
+  position: relative;
 }
 
 .logobox1 {
   display: flex;
   flex-direction: column;
-  height: 27vh;
+  height: 35vh;
+  width: 20vw;
+  margin: auto;
+  top: 53vh;
+  left: 0vw;
+  position: absolute;
+  z-index: 99;
+  align-items: center;
+  justify-content: center;
+  
+  /*
+  box-shadow: 2px 2px 50px #004aad; */
 }
 
 .logobox1a {
   display: inline-block;
-  margin-top: 4vh;
-  padding-left: 0.5vw;
+  margin-top: 1vh;
+  padding-left: 0vw;
 }
 
 .logobox1b {
   display: block;
-  margin-top: -3vh;
+  margin-top: 0vh;
 }
 
 .logo1a {
-  height: 7vh;
+  height: 11.1vh;
+  margin-left: -2vh;
 }
 
 .logo1b {
-  height: 12vh;
+  height: 20vh;
+  margin-top: -3vh;
 }
 
 .fa-brands {
-  color: rgba(211, 211, 211, 0.881);
+  color: black;
   font-size: 3vh;
 }
 
 .navbox {
-  height: 35vh;
-  margin-top: 3vh;
+  height: 12vh;
+  width: 40vw;
+  margin-top:0vh;
+  margin-left:2vw;
+  align-content: center;
+  padding-top: 3vh;
+  
 }
 
 .navul {
   list-style: none;
   list-style-type: none;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
   margin: auto;
 }
 
@@ -106,9 +129,9 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   text-decoration: none;
-  font-size: 2.2vh;
+  font-size: 2vh;
   font-weight: 300;
-  text-align: right;
+  text-align: left;
   line-height: 10vh;
 }
 
@@ -118,23 +141,23 @@ body {
   font-style: normal;
   text-decoration: none;
   text-decoration: none;
-  font-size: 2.2vh;
-  text-align: right;
+  font-size: 2vh;
+  text-align: left;
   line-height: 3vh;
 }
 
 a.Alink-nav:link,
 a.Alink-nav:visited {
   text-decoration: none;
-  color: white;
-  font-size: 2.2vh;
+  color: black;
+  font-size: 2vh;
   font-weight: 400;
 }
 
 a.Alink-nav:hover,
 a.Alink-nav:active {
-  color: #be0032;
-  font-size: 4vh;
+  color: #ff3131;
+  font-size: 2.4vh;
   font-weight: 300;
   transition: 0.5s ease-out;
 }
@@ -159,12 +182,12 @@ a.Alink-nav:active {
 }
 
 .fa-solid {
-  color: white;
+  color: black;
   size: 2vh;
 }
 
 header {
-  
+  height: 80vh;
 }
 
 .headercontainer {
@@ -177,28 +200,30 @@ header {
 .biotextimgbox {
   display: flex;
   justify-content: space-between;
-  height: 30vh;
-  width: 95vw;
+  height: 77vh;
+  width: 98vw;
   margin: auto;
 }
 
 .biotb-title {
   display: inline;
-  width: 30vw;
-  height: 33vh;
+  width: 50vw;
+  height: 15vh;
   text-align: left;
   padding-top: 3.3vh;
-  margin-top: -5vh;
+  margin-top: 60vh;
 }
 
 .imgtitles {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  width: 45vw;
 }
  
 .biotb-img {
   display: inline;
-  margin-top: -8vh;
+  margin-top: 0vh;
   position: relative;
   animation-name: myani;
   animation-duration: 4s;
@@ -206,7 +231,7 @@ header {
   animation-iteration-count: 5;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
-  width: 8vw;
+  width: 7.3vw;
   height: 33.4vh;
   align-self: flex-end;
 }
@@ -214,38 +239,42 @@ header {
 .biotb-image {
   width: 7.3vw;
   height: 33vh;
+  box-shadow: 2px 2px 7px black;
 }
 
 @keyframes myani {
-  0% {border-bottom: 2px solid #be0032; right:0px; top:0px;}
-  25% {border-bottom: 2px solid #880000; right:500px; top:0px;}
-  50% {border-bottom: 2px solid #006aad; right:500px; top:0px;}
-  75% {border-bottom: 2px solid #032b44; right:0px; top:0px;}
-  100% {border-bottom: 2px solid #9e8461; right:0px; top:0px;}
+  0% {border-bottom: 2px solid #ff3131; right:0px; top:0px;}
+  25% {border-bottom: 2px solid #004aad; right:500px; top:0px;}
+  50% {border-bottom: 2px solid #757575; right:500px; top:0px;}
+  75% {border-bottom: 2px solid #ff3131; right:0px; top:0px;}
+  100% {border-bottom: 2px solid #004aad; right:0px; top:0px;}
 }
 
 .bioheading {
-  color: white;
-  font-family: "Courier Prime", serif;
+  color: black;
+  font-family: "Boldonse", system-ui;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 16vh;
-  line-height: 12vh;
+  font-size: 7.6vh;
+  line-height: 9vh;
   letter-spacing: 0vw;
   font-weight: 100;
+  display: none;
 }
 
 .biosup {
-  font-size: 4vh;
-  color: #006aad;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 3vh;
+  font-weight: 500;
+  color: #004aad;
 }
 
 .folio-txt {
-  padding-left: 2.2vw;
+  padding-left: 0vw;
 }
 
 .biopara {
-  color: white;
+  color: black;
   font-family: "Roboto Mono", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
@@ -256,35 +285,39 @@ header {
 }
 
 .bannerbkg {
-  height: 91vh;
+  height: 105vh;
   width: 95vw;
   margin-left: 2vw;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .logobox2 {
+  margin-top: 0vh;
 }
 
 .logo2 {
-  height: 90vh;
+  height: 88vh;
 }
 
 .logobkg {
-  height: 60vh;
+  height: 40vh;
   position: absolute;
-  left: 4vw;
-  top: 90vh;
-  opacity: 0.7;
+  left: 5vw;
+  top: 100vh;
+  opacity: 1;
+
 }
 
 .titles {
   display: inline;
-  width: 57vw;
-  height: 25vh;
-  padding-top: 4vh;
-  margin-left: 7.2vw;
+  width: 44vw;
+  height: 14vh;
+  padding-top: 0vh;
+  margin-top: 14vh;
+  margin-left: 0vw;
   text-align: right;
 }
 
@@ -295,38 +328,36 @@ header {
   text-align: right;
   line-height: 4vh;
   display: inline;
-  font-size: 2.4vh;
+  font-size: 2vh;
   font-weight: 300;
-  color: white;
-  text-shadow: 2px 2px 5px black;
+  color: black;
 }
 
 a.Alink-title:link,
 a.Alink-title:visited {
-  font-size: 2.4vh;
-  color: white;
+  font-size: 2vh;
+  color: black;
   text-decoration: none;
   font-weight: 400;
-  text-shadow: 2px 2px 5px black;
 }
 
 a.Alink-title:hover,
 a.Alink-title:active {
-  color: #d6c09f;
-  font-size: 2.6vh;
+  color: #ff3131;
+  font-size: 2.2vh;
   font-weight: 400;
   letter-spacing: 0.2rem;
-  text-shadow: 2px 2px 5px #880000;
   transition: 0.5s ease-out;
 }
 
 .about-section {
   display: flex;
   flex-direction: row;
-  width: 66vw;
-  height: 50vh;
+  width: 15vw;
+  height: 35vh;
   justify-content: space-between;
-  margin-top: 23.6vh;
+  margin-top: 0vh;
+  margin-left: 57vw;
 }
 
 .about-sec-img {
@@ -358,43 +389,44 @@ a.Alink-title:active {
 
 .about-sec-title {
   display: inline;
-  width: 37vw;
-  height: 26vh;
-  margin-top: 20vh;
+  width: 80vw;
+  height: 35vh;
+  margin-left: -40vw;
+  margin-top: 0vh;
 }
 
 .about-sec-title-txt {
   font-family: "Courier Prime", serif;
   font-weight: 100;
-  font-size: 15vh;
-  color: #d6c09f;
+  font-size: 14vh;
+  color: black;
   text-align: right;
   line-height: 11vh;
-  text-shadow: 2px 2px 10px black;
-  padding-top: 8vh;
+  padding-top: 0vh;
 }
 
 .really {
   font-family: "Courier Prime", serif;
   font-weight: 100;
   font-size: 7vh;
-  color: #be0032;
+  color: #ff3131;
   text-align: right;
-  text-shadow: 2px 2px 10px black;
+  text-shadow: 2px 2px 10px #ff3131;
 }
 
 .about-sec-txt {
   position: absolute;
-  top: 155vh;
-  left: 31vw;
-  width: 42vw;
-  height: 20vh;
-  line-height: 8vh;
-}
+  top: 120vh;
+  left: 25.2vw;
+  width: 10vw;
+  height: 10vh;
+  line-height: 5vh;
+  padding-top: 3vh;
+ }
 
 .about-sec-txt-txt {
-  font-size: 8vh;
-  color: white;
+  font-size: 6vh;
+  color: #4d4d4d;
   text-align: left;
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
@@ -402,16 +434,16 @@ a.Alink-title:active {
   line-height: 4vh;
   letter-spacing: 0.2rem;
   display: inline;
-  text-shadow: 2px 2px 10px black;
 }
 
 .bio-sect {
-  height: 47vh;
+  height: 64vh;
+  width: 72vw;
   /* background: linear-gradient(
     180deg,
     black,
     #880000 
-  );*/
+  );
   background-image: url("images/david\ ero\ bkg.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -420,36 +452,42 @@ a.Alink-title:active {
   background-size: cover;
   background-origin: padding-box;
   object-fit: cover;
-  object-position: 100% 100%;
+  object-position: 100% 100%;*/
   z-index: 0;
   position: relative;
+  top: -3vw;
 }
 
 .bio-sect-overlay {
-  height: 47vh;
+  height: 60vh;
+  background-color: white;
+  /*
   background: linear-gradient(
     180deg,
-    rgba(0, 0, 0, 0.954),
-    rgba(0, 0, 0, 0.158),
-    #d6c09f);
+      #ffffff,
+      #fafafa,
+      #f5f5f5,
+      #e5e5e5,
+      #d4d4d4);*/
   position: relative;
   z-index: 1;
 }
 
 .bio-sect-box {
   margin: auto;
-  width: 90vw;
-  height: 45vh;
+  width: 69vw;
+  height: 54vh;
   align-self: center;
   padding-top: 4vh;
   z-index: 2;
-  position: relative;
-  margin-top: -47vh;
+  position: absolute;
+  top: 0vh;
+  left: 2.5vw;
 }
 
 .bio-sect-txt {
-  font-size: 2.4vh;
-  color: white;
+  font-size: 2.2vh;
+  color: black;
   text-align: justify;
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
@@ -457,8 +495,8 @@ a.Alink-title:active {
   line-height: 4.8vh;
   letter-spacing: 0.1rem;
   display: inline;
-  text-shadow: 2px 2px 2px #4137288f;
   z-index: 3;
+ 
 }
 
 .skills-spec {
@@ -478,7 +516,7 @@ a.Alink-title:active {
 .skills-spec-box {
   height: 20vh;
   width: 50vw;
-  margin-top: 12vh;
+  margin-top: 8vh;
   padding-left: 2.2vw;
   padding-top: 2vh;
   display: flex;
