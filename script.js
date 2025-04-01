@@ -1,4 +1,33 @@
 "use-strict";
+
+/* pop up */
+document.querySelector(".Alink-gohome").addEventListener ("click", function() {
+    preventDefault();
+    const PopUp = document.querySelector(".popup");
+   
+    PopUp.style.display = "none";
+});
+
+/*
+const PopUpButton = document.querySelector(".Alink-gohome");
+
+PopUpButon.addEventListener("click", popupFunction);
+
+function popupFunction() {
+    preventDefault();
+    const PopUp = document.getElementById("popupid");
+    if (PopUp.style.display === "block") {
+      PopUp.style.display = "none";
+    } else {
+      PopUp.style.display = "block";
+    }
+    
+  }
+    */
+  
+
+
+
 // nav 
 document.querySelector(".barsicon").addEventListener("click", function() {
     const navBox = document.querySelector(".navbox");

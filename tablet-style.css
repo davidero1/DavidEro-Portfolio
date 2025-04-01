@@ -24,12 +24,12 @@
     
     /* Handle */
     ::-webkit-scrollbar-thumb {
-      background: #be0032;
+      background: #ff3131;
     }
   
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-      background: #be0032;
+      background: #ff3131;
       width: 0.5vw;
     }
   }
@@ -37,27 +37,414 @@
   body {
     font-family: "Courier Prime", "Roboto Mono", "Space Grotesk", sans-serif;
   }
+
+  /* POP UP SECTION  */
+.popup {
+  height: 95vh;
+  width: 95vw;
+  margin: auto;
+  /*background-color: rgba(247, 247, 247, 0.987);  */
+  background: radial-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0.976), rgba(0, 0, 0, 0.956), rgba(0, 18, 50, 0.79));
+  animation: color 12s ease-in-out infinite;
+  z-index: 99;
+  position: absolute;
+  position: fixed;
+  left: 2.5vw;
+  top: 2.5vh;
+  border-radius: 4vw;
+  box-shadow: 2px 2px 20px #004aad;
+  border: 1px solid #ababab3f;
+}
+
+/*
+.popupani {
+  animation-name: popupani;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes popupani { 
+  0% {color: rgb(0, 0, 0)}
+  50% {color: rgb(209, 34, 34)}
+  75% {color: rgba(0, 0, 0, 0.976)}
+  100% {color: rgba(0, 18, 50, 0.79)}
+} 
+  */
+
+.popupwelcome {
+  color: rgba(255, 255, 255, 0.168);
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 100;
+  font-size: 4vh;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+.popupinner {
+  height: 70vh;
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.popupheading {
+  font-family: "Courier Prime", serif;
+  font-weight: 100;
+  width: 50vw;
+  color: #757575;
+  font-size: 2vh;
+}
+
+.textlogo {
+  height: 3.5vh;
+  width: 20vw;
+}
+
+.puheading {
+  color: #4d4d4d;
+  font-weight: 500;
+  font-size: 2.4vh;
+}
+
+.popupgrid {
+  width: 85vw;
+  height: 50vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 6vh;
+  justify-content: space-evenly;
+}
+
+.gridshape {
+  height: 25vh;
+  width: 25vw;
+  cursor: pointer;
+  display: flex;
+  margin: 3vw;
+}
+
+.wip {
+  opacity: 0.3;
+}
+
+.popupoverlay {
+  height: 25vh;
+  width: 25vw;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59), black);
+  transform-style: preserve-3d;
+}
+
+.popupoverlay:hover {
+  height: 25vh;
+  width: 25vw;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.494);
+  transform-style: preserve-3d;
+  transition: 0.6s ease-in-out;
+}
+
+.popup2overlay {
+  height: 25vh;
+  width: 25vw;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59), black);
+  transform-style: preserve-3d;
+}
+
+.popup2overlay:hover {
+  height: 25vh;
+  width: 25vw;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.494);
+  transform-style: preserve-3d;
+  transition: 0.6s ease-in-out;
+}
+
+.popup3overlay {
+  height: 25vh;
+  width: 25vw;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59), black);
+  transform-style: preserve-3d;
+}
+
+.popup3overlay:hover {
+  height: 25vh;
+  width: 25vw;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.494);
+  transform-style: preserve-3d;
+  transition: 0.6s ease-in-out;
+}
+
+.popup4overlay {
+  height: 25vh;
+  width: 25vw;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59), black);
+  transform-style: preserve-3d;
+}
+
+.popup4overlay:hover {
+  height: 25vh;
+  width: 25vw;
+  margin: auto;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.494);
+  transform-style: preserve-3d;
+  transition: 0.6s ease-in-out;
+}
+
+.pugrid1 {
+  transform-style: preserve-3d;
+  transform: perspective(8cm) rotateX(-10deg) rotateY(30deg);
+  z-index: 0;
+  background-image: url("images/IMG_4507.PNG");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-size: cover;
+  background-origin: padding-box;
+  height: 25vh;
+  width: 25vw;
+  object-fit: cover;
+  object-position: 100% 100%;
+}
+
+.pugrid1:hover {
+  background-color: rgba(0, 0, 0, 0.494);
+  transform-style: preserve-3d;
+  transform: scale(1.2, 1.2);
+  transition: 0.6s ease-in-out;
+}
+
+.pugrid2 {
+  transform-style: preserve-3d;
+  transform: perspective(8cm) rotateX(-10deg) rotateY(30deg);
+  z-index: 0;
+  background-image: url("images/IMG_7259.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-size: cover;
+  background-origin: padding-box;
+  height: 25vh;
+  width: 25vw;
+  object-fit: cover;
+  object-position: 100% 100%;
+}
+
+.pugrid2:hover {
+  background-color: rgba(0, 0, 0, 0.494);
+  transform-style: preserve-3d;
+  transform: scale(1.2, 1.2);
+  transition: 0.6s ease-in-out;
+}
+
+.pugrid3 {
+  transform-style: preserve-3d;
+  transform: perspective(8cm) rotateX(-10deg) rotateY(30deg);
+  z-index: 0;
+  background-image: url("images/Untitled\ design\ -\ 7.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 60%;
+  background-position-y: 100%;
+  background-size: cover;
+  background-origin: padding-box;
+  height: 25vh;
+  width: 25vw;
+  object-fit: cover;
+  object-position: 100% 100%;
+}
+
+.pugrid3:hover {
+  background-color: rgba(0, 0, 0, 0.494);
+  transform-style: preserve-3d;
+  transform: scale(1.2, 1.2);
+  transition: 0.6s ease-in-out;
+}
+
+.pugrid4 {
+  transform-style: preserve-3d;
+  transform: perspective(8cm) rotateX(-10deg) rotateY(30deg);
+  z-index: 0;
+  background-image: url("images/@seincollective\ -\ 9.PNG");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 60%;
+  background-position-y: 100%;
+  background-size: cover;
+  background-origin: padding-box;
+  height: 25vh;
+  width: 25vw;
+  object-fit: cover;
+  object-position: 100% 100%;
+}
+
+.pugrid4:hover {
+  background-color: rgba(0, 0, 0, 0.494);
+  transform-style: preserve-3d;
+  transform: scale(1.2, 1.2);
+  transition: 0.6s ease-in-out;
+  animation-name: popupani;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes popupani {
+  /*
+  0% {left: 5vw; right: 0vw;}
+  25% {left: 0vw; right: 5vw;}
+  50% {left: 5vw; right: 0vw;}
+  75% {left: 0vw; right: 5vw;}
+  100% {left: 5vw; right: 0vw;}
+  
+  0% {bottom: 10; top:20px;}
+  25% {bottom: 10px; top:0px;}
+  50% {bottom: 0; top:10px;}
+  75% {bottom: 10px; top:0px;}
+  100% {bottom: 0; top:10px;} */
+}
+
+.popupsubheading {
+  transform: rotate(-90deg);
+  font-size: 3vh;
+  font-family: "Boldonse", system-ui;
+  display: inline;
+  color: white;
+  height: 8vh;
+  width: 10vw;
+  position: relative;
+  letter-spacing: 0.1vw;
+  top: 17vh;
+  right: -3vw;
+  text-shadow: 1px 1px 1px #757575;
+  position: absolute;
+  z-index: 3;
+}
+
+.popupsubheading2 {
+  transform: rotate(-90deg);
+  font-size: 3vh;
+  font-family: "Boldonse", system-ui;
+  display: inline;
+  color: white;
+  height: 11vh;
+  width: 24vw;
+  position: relative;
+  letter-spacing: 0.1vw;
+  top: 9vh;
+  right: -8vw;
+  line-height: 4vh;
+  text-shadow: 1px 1px 1px #757575;
+  position: absolute;
+  z-index: 3;
+}
+
+a.Alink-vers:link, a.Alink-vers:visited {
+  font-family: "Roboto Mono", sans-serif;
+  color: white;
+  font-size: 1.2vh;
+  text-decoration: none;
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  border: 1px solid white;
+  border-radius: 1vw;
+  background-color: black;
+  width: 20vw;
+  height: 5vh;
+  top: 1vh;
+  left: 1vw;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+a.Alink-vers:hover, a.Alink-vers:active {
+  color: black;
+  font-size: 1.4vh;
+  left: 5.8vw;
+  border: 1px solid black;
+  background-color: white;
+  transition: 0.8s ease-in-out;
+  transform: scale(1.1,1.1);
+}
+
+.gohome {
+  display: flex;
+  height: 8vh;
+  width: 30vw;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15vw;
+}
+
+a.Alink-gohome:link, a.Alink-gohome:visited {
+  text-decoration: none;
+  color: #8e8e8e;
+  font-size: 2.5vh;
+  padding: 1vw;
+}
+
+a.Alink-gohome:hover, a.Alink-gohome:active {
+  color: #004aad;
+}
   
   .header-background {
-    background-image: url("images/IMG_0220.JPG");
+    background-image: url("images/Marketing\ Portfolio\ and\ Resume\ Website\ in\ Black\ and\ White\ Neon\ Green\ Professional\ Style.png\ \(2\).png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x: 100%;
-    background-position-y: 70%;
-    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 40%;
+    background-size: contain;
     background-origin: padding-box;
     z-index: 0;
-    height: 160vh;
+    height: 200vh;
     object-fit: cover;
     object-position: 100% 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .header-background-inner {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: auto;
-    height: 30vh;
+    height: 28vh;
     width: 95vw;
     z-index: 2;
   }
@@ -65,7 +452,8 @@
   .logobox1 {
     display: flex;
     flex-direction: column;
-    height: 20vh;
+    height: 15vh;
+    margin-top: -53vh;
   }
   
   .logobox1a {
@@ -76,25 +464,27 @@
   
   .logobox1b {
     display: block;
-    margin-top: -1.5vh;
+    margin-top: 1.6vh;
   }
   
   .logo1a {
-    height: 5.2vh;
+    height: 4vh;
   }
   
   .logo1b {
-    height: 9vh;
+    height: 7.2vh;
   }
   
   .fa-brands {
-    color: rgba(211, 211, 211, 0.881);
+    color: black;
     font-size: 3vh;
   }
   
   .navbox {
-    height: 30vh;
+    height: 25vh;
     margin-top: 0vh;
+    margin-left: 55vw;
+    padding-top: 0vh;
   }
   
   .navul {
@@ -107,38 +497,38 @@
   }
   
   .navli {
-    font-family: "Roboto Mono", serif;
+    font-family: "Roboto Mono", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 1.7vh;
     font-weight: 300;
     text-align: right;
-    line-height: 7vh;
+    line-height: 5vh;
   }
   
   .navlid {
-    font-family: "Roboto Mono", serif;
+    font-family: "Roboto Mono", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     text-decoration: none;
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 1.7vh;
     text-align: right;
-    line-height: 3vh;
+    line-height: 2vh;
   }
   
   a.Alink-nav:link,
   a.Alink-nav:visited {
     text-decoration: none;
-    color: white;
-    font-size: 2vh;
+    color: black;
+    font-size: 1.7vh;
     font-weight: 400;
   }
   
   a.Alink-nav:hover,
   a.Alink-nav:active {
-    color: #be0032;
+    color: #ff3131;
     font-size: 2.5vh;
     font-weight: 300;
     transition: 0.5s ease-out;
@@ -169,7 +559,7 @@
   }
   
   header {
-    
+    padding-bottom: 2vh;
   }
   
   .headercontainer {
@@ -199,11 +589,13 @@
   .imgtitles {
     display: flex;
     flex-direction: column;
+    width: 70vw;
+    height: 60vh;
   }
    
   .biotb-img {
     display: inline;
-    margin-top: 0vh;
+    margin-top: 5.8vh;
     position: relative;
     animation-name: myani;
     animation-duration: 4s;
@@ -243,7 +635,7 @@
   
   .biosup {
     font-size: 2.3vh;
-    color: #006aad;
+    color: #004aad;
   }
   
   .folio-txt {
@@ -262,16 +654,18 @@
   }
   
   .bannerbkg {
-    height: 75vh;
+    height: 200vh;
     width: 95vw;
     margin-left: 2vw;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
   }
   
   .logobox2 {
-    margin-top: 2vh;
+    margin-top: 4vh;
+    width: 25vw;
   }
   
   .logo2 {
@@ -279,21 +673,22 @@
   }
   
   .logobkg {
-    height: 28vh;
+    height: 18vh;
     position: absolute;
-    left: 4.5vw;
+    left: 5.5vw;
     top: 84vh;
-    opacity: 0.7;
+    opacity: 1;
   }
   
   .titles {
-    display: inline;
-    width: 84vw;
+    display: block;
+    width: 90vw;
     height: 20vh;
-    padding-top: 4vh;
-    margin-left: -20vw;
-    text-align: right;
-    margin-top: 8vh;
+    padding-top: 0vh;
+    margin: auto;
+    margin-left: -28vw;
+    text-align: left;
+    margin-top: 10vh;
   }
   
   .titles-txt {
@@ -303,39 +698,36 @@
     text-align: right;
     line-height: 4vh;
     display: inline;
-    font-size: 2vh;
+    font-size: 1.7vh;
     font-weight: 300;
-    color: white;
-    text-shadow: 2px 2px 5px black;
+    color: black;
   }
   
   a.Alink-title:link,
   a.Alink-title:visited {
-    font-size: 1.8vh;
-    color: white;
+    font-size: 1.7vh;
+    color: black;
     text-decoration: none;
     font-weight: 400;
-    text-shadow: 2px 2px 5px black;
   }
   
   a.Alink-title:hover,
   a.Alink-title:active {
-    color: #d6c09f;
+    color: #ff3131;
     font-size: 2vh;
     font-weight: 400;
     letter-spacing: 0.2rem;
-    text-shadow: 2px 2px 5px #880000;
     transition: 0.5s ease-out;
   }
   
   .about-section {
     display: flex;
     flex-direction: row;
-    width: 90vw;
-    height: 30vh;
+    width: 67vw;
+    height: 22vh;
     justify-content: space-between;
-    margin-top: 0vh;
-    margin: auto;
+    margin-top: -50vh;
+    margin-left: 27vw;
   }
   
   .about-sec-img {
@@ -367,19 +759,19 @@
   
   .about-sec-title {
     display: inline;
-    width: 60vw;
-    height: 9vh;
-    margin-top: -26vh;
+    width: 65vw;
+    height: 20vh;
+    margin-left: 0vw;
+    margin-top: 0vh;
   }
   
   .about-sec-title-txt {
-    font-family: "Courier Prime", serif;
+    font-family: "Courier Prime", sans-serif;
     font-weight: 100;
-    font-size: 8vh;
-    color: #d6c09f;
+    font-size: 6vh;
+    color: black;
     text-align: right;
-    line-height: 7vh;
-    text-shadow: 2px 2px 10px black;
+    line-height: 6vh;
     padding-top: 0vh;
   }
   
@@ -394,31 +786,32 @@
   
   .about-sec-txt {
     position: absolute;
-    top: 130vh;
-    left: 5vw;
-    width: 65vw;
-    height: 23vh;
+    top: 110vh;
+    left: 30vw;
+    width: 14vw;
+    height: 6vh;
     line-height: 8vh;
+    padding-top: 0vh;
   }
   
   .about-sec-txt-txt {
-    font-size: 6vh;
-    color: white;
+    font-size: 3vh;
+    color: black;
     text-align: left;
-    font-family: "Roboto Mono", serif;
+    font-family: "Roboto Mono", sans-serif;
     font-style: normal;
     letter-spacing: 0.2rem;
     display: inline;
-    text-shadow: 2px 2px 10px black;
   }
   
   .bio-sect {
-    height: 90vh;
+    height: 80vh;
+    width: 95vw;
     /* background: linear-gradient(
       180deg,
       black,
       #880000 
-    );*/
+    );
     background-image: url("images/david\ ero\ bkg.png");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -427,36 +820,39 @@
     background-size: cover;
     background-origin: padding-box;
     object-fit: cover;
-    object-position: 100% 100%;
+    object-position: 100% 100%; */
     z-index: 0;
     position: relative;
   }
   
   .bio-sect-overlay {
-    height: 90vh;
+    height: 80vh;
+    width: 95vw;
+    background-color: rgba(255, 255, 255, 0.048);
+    /*
     background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.954),
       rgba(0, 0, 0, 0.158),
-      #d6c09f);
+      #d6c09f); */
     position: relative;
     z-index: 1;
   }
   
   .bio-sect-box {
     margin: auto;
-    width: 92vw;
-    height: 82vh;
+    width: 88vw;
+    height: 78vh;
     align-self: center;
-    padding-top: 4vh;
+    padding-top: 0vh;
     z-index: 2;
     position: relative;
-    margin-top: -88vh;
+    margin-top: -73vh;
   }
   
   .bio-sect-txt {
-    font-size: 2.0vh;
-    color: white;
+    font-size: 1.7vh;
+    color: black;
     text-align: justify;
     font-family: "Roboto Mono", serif;
     font-optical-sizing: auto;
@@ -464,7 +860,6 @@
     line-height: 4.8vh;
     letter-spacing: 0rem;
     display: inline;
-    text-shadow: 2px 2px 2px #4137288f;
     z-index: 3;
   }
   
