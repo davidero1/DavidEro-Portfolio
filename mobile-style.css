@@ -47,7 +47,7 @@
         width: 95vw;
         margin: auto;
         /*background-color: rgba(247, 247, 247, 0.987);  */
-        background: radial-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0.976), rgba(0, 0, 0, 0.956), rgba(0, 18, 50, 0.79));
+        background: radial-gradient(white, white, rgba(247, 247, 247, 0.987), rgba(247, 247, 247, 0.987), rgba(211, 211, 211, 0.785));
         animation: color 12s ease-in-out infinite;
         z-index: 99;
         position: absolute;
@@ -275,10 +275,10 @@
         transform-style: preserve-3d;
         transform: perspective(8cm) rotateX(-10deg) rotateY(30deg);
         z-index: 0;
-        background-image: url("images/Untitled\ design\ -\ 7.png");
+        background-image: url("images/top-view-hands-typing-keyboard.jpg");
         background-repeat: no-repeat;
         background-attachment: scroll;
-        background-position-x: 60%;
+        background-position-x: 10%;
         background-position-y: 100%;
         background-size: cover;
         background-origin: padding-box;
@@ -352,7 +352,6 @@
         letter-spacing: 0.1vw;
         top: 17vh;
         right: -3vw;
-        text-shadow: 1px 1px 1px #757575;
         position: absolute;
         z-index: 3;
       }
@@ -370,7 +369,6 @@
         top: 12vh;
         right: -6vw;
         line-height: 3.5vh;
-        text-shadow: 1px 1px 1px #757575;
         position: absolute;
         z-index: 3;
       }
@@ -656,7 +654,7 @@
       }
       
       .bannerbkg {
-        height: 180vh;
+        height: 185vh;
         width: 95vw;
         margin-left: 2vw;
         margin-top: 2vh;
@@ -771,7 +769,7 @@
       .about-sec-title-txt {
         font-family: "Courier Prime", sans-serif;
         font-weight: 100;
-        font-size: 5.2vh;
+        font-size: 5vh;
         color: black;
         text-align: left;
         line-height: 5vh;
@@ -781,15 +779,15 @@
       .really {
         font-family: "Courier Prime", serif;
         font-weight: 100;
-        font-size: 4vh;
-        color: #be0032;
+        font-size: 3vh;
+        color: #757575;
         text-align: right;
         text-shadow: 2px 2px 10px black;
       }
       
       .about-sec-txt {
         position: absolute;
-        top: 137vh;
+        top: 127.7vh;
         left: 5vw;
         width: 70vw;
         height: 5vh;
@@ -797,8 +795,8 @@
       }
       
       .about-sec-txt-txt {
-        font-size: 3vh;
-        color: black;
+        font-size: 2.5vh;
+        color: #4d4d4d;
         text-align: left;
         font-family: "Roboto Mono", sans-serif;
         font-style: normal;
@@ -808,7 +806,7 @@
       }
       
       .bio-sect {
-        height: 110vh;
+        height: 114vh;
         width: 95vw;
         /* background: linear-gradient(
           180deg,
@@ -825,11 +823,12 @@
         object-fit: cover;
         object-position: 100% 100%; */
         z-index: 0;
+        margin-top: 4vh;
         position: relative;
       }
       
       .bio-sect-overlay {
-        height: 125vh;
+        height: 114vh;
         width: 95vw;
         background-color: rgba(255, 255, 255, 0.048);
         /*
@@ -869,10 +868,9 @@
       .skills-spec {
         background: linear-gradient(
           180deg,
-          #d6c09f,
           white,
           white,
-          white
+          #d6c09f
         );
         height: 140vh;
         display: flex;
@@ -947,7 +945,7 @@
       }
       
       .area1box, .area2box, .area3box, .area4box {
-        width: 35vw;
+        width: 36vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1006,127 +1004,160 @@
         width: 100%;
       }*/
       
-      /*
+      
       .create {
         background-color: black;
-        height: 120vh;
+        height: 288vh;
       }
       
       .create-heading {
-        height: 40vh;
+        height: 30vh;
         width: 95vw;
         margin: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction:column;
         justify-content: space-around;
-        padding-top: 3vh;
+        padding-top: 0vh;
       }
       
       .create-head {
-        width: 46vw;
-        height: 30vh;
-        align-self: self-end;
-        margin-top: 4vh;
+        width: 90vw;
+        height: 19vh;
+        margin: auto;
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: column;
       }
       
       .create-head1 {
         font-family: "Courier Prime", serif;
         font-weight: 100;
-        font-size: 9vh;
+        font-size: 4vh;
         font-optical-sizing: auto;
         font-style: normal;
         color: white;
-        padding-top: 5vh;
+        padding-top: 2vh;
+        margin-left: 0vw;
+        display: block;
+        /* transform: rotate(-90deg); */
       }
       
       .create-head2 {
         font-family: "Courier Prime", serif;
         font-weight: 100;
-        font-size: 18vh;
-        color: #be0032;
-        margin-left: 10vw;
-        margin-top: -3vh;
-        text-align: right;
+        font-size: 7.2vh;
+        color: #004aad;
+        margin-left: 0vw;
+        margin-top: 0vh;
+        margin-left: 14vh;
+        text-align: left;
+        display: block;
+        /* transform: rotate(-90deg);*/
       }
       
       .create-subhead {
         display: inline-block;
-        width: 40vw;
+        width: 45vw;
+        height: 12vh;
+        margin-top: 4vh;
+        margin-left: 2vw;
       }
       
       .create-subhead-txt {
         font-family: "Roboto Mono", serif;
         color: white;
-        font-size: 3vh;
+        font-size: 2vh;
         font-weight: 200;
         font-optical-sizing: auto;
         font-style: normal;
       }
       
       .create-body {
-        height: 75vh;
+        height: 240vh;
         margin-top: 5vh;
         display: flex;
+        flex-direction: column;
       }
       
       .create-img {
-      
+        display: block;
+        margin-left: 3vw;
       }
       
       .create-pic {
-        height: 74.8vh;
+        height: 28vh;
         margin-left: 2.5vw;
+        z-index: 3;
       }
       
       .create-logo {
         display: inline;
-        padding-top: 12vh;
-        margin-left: -3vw;
+        padding-top: 0vh;
+        margin-left: 62vw;
+        margin-top: -20vh;
       }
       
       .create-logo-img {
-        height: 50vh;
+        height: 12vh;
       }
       
       .create-contentbox {
         background: linear-gradient(
           180deg,
-          #be0032,
+          #880000,
           black 
         );
-        height: 70vh;
-        width: 70vw;
+        height: 200vh;
+        width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
-        margin-left: -4vw;
+        margin-left:0vw;
         padding-top: 4vh;
+        margin: auto;
       }
       
-      .create-content1, .create-content3 {
-        width: 18vw;
-        height: 38vh;
+      .create-content1 {
+        width: 67vw;
+        height: 40vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .create-content3 {
+        width: 67vw;
+        height: 50vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
       }
       
       .create-content1-img, .create-content3-img {
-        height: 38vh;
+        height: 30vh;
       }
       
       .create-content2 {
-        width: 31vh;
-        height: 38vh;
+        width: 67vw;
+        height: 67vh;
+        margin: auto;
       }
       
       .create-content2-img {
         height: 38vh;
+        margin: auto;
       }
       
       a.Alink-create-content:link, a.Alink-create-content:visited {
         height: 38vh;
+        display: block;
+        transition: 0.7s ease-in-out;
       }
       
       a.Alink-create-content:hover, a.Alink-create-content:active {
         height: 38vh;
+        transform: scale(1.1, 1.1);
+        box-shadow: 2px 2px 10px black;
       }
       
       .create-content-heading {
@@ -1144,67 +1175,72 @@
         font-weight: 300;
         color: white;
         text-align: justify;
+        display: inline-block;
       }
       
       .create-link {
-        width: 10vw;
-        height: 10vh;
+        width: 28vw;
+        height: 4vh;
         position: relative;
-        top: -8vh;
-        left: 88vw;
-        display: inline;
+        top: 0vh;
+        left: 60vw;
+        display: block;
       }
       
       a.Alink-creations:link, a.Alink-creations:visited {
         color: white;
-        font-family: "Roboto Mono", serif;
-        font-size: 2.6vh;
+        font-family: "Roboto Mono", sans-serif;
+        font-size: 2vh;
         font-weight: 300;
         text-decoration: none;
       }
       
       a.Alink-creations:hover, a.Alink-creations:active {
         font-family: "Roboto Mono", serif;
-        font-size: 3.1vh;
+        font-size: 2.2vh;
         font-weight: 400;
-        color: #d6c09f;
+        color: white;
         text-shadow: 2px 2px 5px #be0032;
         transition: .5s ease;
       }
       
       .logos-created {
         background-color: black;
-        height: 30vh;
-        padding-top: 6vh;
+        height: 55vh;
+        padding-top: 0vh;
       }
       
       .logos-inner {
-        height: 22vh;
+        height: 50vh;
         width: 94vw;
         margin: auto;
         display: flex;
         flex-direction: column;
+        padding-top: 2vh;
       }
       
       .logos-heading {
         font-family: "Courier Prime", serif;
         color: white;
-        font-size: 3vh;
+        font-size: 2.6vh;
         font-weight: 300;
         text-align: center;
       }
       
       .logos-headbold {
-        color: #be0032;
-        letter-spacing: 0.03rem;
+        color: #880000;
+        letter-spacing: 0.02rem;
         font-size: 4vh;
       }
       
       .logos-box {
         display: flex;
-        height: 12vh;
+        flex-wrap: wrap;
+        height: 30vh;
+        width: 80vw;
+        margin: auto;
         justify-content: space-between;
-        margin-top: 5vh;
+        margin-top: 7vh;
       }
       
       .logos {
@@ -1212,34 +1248,34 @@
       }
       
       .logo-img {
-        height: 8vh;
+        height: 4vh;
       }
       
       .alonglogo {
-        height: 11vh;
+        height: 5vh;
       }
       
       .adlogo {
-        height: 7vh;
+        height: 5vh;
       }
       
       .pairedlogo {
-        height: 7vh;
+        height: 4vh;
       }
       
       .yatilogo {
-        height: 11vh;
-      }
-      
-      .cclogo {
         height: 6vh;
       }
       
-      .fklogo {
-        height: 7vh;
+      .cclogo {
+        height: 3.5vh;
       }
       
-      */
+      .fklogo {
+        height: 4vh;
+      }
+      
+      
       
       .collab {
         height: 50vh;

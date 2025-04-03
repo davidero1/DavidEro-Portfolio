@@ -34,13 +34,14 @@ body {
 }
 
 /* POP UP SECTION  */
+
 .popup {
-  height: 95vh;
+  height: 90vh;
   width: 95vw;
   margin: auto;
   /*background-color: rgba(247, 247, 247, 0.987); 
-  background: radial-gradient(white, white, rgba(247, 247, 247, 0.987), rgba(247, 247, 247, 0.987), rgba(211, 211, 211, 0.785)); */
-  background: radial-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0.976), rgb(0, 0, 0), rgba(0, 18, 50, 0.79));
+  background: radial-gradient(rgb(0, 0, 0), rgb(0, 0, 0), rgba(0, 0, 0, 0.976), rgb(0, 0, 0), rgba(0, 18, 50, 0.79));*/
+  background: radial-gradient(white, white, rgba(247, 247, 247, 0.987), rgba(247, 247, 247, 0.987), rgba(211, 211, 211, 0.785)); 
   z-index: 99;
   position: absolute;
   position: fixed;
@@ -49,6 +50,7 @@ body {
   border-radius: 2.5vw;
   box-shadow: 2px 2px 20px #004aad;
   border: 1px solid #ababab5e;
+  display: block;
 }
 
 .popupwelcome {
@@ -65,6 +67,7 @@ body {
   height: 77vh;
   width: 90vw;
   margin: auto;
+  display: inline;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -94,6 +97,7 @@ body {
   width: 85vw;
   height: 55vh;
   margin: auto;
+  display: inline;
   display: flex;
   margin-top: 9vh;
   justify-content: space-evenly;
@@ -103,6 +107,7 @@ body {
   height: 44vh;
   width: 14vw;
   cursor: pointer;
+  display: inline;
   display: flex;
 }
 
@@ -114,6 +119,7 @@ body {
   height: 44vh;
   width: 14vw;
   margin: auto;
+  display: inline;
   position: absolute;
   z-index: 1;
   background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59), black);
@@ -135,6 +141,7 @@ body {
   height: 44vh;
   width: 14vw;
   margin: auto;
+  display: inline;
   position: absolute;
   z-index: 1;
   background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59), black);
@@ -156,6 +163,7 @@ body {
   height: 44vh;
   width: 14vw;
   margin: auto;
+  display: inline;
   position: absolute;
   z-index: 1;
   background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59), black);
@@ -177,6 +185,7 @@ body {
   height: 44vh;
   width: 14vw;
   margin: auto;
+  display: inline;
   position: absolute;
   z-index: 1;
   background: linear-gradient(rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59), black);
@@ -209,6 +218,7 @@ body {
   width: 14vw;
   object-fit: cover;
   object-position: 100% 100%;
+  display: inline;
 }
 
 .pugrid1:hover {
@@ -233,6 +243,7 @@ body {
   width: 14vw;
   object-fit: cover;
   object-position: 100% 100%;
+  display: inline;
 }
 
 .pugrid2:hover {
@@ -246,10 +257,10 @@ body {
   transform-style: preserve-3d;
   transform: perspective(8cm) rotateX(-10deg) rotateY(30deg);
   z-index: 0;
-  background-image: url("images/Untitled\ design\ -\ 7.png");
+  background-image: url("images/top-view-hands-typing-keyboard.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position-x: 60%;
+  background-position-x: 10%;
   background-position-y: 100%;
   background-size: cover;
   background-origin: padding-box;
@@ -257,6 +268,7 @@ body {
   width: 14vw;
   object-fit: cover;
   object-position: 100% 100%;
+  display: inline;
 }
 
 .pugrid3:hover {
@@ -281,6 +293,7 @@ body {
   width: 14vw;
   object-fit: cover;
   object-position: 100% 100%;
+  display: inline;
 }
 
 .pugrid4:hover {
@@ -323,7 +336,6 @@ body {
   letter-spacing: 0.1vw;
   top: 22.2vh;
   right: 4vw;
-  text-shadow: 1px 1px 1px #757575;
   position: absolute;
   z-index: 3;
 }
@@ -341,7 +353,6 @@ body {
   top: 21.5vh;
   right: 3.6vw;
   line-height: 5vh;
-  text-shadow: 1px 1px 1px #757575;
   position: absolute;
   z-index: 3;
 }
@@ -353,6 +364,7 @@ a.Alink-vers:link, a.Alink-vers:visited {
   text-decoration: none;
   position: absolute;
   z-index: 4;
+  display: inline;
   display: flex;
   border: 1px solid white;
   border-radius: 1vw;
@@ -377,6 +389,7 @@ a.Alink-vers:hover, a.Alink-vers:active {
 }
 
 .gohome {
+  display: inline;
   display: flex;
   height: 8vh;
   width: 30vw;
@@ -772,10 +785,9 @@ a.Alink-title:active {
 .really {
   font-family: "Courier Prime", serif;
   font-weight: 100;
-  font-size: 7vh;
-  color: #ff3131;
-  text-align: right;
-  text-shadow: 2px 2px 10px #ff3131;
+  font-size: 5vh;
+  color: #757575;
+  text-align: center;
 }
 
 .about-sec-txt {
@@ -866,10 +878,9 @@ a.Alink-title:active {
 .skills-spec {
   background: linear-gradient(
     180deg,
-    #d6c09f,
     white,
     white,
-    white
+    #d6c09f
   );
   height: 105vh;
   display: flex;
@@ -889,7 +900,7 @@ a.Alink-title:active {
 
 .skills-spec-txt {
   color: black;
-  font-size: 15vh;
+  font-size: 13vh;
   text-align: left;
   line-height: 6vh;
   display: block;
@@ -942,7 +953,7 @@ a.Alink-title:active {
 }
 
 .area1box, .area2box, .area3box, .area4box {
-  width: 21vw;
+  width: 28vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -999,10 +1010,10 @@ a.Alink-title:active {
   width: 100%;
 }*/
 
-/*
+
 .create {
   background-color: black;
-  height: 120vh;
+  height: 121vh;
 }
 
 .create-heading {
@@ -1016,7 +1027,7 @@ a.Alink-title:active {
 }
 
 .create-head {
-  width: 46vw;
+  width: 40vw;
   height: 30vh;
   align-self: self-end;
   margin-top: 4vh;
@@ -1035,8 +1046,8 @@ a.Alink-title:active {
 .create-head2 {
   font-family: "Courier Prime", serif;
   font-weight: 100;
-  font-size: 18vh;
-  color: #be0032;
+  font-size: 15vh;
+  color: #004aad;
   margin-left: 10vw;
   margin-top: -3vh;
   text-align: right;
@@ -1084,7 +1095,7 @@ a.Alink-title:active {
 .create-contentbox {
   background: linear-gradient(
     180deg,
-    #be0032,
+    #880000,
     black 
   );
   height: 70vh;
@@ -1097,7 +1108,7 @@ a.Alink-title:active {
 }
 
 .create-content1, .create-content3 {
-  width: 18vw;
+  width: 17.6vw;
   height: 38vh;
 }
 
@@ -1106,7 +1117,7 @@ a.Alink-title:active {
 }
 
 .create-content2 {
-  width: 31vh;
+  width: 30vh;
   height: 38vh;
 }
 
@@ -1116,10 +1127,14 @@ a.Alink-title:active {
 
 a.Alink-create-content:link, a.Alink-create-content:visited {
   height: 38vh;
+  display: block;
+  transition: 0.7s ease-in-out;
 }
 
 a.Alink-create-content:hover, a.Alink-create-content:active {
   height: 38vh;
+  transform: scale(1.1, 1.1);
+  box-shadow: 2px 2px 10px black;
 }
 
 .create-content-heading {
@@ -1158,9 +1173,9 @@ a.Alink-creations:link, a.Alink-creations:visited {
 
 a.Alink-creations:hover, a.Alink-creations:active {
   font-family: "Roboto Mono", serif;
-  font-size: 3.1vh;
+  font-size: 3vh;
   font-weight: 400;
-  color: #d6c09f;
+  color: white;
   text-shadow: 2px 2px 5px #be0032;
   transition: .5s ease;
 }
@@ -1188,7 +1203,7 @@ a.Alink-creations:hover, a.Alink-creations:active {
 }
 
 .logos-headbold {
-  color: #be0032;
+  color: #004aad;
   letter-spacing: 0.03rem;
   font-size: 4vh;
 }
@@ -1205,34 +1220,34 @@ a.Alink-creations:hover, a.Alink-creations:active {
 }
 
 .logo-img {
-  height: 8vh;
+  height: 5vh;
 }
 
 .alonglogo {
-  height: 11vh;
+  height: 7vh;
 }
 
 .adlogo {
-  height: 7vh;
-}
-
-.pairedlogo {
-  height: 7vh;
-}
-
-.yatilogo {
-  height: 11vh;
-}
-
-.cclogo {
   height: 6vh;
 }
 
-.fklogo {
-  height: 7vh;
+.pairedlogo {
+  height: 5vh;
 }
 
-*/
+.yatilogo {
+  height: 8vh;
+}
+
+.cclogo {
+  height: 4vh;
+}
+
+.fklogo {
+  height: 5vh;
+}
+
+
 
 .collab {
   height: 102vh;
