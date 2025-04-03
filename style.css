@@ -880,6 +880,7 @@ a.Alink-title:active {
     180deg,
     white,
     white,
+    white,
     #d6c09f
   );
   height: 105vh;
@@ -1047,7 +1048,7 @@ a.Alink-title:active {
   font-family: "Courier Prime", serif;
   font-weight: 100;
   font-size: 15vh;
-  color: #004aad;
+  color: #9e8461;
   margin-left: 10vw;
   margin-top: -3vh;
   text-align: right;
@@ -1203,7 +1204,7 @@ a.Alink-creations:hover, a.Alink-creations:active {
 }
 
 .logos-headbold {
-  color: #004aad;
+  color: #9e8461;
   letter-spacing: 0.03rem;
   font-size: 4vh;
 }
