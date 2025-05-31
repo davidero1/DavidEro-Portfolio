@@ -467,13 +467,13 @@ a.Alink-gohome:hover, a.Alink-gohome:active {
 }
 
 .logo1a {
-  height: 11.1vh;
-  margin-left: -2vh;
+  height: 10vh;
+  margin-left: -5vh;
 }
 
 .logo1b {
-  height: 20vh;
-  margin-top: -3vh;
+  height: 19vh;
+  margin-top: -1vh;
 }
 
 .fa-brands {
@@ -680,10 +680,10 @@ header {
 }
 
 .logobkg {
-  height: 40vh;
+  height: 35vh;
   position: absolute;
   left: 5vw;
-  top: 100vh;
+  top: 105vh;
   opacity: 1;
 
 }
@@ -1090,7 +1090,7 @@ a.Alink-title:active {
 }
 
 .create-logo-img {
-  height: 50vh;
+  height: 60vh;
 }
 
 .create-contentbox {
@@ -1248,7 +1248,75 @@ a.Alink-creations:hover, a.Alink-creations:active {
   height: 5vh;
 }
 
+.lawyer {
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      black,
+      #2f0c08 
+    );
+  padding-top: 2vh;
+}
 
+.lawyerinner {
+  height: 95vh;
+  margin: auto;
+  width: 95vw;
+  background-color: white;
+  background-image: url("images/IMG_7259.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 100%;
+  background-position-y: 30%;
+  background-size: contain;
+  background-origin: padding-box;
+  object-fit: cover;
+  object-position: 100% 100%;
+  border-radius: 3vw;
+  align-content: center;
+}
+
+.lawyertextbox {
+  border: 2px solid red;
+  height: 70vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ltbheadbox {
+  width: 30vw;
+  border: 2px solid orange;
+}
+
+.ltbheading {
+  font-family: "Courier Prime", serif;
+  font-weight: 100;
+  font-size: 9vh;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: black;
+  padding-top: 5vh;
+}
+
+.ltbheading2 {
+  font-family: "Courier Prime", serif;
+  font-weight: 100;
+  font-size: 15vh;
+  color: #2f0c08;
+  margin-left: 10vw;
+  margin-top: -3vh;
+  text-align: right;
+}
+
+.ltbparabox {
+
+}
+
+.ltbpara {
+
+}
 
 .collab {
   height: 102vh;

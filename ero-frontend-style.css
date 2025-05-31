@@ -86,7 +86,7 @@
   }
   
   .logo1a {
-    height: 7vh;
+    height: 6vh;
   }
   
   .logo1b {
@@ -394,11 +394,11 @@
     height: 409.7vh;
     display: flex;
     flex-direction: column;
-    background-image: url("images/Marketing\ Portfolio\ and\ Resume\ Website\ in\ Black\ and\ White\ Neon\ Green\ Professional\ Style.png\ \(2\).png");
+    background-image: url("images/IMG_3295.JPG");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: 100%;
-    background-position-y: 40%;
+    background-position-y: 38%;
     background-size: cover;
     background-origin: padding-box;
     object-fit: cover;
@@ -1361,26 +1361,26 @@
   }
   
   .connect {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-color: white;
     z-index: -1; 
   }
   
   .connect-inner {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-    background-image: url("images/david\ ero.png.png");
-    background-repeat: no-repeat;
+    background-image: url("images/erobkg2.jpg");
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position-x: 100%;
-    background-position-y: 5%;
-    background-size: cover;
+    background-position-y: 60%;
+    background-size: contain;
     background-origin: padding-box;
-    object-fit: cover;
+    object-fit: contain;
     object-position: 100% 100%;
     border-top-left-radius: 10vw;
     border-top-right-radius: 10vw;
@@ -1926,7 +1926,7 @@
       display: flex;
       flex-direction: column;
       width: 99.5vw;
-      background-image: url("images/Marketing\ Portfolio\ and\ Resume\ Website\ in\ Black\ and\ White\ Neon\ Green\ Professional\ Style.png\ \(2\).png");
+      background-image: url("images/IMG_3295.JPG");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-position-x: 50%;
@@ -2930,8 +2930,8 @@
       height: 90vh;
       justify-content: space-around;
       position: relative;
-      background-image: url("images/david\ ero.png.png");
-      background-repeat: no-repeat;
+      background-image: url("images/erobkg2.jpg");
+      background-repeat: repeat;
       background-attachment: fixed;
       background-position-x: 50%;
       background-position-y: 100%;
@@ -3552,12 +3552,12 @@
     display: flex;
     flex-direction: column;
     background-color: white;
-    background-image: url("images/Marketing\ Portfolio\ and\ Resume\ Website\ in\ Black\ and\ White\ Neon\ Green\ Professional\ Style.png\ \(2\).png");
+    background-image: url("images/IMG_3295.JPG");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: 50%;
     background-position-y: 80%;
-    background-size: 200%;
+    background-size: cover;
     background-origin: padding-box;
     object-fit: cover;
     object-position: 100% 100%;
@@ -4540,8 +4540,8 @@
   .connect-inner {
     height: 100vh;
     background-color: black ;
-    background-image: url("images/david\ ero.png.png");
-    background-repeat: no-repeat;
+    background-image: url("images/erobkg2.jpg");
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position-x: 100%;
     background-position-y: 10%;
